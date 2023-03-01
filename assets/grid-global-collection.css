@@ -2,16 +2,29 @@
 .template-collection .grid-global-collection {
   background: #ffffff;
 }
+.template-collection .content-title-collection-box{
+  margin: 45px 0 0 0;
+  font-family: Raleway-Light;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+}
 .template-collection
   .grid-global-collection
   .content-submenu-options-collections {
-  margin: 45px 0 40px;
+  margin: 0px 0 40px;
+
 }
 @media (min-width: 992px) {
+  .template-collection .content-title-collection-box{
+    margin: 65px 0 0 0;
+  }
   .template-collection
     .grid-global-collection
     .content-submenu-options-collections {
-    margin: 65px 0 60px;
+    margin: 0px 0 60px;
   }
 }
 .template-collection

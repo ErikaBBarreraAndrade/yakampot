@@ -11,6 +11,9 @@
 {%- paginate collection.products by 8 -%}
 <div class="container-fluid page-width">
 	<div class="row justify-content-center content-products-grid-box-global">
+    <div class="col-11 col-lg-12 content-title-collection-box text-center">
+      {{ collection.title }}
+    </div>
     {%  if collection.metafields.yakampot.menu_colecciones != blank %}
       <div class="col-11 col-lg-12 content-submenu-options-collections">
         <ul class="d-flex list-unstyled justify-content-lg-center">
