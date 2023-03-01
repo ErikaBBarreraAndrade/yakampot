@@ -1,0 +1,66 @@
+<div class="container-fluid">
+	<div class="row content-txt">
+		<div class="col-12 text-center">
+			{% if section.settings.title != blank%}
+				<p class="title">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.description != blank%}
+				<div class="description">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+			{% if section.settings.button_link != blank%}
+				<p class="content-button">
+					<a href="{{section.settings.button_link}}" class="btn">
+						<span>{{section.settings.button_label}}</span>
+					</a>
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Section btn txt",
+"class":"section-content-description-parallax",
+"settings": [
+{
+"type":"header",
+"content":"==== Titulo & descripción ===="
+},
+{
+"type":"text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type":"richtext",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type":"header",
+"content":"==== Botón ===="
+},
+{
+"type":"text",
+"id": "button_label",
+"label": "Texto de Botón"
+},
+{
+"type":"url",
+"id": "button_link",
+"label": "Link de Botón"
+}
+],
+"presets": [
+{
+"name": "Section btn txt",
+"category": "Image"
+}
+]
+}
+{% endschema %}

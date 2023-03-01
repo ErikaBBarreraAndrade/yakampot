@@ -1,0 +1,133 @@
+<div class="container-fluid">
+	<div class="row justify-content-center section-services">
+		<div class="col-12 col-lg-10">
+			<div class="row grid-service">
+				{% for block in section.blocks limit: section.blocks.size %}
+					<div class="col-12 col-lg-4 service-box">
+						<div class="d-flex service  align-items-center justify-content-center">
+							<div class="">
+								{% if block.settings.enable_image %}
+									{{ block.settings.image | img_url: 'master' | img_tag: 'feature-row__image','img-fluid float-start' }}
+								{% endif %}
+							</div>
+							<div class="ms-3">
+								{% if block.settings.heading_service != blank %}
+									<h4 class="title_block">
+                       <span class="language-es">
+					                    {{ block.settings.heading_service }}
+						</span>
+                    <span class="language-en collapse">
+												                    {{ block.settings.heading_service_en }}
+						</span>
+                  </h4>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "services language",
+  "class": "section-content-description-parallax",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "icon-left",
+      "label": "Enable Icon Left Text Right"
+    },
+    {
+      "type": "color",
+      "id": "color_border_box",
+      "label": "Border Out",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "color",
+      "id": "bg_section",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "color_title_sub",
+      "label": "Color Sub",
+      "default": "#888888"
+    },
+    {
+      "type": "color",
+      "id": "color_icon",
+      "label": "Color Icon",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "color_border",
+      "label": "Border Color",
+      "default": "#e5e5e5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "service",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_image",
+          "label": "Show image",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading_service",
+          "label": "Titulo servicio"
+        },
+        {
+          "type": "text",
+          "id": "heading_service_en",
+          "label": "Heading service"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "services language",
+      "category": "service",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

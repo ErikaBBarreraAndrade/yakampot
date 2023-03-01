@@ -1,0 +1,87 @@
+<div class="container-fluid">
+	<div class="row content-box" style="background: {{ section.settings.bg_section }}">
+		<div class="col-12">
+			{% if section.settings.title != blank %}
+				<h1 class="mega-subtitle text-center mb-0" style="color: {{ section.settings.color }}">
+					{{ section.settings.title }}
+				</h1>
+			{% endif %}
+			{% if section.settings.description %}
+				<div class="rte-setting subtitle mega-subtitle text-center" style="color:{{section.settings.color_des }};  margin:0 auto ;">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+			{% if section.settings.button_link != blank %}
+				<p class="content-button text-center">
+					<a href="{{section.settings.button_link}}" class="btn" style="color: {{ section.settings.color_btn }}">
+						<span>
+							{{ section.settings.button_label }}
+						</span>
+					</a>
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Seccion texto",
+"class": "section-only-text section-content-description-parallax texto-somos-only-txt",
+"settings": [
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background color",
+"default": "#ffffff"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "color",
+"id": "color",
+"label": "Color de titulo",
+"default" : "#FFFFFF"
+},
+{
+"type": "header",
+"content": "==== Descrición ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "color",
+"id": "color_des",
+"label": "Color descripción",
+"default" : "#FFFFFF"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Texto Botón"
+},
+{
+"type": "color",
+"id": "color_btn",
+"label": "Color de Botón",
+"default" : "#FFFFFF"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Url Botón"
+}
+],
+"presets": [
+{
+"name": "Section with text overlay",
+"category": "Image"
+}
+]
+}
+{% endschema %}

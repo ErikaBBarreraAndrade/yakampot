@@ -1,0 +1,163 @@
+<style>
+  .seccion-modelo-impacto{
+    background: {{ section.settings.bg_color }};
+  }
+</style>
+<div class="container-fluid">
+	<div class="row content-box">
+		{% if section.settings.title != blank %}
+			<div class="col-12">
+				<p class="title">
+					{{ section.settings.title }}
+				</p>
+			</div>
+		{% endif %}
+		<div class="col-12">
+			<div class="row">
+				{% for block in section.blocks %}
+					<div class="col-12 content-box-description d-none d-lg-block">
+						<ul class="content-bx-des">
+							<li class="content-icon">
+								<img class="mr-3  lazyload"
+								     data-src="{{ block.settings.image | img_url: "master" }}"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     alt="{{ preview_image.alt | escape }}">
+							</li>
+							<li class="content-description">
+								{% if block.settings.title != blank %}
+									<p class="title">
+										{{ block.settings.title }}
+									</p>
+								{% endif %}
+								{% if block.settings.description != blank %}
+									<div class="description">
+										{{ block.settings.description }}
+									</div>
+								{% endif %}
+							</li>
+						</ul>
+					</div>
+				{% endfor %}
+				<div class="col-12 content-box-description d-block d-lg-none">
+					<div class="accordion" id="accordionExample">
+						{% for block in section.blocks %}
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading-{{block.settings.title | escape | split: ' ' | last | capitalize}}">
+								<a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#{{block.settings.title | escape | split: ' ' | last | capitalize}}" aria-expanded="false" aria-controls="collapseTwo">
+									<div class="content-icon">
+										<img class="  lazyload"
+										     data-src="{{ block.settings.image_mobile | img_url: "master" }}"
+										     data-aspectratio="{{ preview_image.aspect_ratio }}"
+										     alt="{{ preview_image.alt | escape }}">
+									</div>
+									<div class="content-description">
+										{% if block.settings.title != blank %}
+											<p class="title">
+												{{block.settings.title}}
+											</p>
+										{% endif %}
+									</div>
+								</a>
+							</h2>
+							<div id="{{block.settings.title | escape | split: ' ' | last | capitalize}}" class="accordion-collapse collapse" aria-labelledby="heading-{{block.settings.title | escape | split: ' ' | last | capitalize}}" data-bs-parent="#accordionExample">
+								<div class="accordion-body content-description">
+									{% if block.settings.description != blank %}
+										<div class="description">
+											{{block.settings.description}}
+										</div>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Modelo de impacto",
+"class": "section-content-description-parallax seccion-modelo-impacto",
+"settings": [
+{
+"type": "header",
+"content": "==== Background  ===="
+},
+{
+"type": "color",
+"id": "bg_color",
+"label": "Background"
+},
+{
+"type": "header",
+"content": "==== Titulo  ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+}
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Icono ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Icono"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Icono Mobile"
+},
+{
+"type": "header",
+"content": "==== Titulo y descripción ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Modelo de impacto",
+"category": "Image & Text",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

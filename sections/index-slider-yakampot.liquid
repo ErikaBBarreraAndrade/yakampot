@@ -1,0 +1,196 @@
+<section class="banner__slider banner-video-general">
+	<div class="slider stick-dots">
+		{% for block in section.blocks %}
+			<div class="slide">
+				<div class="slide__img d-none d-lg-block">
+					{% if block.settings.image != blank %}
+						<img src=""  data-src="{{ block.settings.image | img_url: 'master'}}" class=" lazyload img-fluid w-100 full-image animated" data-animation-in="zoomInImage">
+					{% else %}
+						{% if block.settings.video_link != blank %}
+							<video class="full-image animated lazy" width="100%" preload="none" autoplay loop muted playsinline poster="" data-animation-in="zoomInImage">
+								<source data-src="{{ block.settings.video_link }}" type="video/mp4">
+							</video>
+						{% endif %}
+					{% endif %}
+				</div>
+				<div class="slide__img d-block d-lg-none">
+					{% if block.settings.image_mobile != blank %}
+						<img src=""  data-src="{{ block.settings.image_mobile | img_url: 'master'}}" class=" lazyload img-fluid w-100 full-image animated" data-animation-in="zoomInImage">
+					{% else %}
+						{% if block.settings.video_link_mobile != blank %}
+							<video class="full-image animated lazy" width="100%" preload="none" autoplay loop muted playsinline poster="" data-animation-in="zoomInImage">
+								<source data-src="{{ block.settings.video_link_mobile }}" type="video/mp4">
+							</video>
+						{% endif %}
+					{% endif %}
+				</div>
+				<div class="slide__content {% if block.settings.enable_titulos %} slide__content__absolute {% endif %}">
+					<div class="slide__content--headings text-center">
+						{% if block.settings.title != blank %}
+							<div class="animated top-title"  style="color:{{block.settings.title_color}}" data-animation-in="fadeInUp" data-delay-in="0.3">{{ block.settings.title }}</div>
+    						<div class="animated top-subtitle"  style="color:{{block.settings.title_color}}" data-animation-in="fadeInUp" data-delay-in="0.3">{{ block.settings.subtitle }}</div>
+			
+                          {% endif %}
+						{% if block.settings.enable_image %}
+							<img src=""  data-src="{{ block.settings.image_between | img_url: 'master'}}" class=" lazyload img-fluid m-auto image-between" >
+						{% endif %}
+						{% if block.settings.text != blank %}
+							<h2 class="animated title" style="color:{{block.settings.text_color}}" data-animation-in="fadeInUp">{{ block.settings.text }}</h2>
+						{% endif %}
+						{% if block.settings.button_label != blank and block.settings.button_link != blank %}
+							<div class="button-alone-slider {{ block.settings.posicion_boton }}">
+								<a href="{{ block.settings.button_link }}" class="btn-light btn button-custom animated" data-animation-in="fadeInUp">
+									{{ block.settings.button_label }}
+								</a>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>
+
+{% schema %}
+{
+"name": "Index slider yakampot",
+"class": "index-section-slider slider-normal",
+"settings": [
+
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Image Mobile"
+},
+{
+"type": "url",
+"id": "video_link",
+"label": "Video link"
+},
+{
+"type": "url",
+"id": "video_link_mobile",
+"label": "Video link mobile"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Add a title or tagline"
+},
+  {
+"type": "text",
+"id": "subtitle",
+"label": "Heading",
+"default": "Add a subtitle or tagline"
+},
+{
+"type": "header",
+"content": "==== Imagen entre párrafos ===="
+},
+{
+"type": "checkbox",
+"id": "enable_image",
+"label": "Activar imagen entre párrafos",
+"default": false
+},
+{
+"type": "image_picker",
+"id": "image_between",
+"label": "Imagen entre párrafos"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "checkbox",
+"id": "enable_titulos",
+"label": "Activar titulos",
+"default": false
+},
+{
+"type": "color",
+"id": "title_color",
+"label": "Color Title",
+"default": "#FFF"
+},
+{
+"type": "text",
+"id": "text",
+"label": "Text",
+"default": "Add a text or tagline"
+},
+{
+"type": "color",
+"id": "text_color",
+"label": "Color Text",
+"default": "#FFF"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "select",
+"id": "posicion_boton",
+"label": "Posición botón",
+"default": "bottom-button",
+"options": [
+{
+"value": "top-button",
+"label": "Top"
+},
+{
+"value": "center-button",
+"label": "Center"
+},
+{
+"value": "bottom-button",
+"label": "Bottom"
+}
+]
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button link"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Index slider yakampot",
+"category": "Text",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}

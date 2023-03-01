@@ -1,0 +1,125 @@
+<style>
+	.section-rezos-banner-hero .section-content{
+    background: url({{ section.settings.bg_mobile | img_url:"master" }})top, no-repeat;
+		background-size: cover !important;
+	}
+	@media(min-width: 576px){
+    .section-rezos-banner-hero .section-content{
+      background: url({{ section.settings.bg_desktop | img_url:"master" }})top, no-repeat;
+    }
+	}
+</style>
+<div class="container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-11 col-lg-10">
+			<div class="row section-content">
+				<div class="col-12 mt-auto">
+					<div class="row content-description">
+						<div class="col-12 col-sm-6 col-lg-6">
+							<div class="row">
+								<div class="col-12 col-sm-11 col-lg-10">
+									{% if section.settings.image != blank %}
+										<img class="d-none d-lg-block w-100 img-fluid lazyload"
+										     data-src="{{ section.settings.image | img_url:"master" }}"
+										     data-widths="[180, 360, 540, 720, 900, 1080]"
+										     data-aspectratio="{{ preview_image.aspect_ratio }}"
+										     data-sizes="auto"
+										     alt="{{ preview_image.alt | escape }}">
+										<img class="d-block d-lg-none w-100 img-fluid lazyload"
+										     data-src="{{ section.settings.image_mobile | img_url:"master" }}"
+										     data-widths="[180, 360, 540, 720, 900, 1080]"
+										     data-aspectratio="{{ preview_image.aspect_ratio }}"
+										     data-sizes="auto"
+										     alt="{{ preview_image.alt | escape }}">
+									{% endif %}
+								</div>
+							</div>
+							{% if section.settings.description != blank %}
+								<div class="rte-setting">
+								{{ section.settings.description }}
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					{% if section.settings.btn_url != blank %}
+						<p class="content-button text-center text-sm-end">
+							<a href="{{ section.settings.btn_url }}" class="btn">
+								<span>{{ section.settings.btn_label }}</span>
+							</a>
+						</p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Rezos Banner",
+"class": "section-content-description-parallax section-rezos-banner-hero",
+"settings": [
+{
+"type": "header",
+"content": "==== Bakground Desktop ===="
+},
+{
+"type": "image_picker",
+"id": "bg_desktop",
+"label": "Background desktop"
+},
+{
+"type": "image_picker",
+"id": "bg_mobile",
+"label": "Background Mobile"
+},
+{
+"type": "header",
+"content": "==== Imagen ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Imagen desktop"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Imagen Mobile"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Texto Botón"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Botón Url"
+}
+],
+
+"presets": [
+{
+"name": "Rezos Banner",
+"category": "Image"
+}
+]
+}
+{% endschema %}

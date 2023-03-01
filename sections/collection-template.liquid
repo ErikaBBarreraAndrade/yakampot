@@ -1,0 +1,362 @@
+<style>
+.list-current-tag ul li {
+    padding: 15px 15px 15px 0;
+    display: inline-block;
+  color: white;
+    font-size: 13px;
+}
+  .list-current-tag ul li a {
+    float: right;
+    background: #000;
+    color: #fff;
+    width: 18px;
+    text-align: center;
+    border-radius: 50%;
+    height: 18px;
+    font-size: 12px;
+    margin-left: 8px;
+    text-decoration:none;
+}
+  .template-collection .filter-complete-yakampot .catalog_color a, .template-collection .filter-complete-yakampot .catalog_size a{
+    color: white;
+    text-decoration: none;
+}
+  .disable_filter{opacity:0.5;}
+  .list-current-tag ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+  .template-collection .filter-complete-yakampot .catalog_color img{
+    width: 10px!important;
+    height: 10px!important;
+    margin-right: 0!important;
+    border: none!important;}
+  .template-collection #CollectionSection .grid--collection .grid__item {
+    /*clear: none !important;*/
+}
+.link-active .icon-checkmark{visibility:visible !important;}
+</style>
+{{ 'component-facets.css' | asset_url | stylesheet_tag }}
+{%- assign per_row = section.settings.per_row -%}
+{%- assign paginate_by = per_row | times: section.settings.rows_per_page -%}
+
+{%- paginate collection.products by 100 -%}
+
+<div
+  id="CollectionSection"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-template">
+
+  {%- if section.settings.description_position == 'top' -%}
+    {%- if collection.description != blank -%}
+      <div class="rte">
+        {{ collection.description }}
+      </div>
+      <hr class="hr--clear hr--small">
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if section.settings.subcollection_style == 'above' -%}
+  {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
+  {%- endif -%}
+
+  <div class="collection-filter row ">
+    {%- assign current_filter_size = current_tags | size -%}
+	  <div class="col-12 page-width">
+		  <div class="row">
+			  <div class="col-12 col-lg-6 text-center text-lg-start">
+				  <h1 class="title-general">
+					  {{ collection.title }}
+				  </h1>
+			  </div>
+			  <div class="col-12 col-lg-6">
+				 <div class="row justify-content-end">
+					 <div class="col-12 col-xxl-6 content-filter">
+						 <div class="row">
+							 <div class="col-6 col-lg-6 text-center text-lg-end">
+								 <a class="filter-show-yakampot">
+									 Ordenar por <i class="fa fa-angle-down"></i>
+								 </a>
+								 {% comment %}<div class="collection-filter__item collection-filter__item--drawer">
+									 <button
+											 type="button"
+											 class="js-drawer-open-collection-filters btn btn--tertiary{% unless current_filter_size == 0 %} btn--tertiary-active{% endunless %}"
+											 aria-controls="FilterDrawer">
+										 <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-filter" viewBox="0 0 64 64"><path d="M48 42h10M48 42a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM7 42h31M16 22H6M16 22a5 5 0 1 1 5 5 5 5 0 0 1-5-5zM57 22H26"/></svg>
+										 {{ 'collections.filters.title_tags' | t }}
+										 {%- if current_filter_size > 0 -%}
+											 ({{ current_filter_size }})
+										 {%- endif -%}
+									 </button>
+								 </div>{% endcomment %}
+							 </div>
+							 <div class="col-6 col-lg-6  text-center text-lg-end">
+								 <a class="filter-show-complete-yakampot">
+									 Filtrar por <i class="fa fa-angle-down"></i>
+								 </a>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+	<div class="row filter-complete-yakampot m-0">
+		<div class="col-12 pb-4">
+			<div class="title-block text-uppercase">
+				Filtrar por:
+			</div>
+
+          {% if current_tags %}
+          <div class="list-current-tag">
+            <ul>
+              {% for tag in current_tags %}
+              {% assign cTName = tag | remove_first : 'COLOR_' | remove_first : 'TALLA_' %}
+          		<li>{{cTName}} {{ 'x' | link_to_remove_tag: tag }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+		</div> 
+    <div class="col-12">
+  <div class="row">
+{%- for filter in collection.filters -%}
+        {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+        {%  assign filterName = filter.label | downcase %}
+        {%  if filterName != 'disponibilidad' %}
+        <div class="col-12 col-md-4 col-lg-4">
+            <div class="row">
+                <div class="col-12 title-block text-uppercase pb-4">
+                    {{ filter.label }}
+                </div>
+                {%- for value in filter.values -%}
+                  {% if value.count > 0 %}
+                <div class="col-12 mb-2">
+                    <div href="#" class="catalog_color text-uppercase">
+                        <div class="d-flex align-items-center">
+
+                            <div class="flex-grow-1 ms-3 facet-checkbox {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %} {% if value.active %}link-active{% endif %}">
+                                <a class="filter-link {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %}" data-colurl="/collections/{{ collection.handle }}" data-filteropt="{{ value.param_name }}={{ value.value }}" href="#">
+                                    <svg width="1rem" height="1rem" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                        <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                    </svg>
+
+                                    <svg class="icon icon-checkmark"
+                                         width="1.1rem"
+                                         height="0.7rem"
+                                         viewBox="0 0 11 7"
+                                         fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+
+                                        <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                              stroke="currentColor"
+                                              stroke-width="1.75"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round" />
+                                    </svg>
+                                    {% if filter.label == 'Color' %}
+                                        <div class="cc-color cc-color-{{ value.label | handleize }}"></div>
+                                    {%  endif %}
+                                    <span aria-hidden="true">{{ value.label | escape }} </span>
+                                    <span class="float-end">{{ value.count }}</span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    {%  endif %}
+                {%- endfor -%}
+            </div>
+          </div>
+          {%  endif %}
+        {% endfor %}
+        
+				<div class="col-12 col-md-4 col-lg-4 catalog_price">
+					<div class="row h-100">
+						<div class="col-12 title-block text-uppercase">
+							Filtro de precios
+						</div>
+						<div class="col-12 mt-2">
+							<input id="range1" type="text"/>
+							<p class="total-range text-start">
+								<span class="min-price">$ 300.00 MXN</span> - <span class="max-price">$ 7,999.00 MXN</span>
+							</p>
+						</div>
+					</div>
+				</div>
+              </div>
+      		</div>
+			</div>
+		</div>
+	</div>
+	<div class="row filter-yakampot">
+		<div class="col-12 text-center">
+			<div class="collection-filter__sort-container select-filter">
+				{%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+				<label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+				<select name="SortBy" id="SortBy" data-default-sortby="{{ collection.default_sort_by }}">
+					<option value="best-selling">Más vendidos</option>
+					<option value="price-ascending">Precio, menor a mayor</option>
+					<option value="price-descending">Precio, mayor a menor</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+  {%- if section.settings.enable_collection_count -%}
+    <p class="medium-up--hide text-center d-none" data-scroll-to>{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</p>
+  {%- endif -%}
+  <div
+    class="grid grid--uniform row grid--collection{% if section.settings.mobile_flush_grid %} small--grid--flush{% endif %}"{% unless section.settings.enable_collection_count %} data-scroll-to{% endunless %}>
+    {%- liquid
+      assign grid_item_width = 'small--one-half medium-up--one-third'
+
+      case per_row
+        when 2
+          assign grid_item_width = 'medium-up--one-half'
+        when 3
+          assign grid_item_width = 'small--one-half medium-up--one-third'
+        when 4
+          assign grid_item_width = 'small--one-half medium-up--one-quarter'
+        when 5
+          assign grid_item_width = 'small--one-half medium-up--one-fifth'
+      endcase
+    -%}
+
+    {%- for product in collection.products -%}
+      {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
+    {%- else -%}
+      <div class="grid__item">
+        <p>{{ 'collections.general.no_matches' | t }}</p>
+      </div>
+    {%- endfor -%}
+
+  </div>
+
+  {%- if section.settings.subcollection_style == 'below' -%}
+    {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
+  {%- endif -%}
+
+  {%- if paginate.pages > 1 -%}
+    {%- render 'pagination', paginate: paginate -%}
+  {%- endif -%}
+
+  {%- if section.settings.description_position == 'bottom' -%}
+    {%- if collection.description != blank -%}
+      <hr class="hr--clear hr--small">
+      <div class="rte">
+        {{ collection.description }}
+      </div>
+      <hr class="hr--clear hr--small">
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if settings.quick_shop_enable -%}
+    {%- for product in collection.products -%}
+      {%- if product.available -%}
+        {%- render 'quick-shop-modal', product: product -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
+{%- endpaginate -%}
+
+{% schema %}
+  {
+    "name": "Collection pages",
+    "settings": [
+      {
+        "type": "select",
+        "id": "description_position",
+        "label": "Collection description position",
+        "default": "top",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Subcollections"
+      },
+      {
+        "type": "paragraph",
+        "content": "Links to collections from your menu will appear here. [Learn more](https://archetypethemes.co/blogs/impulse/how-do-i-create-subcollections)"
+      },
+      {
+        "type": "select",
+        "id": "subcollection_style",
+        "label": "Subcollection style",
+        "default": "above",
+        "options": [
+          {
+            "value": "above",
+            "label": "Above products"
+          },
+          {
+            "value": "below",
+            "label": "Below products"
+          },
+          {
+            "value": "none",
+            "label": "None"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "subcollections_per_row",
+        "label": "Subcollections per row",
+        "default": 5,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "header",
+        "content": "Products"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_collection_count",
+        "label": "Enable collection count",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Products per row",
+        "default": 4,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "rows_per_page",
+        "label": "Rows per page",
+        "default": 7,
+        "min": 3,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_flush_grid",
+        "label": "Flush grid on mobile",
+        "default": false
+      }
+    ]
+  }
+{% endschema %}

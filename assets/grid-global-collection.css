@@ -1,0 +1,265 @@
+.template-collection,
+.template-collection .grid-global-collection {
+  background: #ffffff;
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections {
+  margin: 45px 0 40px;
+}
+@media (min-width: 992px) {
+  .template-collection
+    .grid-global-collection
+    .content-submenu-options-collections {
+    margin: 65px 0 60px;
+  }
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections
+  ul {
+  margin: 0 !important;
+}
+@media (max-width: 991px) {
+  .template-collection
+    .grid-global-collection
+    .content-submenu-options-collections
+    ul {
+    overflow-x: scroll;
+  }
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections
+  ul
+  li {
+  padding-right: 66px;
+  position: relative;
+  white-space: nowrap;
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections
+  ul
+  li:last-child {
+  padding-right: 0;
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections
+  ul
+  li:last-child:after {
+  content: none;
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections
+  ul
+  li:after {
+  content: "X";
+  font-family: Raleway-Light;
+  position: absolute;
+  color: #000;
+  font-size: 13px;
+  line-height: 15px;
+  top: 5px;
+  margin-left: 30px;
+}
+.template-collection
+  .grid-global-collection
+  .content-submenu-options-collections
+  ul
+  li
+  a {
+  font-family: Raleway-Light;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item {
+  padding: 0 15px !important;
+  margin-bottom: 30px !important;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__tag {
+  bottom: 30px;
+  top: auto;
+  right: 0;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: center !important;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .grid-product__title {
+  font-family: Raleway-Semibold !important;
+  color: #000 !important;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .content-global-fera-reviews {
+  margin-top: 8px;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .content-global-fera-reviews
+  .fera-productReviewsSummary-stars-bg,
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .content-global-fera-reviews
+  .fera-productReviewsSummary-stars-rating {
+  font-size: 18px !important;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .content-global-fera-reviews
+  .fera-productReviewsSummary-avgRating,
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .content-global-fera-reviews
+  .fera-productReviewsSummary-reviewCount {
+  color: #000 !important;
+  font-size: 13px !important;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .grid-product__link
+  .grid-product__meta
+  .grid-product__price
+  .limoniapps-discountninja-productprice-replaced
+  .limoniapps-discountninja-discountedprice
+  .money {
+  font-family: Raleway !important;
+  color: #000 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  font-weight: 100 !important;
+}
+.template-collection
+  .grid-global-collection
+  .content-global-grid-products
+  .grid__item
+  .grid-product__content
+  .limoniapps-discountninja-badge-wrapper
+  .limoniapps-discountninja-badge {
+  bottom: 85px !important;
+  right: 25px !important;
+  background: #ffffff;
+}
+.template-collection .limoniapps-discountninja-badge.bottom {
+  bottom: 110px !important;
+  left: 15px !important;
+}
+.template-collection .limoniapps-discountninja-badge.bottom span {
+  font-family: Raleway-Bold;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  padding: 4px 4px 4px 10px;
+  border-radius: 50%;
+  color: #000 !important;
+  font-size: 13px !important;
+  line-height: 40px !important;
+}
+.template-collection
+  .limoniapps-discountninja-badge.bottom
+  span.limoniapps-discountninja-shortcode {
+  padding: 0 !important;
+}
+.template-collection
+  .grid__item
+  .grid-product__content
+  a
+  .grid-product__meta
+  .grid-product__price {
+  color: #000 !important;
+}
+.content-products-grid-box-global {
+  padding-bottom: 60px;
+}
+.load-more {
+  text-align: center;
+}
+.load-more a {
+  font-family: "Raleway-Light";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+  margin-top: 45px;
+  display: block;
+}
+.load-more_spinner {
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3a3a3a;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: 2s spin linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

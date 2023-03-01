@@ -1,0 +1,49 @@
+<div class="block-section section-content-description-parallax ">
+	<div class="block_conten container-fluid">
+		<div class="row">
+			<div class="col-12 p-0">
+				{% if section.settings.video_link != blank %}
+					<div class="d-none d-lg-block  content-video-box">
+						<video width="100%" autoplay loop playsinline muted preload="none" class="lazy">
+							<source data-src="{{section.settings.video_link}}" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="d-block d-lg-none">
+						<video width="100%" autoplay loop playsinline muted  preload="none" class="lazy">
+							<source data-src="{{section.settings.video_link_mobile}}" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				{% else %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Video Banners end",
+"class": "banners-end",
+"settings": [
+{
+"type": "url",
+"id": "video_link",
+"label": "Video link"
+},
+{
+"type": "url",
+"id": "video_link_mobile",
+"label": "Video link mobile"
+}
+
+],
+"presets": [
+{
+"name": "Video Banners end",
+"category": "Video"
+}
+]
+}
+{% endschema %}

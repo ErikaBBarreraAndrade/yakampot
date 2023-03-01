@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "16432144337e6d776a": {
+      "type": "index-slider-yakampot",
+      "blocks": {
+        "164321443344aa165f-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-colaboraciones.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/ColaboracionArtesanal-Mobile.jpg",
+            "video_link": "",
+            "video_link_mobile": "",
+            "title": "iCÓNICOS YAKAMPOT",
+            "subtitle": "NUESTRA COLECCIÓN DE TEXTILES EMBLEMÁTICOS",
+            "enable_image": false,
+            "enable_titulos": true,
+            "title_color": "#ffffff",
+            "text": "<em>- DISFRUTA DE LA SELECCIÓN DE NUESTRAS PIEZAS MAS EXITOSAS -<\/em>",
+            "text_color": "#ffffff",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164321443344aa165f-0"
+      ],
+      "settings": {
+      }
+    },
+    "158bbdfb-8792-42e8-9372-6cf385859313": {
+      "type": "products-tabs",
+      "blocks": {
+        "template--18113012531515__158bbdfb-8792-42e8-9372-6cf385859313-1677261929cdc7dd80-0": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Vestidos",
+            "collection": "vestidos",
+            "btn_link": "",
+            "btn_link_all": ""
+          }
+        },
+        "template--18113012531515__158bbdfb-8792-42e8-9372-6cf385859313-1677261929cdc7dd80-1": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Blusas",
+            "collection": "tops",
+            "btn_link": "",
+            "btn_link_all": ""
+          }
+        },
+        "template--18113012531515__158bbdfb-8792-42e8-9372-6cf385859313-1677261929cdc7dd80-2": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Camisas",
+            "collection": "camisas",
+            "btn_link": "",
+            "btn_link_all": ""
+          }
+        },
+        "0207ff9a-5232-4492-9e39-aa001f85fc27": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Tops",
+            "collection": "tops-1",
+            "btn_link": "",
+            "btn_link_all": ""
+          }
+        },
+        "6ed465ab-a7aa-41c7-b28c-64386c911f92": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Bottoms",
+            "collection": "bottoms",
+            "btn_link": "",
+            "btn_link_all": ""
+          }
+        },
+        "dba4273d-d82b-4820-b0ed-cf98bf874de5": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Outerwear",
+            "collection": "outerwear",
+            "btn_link": "",
+            "btn_link_all": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18113012531515__158bbdfb-8792-42e8-9372-6cf385859313-1677261929cdc7dd80-0",
+        "template--18113012531515__158bbdfb-8792-42e8-9372-6cf385859313-1677261929cdc7dd80-1",
+        "template--18113012531515__158bbdfb-8792-42e8-9372-6cf385859313-1677261929cdc7dd80-2",
+        "0207ff9a-5232-4492-9e39-aa001f85fc27",
+        "6ed465ab-a7aa-41c7-b28c-64386c911f92",
+        "dba4273d-d82b-4820-b0ed-cf98bf874de5"
+      ],
+      "settings": {
+        "title": "",
+        "enable_full_list": false,
+        "enable_columns": false,
+        "btn_url": "shopify:\/\/collections\/productos",
+        "btn_label": "Ver más"
+      }
+    },
+    "67ceb293-e10f-4aca-9510-15931ffbc2b1": {
+      "type": "services",
+      "blocks": {
+        "template--18113012531515__67ceb293-e10f-4aca-9510-15931ffbc2b1-1677262286e852c4fb-0": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Card_3213534_92271cfb-25ef-4637-ae89-ad721e9c1ca6.png",
+            "heading_service": "",
+            "des_service": "TODAS LAS FORMAS DE PAGO"
+          }
+        },
+        "template--18113012531515__67ceb293-e10f-4aca-9510-15931ffbc2b1-1677262286e852c4fb-1": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_world_2163509_b05b8322-dc35-4287-8b71-ffc4f39795aa.png",
+            "heading_service": "",
+            "des_service": "ENVIOS WORLDWIDE"
+          }
+        },
+        "template--18113012531515__67ceb293-e10f-4aca-9510-15931ffbc2b1-1677262286e852c4fb-2": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Easy_Returns_2639560_efa35f3d-8a63-4ed1-8ead-f74fd65474d8.png",
+            "heading_service": "",
+            "des_service": "DEVOLUCIONES Y REEMBOLSOS"
+          }
+        }
+      },
+      "block_order": [
+        "template--18113012531515__67ceb293-e10f-4aca-9510-15931ffbc2b1-1677262286e852c4fb-0",
+        "template--18113012531515__67ceb293-e10f-4aca-9510-15931ffbc2b1-1677262286e852c4fb-1",
+        "template--18113012531515__67ceb293-e10f-4aca-9510-15931ffbc2b1-1677262286e852c4fb-2"
+      ],
+      "settings": {
+        "icon-left": false,
+        "color_border_box": "#e5e5e5",
+        "bg_section": "#ffffff",
+        "title": "Heading",
+        "color_title": "#222222",
+        "color_title_sub": "#888888",
+        "color_icon": "#222222",
+        "color_border": "#e5e5e5"
+      }
+    },
+    "89578d77-f479-4e7e-965f-edadf65a119b": {
+      "type": "slider-stars",
+      "blocks": {
+        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-0": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Amo la ropa de Yakampot<\/strong>. <br\/>Desde que los conocí, cada que puedo compro ropa ahí. Me encantan sus diseños y los colores que tienen.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-1": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Siempre me preocupo por verme bien y tengo un estilo muy particular. En realidad, es difícil encontrar ropa que me guste mucho, pero desde que conocí Yakampot <strong>me encantaron sus diseños y ahora casi toda mi ropa la compro con ellos<\/strong>. Además está super que sea ropa mexicana.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Los conocí porque una amiga del trabajo usaba ropa que me gustaba mucho<\/strong>.<br\/>Un día le pregunté que dónde la compraba y me dijo que en Yakampot. Los busqué y quedé encantada con la ropa. Me gusta mucho los outfits que puedo hacer y combinar con los colores que manejan. Vi que algunas prendas son artesanales, lo cual está increíble.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "7ebc650d-faa0-452e-8e12-b3afff5ec642": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Me gusto mucho la ropa cuando la vi en facebook.<\/strong><br\/>Decidí comprarla y mi sorpresa al recibirla es que es  muy buena calidad y se ve mucho mejor en vivo. Gracias por todo.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "fa57058d-b03e-4a43-8cfb-bd49f08cffa0": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Todo es muy hermoso!<br\/><\/strong>Lo que pido, me llega en tiempo record! lo necesitaba para un regalo y fue todo un éxito! sin duda volvere a comprar<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-0",
+        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-1",
+        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-2",
+        "7ebc650d-faa0-452e-8e12-b3afff5ec642",
+        "fa57058d-b03e-4a43-8cfb-bd49f08cffa0"
+      ],
+      "custom_css": [
+        ".section-slider-fera {}"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "subtitle": "Comentarios de nuestros clientes - FERA.AI",
+        "bg_section": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16432144337e6d776a",
+    "158bbdfb-8792-42e8-9372-6cf385859313",
+    "67ceb293-e10f-4aca-9510-15931ffbc2b1",
+    "89578d77-f479-4e7e-965f-edadf65a119b"
+  ]
+}

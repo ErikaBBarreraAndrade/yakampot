@@ -1,0 +1,39 @@
+.titulo-texto-simple .content-global {
+  padding: 65px 0;
+}
+.titulo-texto-simple .content-global .content-title {
+  font-family: "Minion Regular";
+  margin-bottom: 70px;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  max-width: 315px;
+}
+.titulo-texto-simple .content-description {
+  font-family: "Circular Std Book";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  max-width: 350px;
+}
+@media (min-width: 576px) {
+  .titulo-texto-simple .content-global .content-title {
+    max-width: 590px;
+  }
+  .titulo-texto-simple .content-description {
+    max-width: 475px;
+  }
+}
+@media (min-width: 1280px) {
+  .titulo-texto-simple .content-global {
+    padding: 45px 0;
+  }
+  .titulo-texto-simple .content-global .content-title {
+    margin-bottom: 70px;
+    max-width: 960px;
+  }
+  .titulo-texto-simple .content-description {
+    font-size: 13px;
+    max-width: 475px;
+  }
+}

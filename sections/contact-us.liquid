@@ -1,0 +1,75 @@
+<div class="container-fluid">
+	<div class="row content-box" style="background: url({{ section.settings.image | img_url: "master" }});">
+		<div class="col-12 page-width">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<h3 class="megatitle">
+						{% if section.settings.titleAbout != blank %}
+							{{ section.settings.titleAbout }}
+						{% endif %}
+					</h3>
+				</div>
+				<div class="col-12 col-lg-4 offset-lg-4">
+					{% if section.settings.text != blank %}
+						<div class="rte-setting">{{ section.settings.text }}</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Contacto",
+"class": "contactanos",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Image with text overlay"
+},
+{
+"type": "text",
+"id": "titleAbout",
+"label": "Heading About text left",
+"default": "Image with text overlay"
+},
+{
+"type": "color",
+"id": "colorAbout",
+"label": "Heading color About",
+"default" : "#FFFFFF"
+},
+{
+"type": "color",
+"id": "color",
+"label": "Heading color",
+"default" : "#FFFFFF"
+},
+{
+"type": "color",
+"id": "color_subtitle",
+"label": "Color Subtitle",
+"default" : "#FFFFFF"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+}
+],
+"presets": [
+{
+"name": "Contacto",
+"category": "Image"
+}
+]
+}
+{% endschema %}

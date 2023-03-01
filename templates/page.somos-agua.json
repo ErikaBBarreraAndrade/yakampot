@@ -1,0 +1,228 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "16474459410f6f0ce6": {
+      "type": "index-slider-yakampot",
+      "blocks": {
+        "1647445941f13ea872-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BannerRezos-Desk.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BannerRezos-mob.jpg",
+            "video_link": "",
+            "video_link_mobile": "",
+            "title": "",
+            "enable_image": false,
+            "enable_titulos": false,
+            "title_color": "#ffffff",
+            "text": "",
+            "text_color": "#ffffff",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1647445941f13ea872-0"
+      ],
+      "settings": {
+      }
+    },
+    "1647450450d44eba22": {
+      "type": "rezos-agua-texto-boton",
+      "settings": {
+        "bg_section": "shopify:\/\/shop_images\/Sin-titulo-1.jpg",
+        "text": "<p>La colección Rezos del Agua marca una nueva etapa de Yakampot donde la creación se vuelve un proceso colectivo inspirado por la ​​colaboración con los pueblos originarios y la conservación sus historias. Buscamos crear piezas que se conviertan en objetos cargados de memoria y significado.<\/p>",
+        "title": "Una vez que vestimos el cuerpo, dejamos de estar solxs, aparecemos como un nosotrxs.",
+        "btn_label": "Manifiesto yakampot",
+        "btn_url": "shopify:\/\/pages\/manifiesto"
+      }
+    },
+    "16474514530ed1687c": {
+      "type": "rezos-agua-prefacio",
+      "settings": {
+        "bg_color": "#ffffff",
+        "title": "Prefacio",
+        "text": "<p>Las ceremonias K’In Kruz o de la Santa Cruz se celebran en la comunidad chiapaneca de  Zinacantán durante el mes de mayo. Este ritual demuestra la estrecha relación que hay entre los habitantes de la comunidad y los elementos naturales, especialmente con el agua.<\/p><p>Durante varios días las familias del pueblo, guiadas por los curanderos, realizan procesiones por los lugares sagrados del pueblo. Realizan ofrendas para convivir con las divinidades y pedir permiso para seguir cosechando y viviendo en el territorio del Señor de la Tierra.<\/p>"
+      }
+    },
+    "1647453483ee774a89": {
+      "type": "rezos-agua-imagen-completa",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Grupo_413.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Grupo_421.jpg",
+        "btn_label": "SACO YOLI AZUL",
+        "btn_url": "shopify:\/\/products\/saco-yoli-azul-preorder"
+      }
+    },
+    "16474555849180e7a4": {
+      "type": "rezos-agua-capitulo-1",
+      "blocks": {
+        "1647455584baa314c1-0": {
+          "type": "text_block",
+          "settings": {
+            "product_2_cap_1": "shopify:\/\/shop_images\/Yakampot-1471.jpg",
+            "btn_label_cap_1": "SACO YOLI BEIGE",
+            "btn_url_cap_1": "shopify:\/\/products\/saco-yoli-beige-preorder"
+          }
+        },
+        "1647455584baa314c1-1": {
+          "type": "text_block",
+          "settings": {
+            "product_2_cap_1": "shopify:\/\/shop_images\/Yakampot-496_1be27973-08b7-427f-af18-f4f8df6118e0.jpg",
+            "btn_label_cap_1": "SACO YOLI AZUL",
+            "btn_url_cap_1": "shopify:\/\/products\/saco-yoli-azul-preorder"
+          }
+        }
+      },
+      "block_order": [
+        "1647455584baa314c1-0",
+        "1647455584baa314c1-1"
+      ],
+      "settings": {
+        "bg_color_cap": "#ffffff",
+        "heading": "Capítulo I.",
+        "title": "Los caminos hacia el señor de la tierra",
+        "description": "<p>Para los habitantes de Zinacantán, Chiapas, los cerros, las cuevas, los pozos y otros rasgos de la naturaleza, son ancestros que en tiempos míticos se transformaron en lugares sagrados.<\/p>",
+        "image_product": "shopify:\/\/shop_images\/capitulo1_1.jpg",
+        "btn_label": "BLUSA XUNCA BEIGE",
+        "btn_url": "shopify:\/\/products\/blusa-xunca-beige",
+        "image_infografia": "shopify:\/\/shop_images\/infografia-producto-1.png",
+        "image_infografia_mobile": "shopify:\/\/shop_images\/infografia_product_1_mobile.png",
+        "enable_second": true
+      }
+    },
+    "16474648313f2a54fd": {
+      "type": "rezos-agua-capitulo-2",
+      "blocks": {
+        "16474648312f2001fd-0": {
+          "type": "text_block",
+          "settings": {
+            "product_2_cap_1": "shopify:\/\/shop_images\/Yakampot-913.jpg",
+            "description": "Gracias bendita y adorable agua que haces que la tierra viva y mi cuerpo esté vivo.",
+            "btn_label_cap_1": "MAXI FALDA BROTE BLANCO CUADROS",
+            "btn_url_cap_1": "shopify:\/\/products\/maxi-falda-brote-blanco-cuadros",
+            "image_infografia": "shopify:\/\/shop_images\/Grupo_351.png",
+            "image_infografia_mobile": "shopify:\/\/shop_images\/Grupo425-mobile.png"
+          }
+        },
+        "16474648312f2001fd-1": {
+          "type": "text_block",
+          "settings": {
+            "product_2_cap_1": "shopify:\/\/shop_images\/Yakampot-1367.jpg",
+            "description": "Aguas, mares, nos das maíz y frijol para alimentarnos, gracias bendita agua y lagunas por eso.",
+            "btn_label_cap_1": "SACO CERRO JOVEN VERDE",
+            "btn_url_cap_1": "shopify:\/\/products\/saco-cerro-joven-verde",
+            "image_infografia": "shopify:\/\/shop_images\/Cuadricula_de_repeticion_2.png",
+            "image_infografia_mobile": "shopify:\/\/shop_images\/Grupo_432_mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "16474648312f2001fd-0",
+        "16474648312f2001fd-1"
+      ],
+      "settings": {
+        "bg_color_cap": "#ffffff",
+        "heading": "Capítulo Ii.",
+        "title": "Rezos",
+        "description": "<p>Los curanderos son habitantes de la comunidad que reciben un llamado a través de sus sueños, son elegidos por los ancestros para comunicarse con las divinidades y transmitir las peticiones de las familias zinacantecas.<\/p>"
+      }
+    },
+    "164745969583f2c689": {
+      "type": "rezos-agua-banner-hero",
+      "settings": {
+        "bg_desktop": "shopify:\/\/shop_images\/Yakampot-1296.jpg",
+        "bg_mobile": "shopify:\/\/shop_images\/Yakampot-1296-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/Grupo_359.png",
+        "image_mobile": "shopify:\/\/shop_images\/Grupo_426.png",
+        "description": "<p>Este año que está a punto de terminar, le digo gracias al agua, porque nos dio de comer, no hubo sequías, hubo buena lluvia y en los pozos, en los nacimientos sigue brotando agua.<\/p>",
+        "btn_label": "SACO CERRO JOVEN VERDE",
+        "btn_url": "https:\/\/yakampot.com.mx\/products\/saco-cerro-joven-verde"
+      }
+    },
+    "16474737323ae5ab66": {
+      "type": "rezos-agua-capitulo-3",
+      "blocks": {
+        "1647473732fdd34e55-0": {
+          "type": "text_block",
+          "settings": {
+            "product_2_cap_1": "shopify:\/\/shop_images\/Yakampot-1578.jpg",
+            "btn_label_cap_1": "VESTIDO DAFNE BLANCO",
+            "btn_url_cap_1": "shopify:\/\/products\/vestido-dafne-blanco"
+          }
+        },
+        "1647473732fdd34e55-1": {
+          "type": "text_block",
+          "settings": {
+            "product_2_cap_1": "shopify:\/\/shop_images\/Yakampot-1090.jpg",
+            "btn_label_cap_1": "",
+            "btn_url_cap_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "1647473732fdd34e55-0",
+        "1647473732fdd34e55-1"
+      ],
+      "settings": {
+        "bg_color_cap": "#ffffff",
+        "heading": "Capítulo Iii.",
+        "title": "Lluvia del cielo, agua en la tierra",
+        "description": "<p>Las lluvias marcan el inicio del ciclo de la vida, representan la fertilidad y son un buen indicio de la cosecha de alimentos y flores, una de las principales actividades de la comunidad.<\/p>",
+        "image_product": "shopify:\/\/shop_images\/Yakampot-795.jpg",
+        "btn_label": "",
+        "btn_url": "shopify:\/\/products\/vestido-susana-rosa-preorder",
+        "image_infografia": "shopify:\/\/shop_images\/Grupo_412.png",
+        "image_infografia_mobile": "shopify:\/\/shop_images\/Grupo_427_mobile.png",
+        "description_infografia": "Lluvia del cielo, agua en la tierra."
+      }
+    },
+    "16474764539b941b2a": {
+      "type": "product-1-slider",
+      "blocks": {
+        "1647476453b611780d-0": {
+          "type": "item",
+          "settings": {
+            "tab_name": "rezos del agua",
+            "collection": "rezos",
+            "btn_link": "shopify:\/\/collections\/rezos",
+            "btn_link_all": "Ver toda la colección"
+          }
+        }
+      },
+      "block_order": [
+        "1647476453b611780d-0"
+      ],
+      "settings": {
+        "title": "Colección 2022"
+      }
+    },
+    "16474589403ab05c75": {
+      "type": "index-video-final",
+      "settings": {
+        "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/VIDEO1.mp4?v=1647459003",
+        "video_link_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/VIDEO1.mp4?v=1647459003"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16474459410f6f0ce6",
+    "1647450450d44eba22",
+    "16474514530ed1687c",
+    "1647453483ee774a89",
+    "16474555849180e7a4",
+    "16474648313f2a54fd",
+    "164745969583f2c689",
+    "16474737323ae5ab66",
+    "16474764539b941b2a",
+    "16474589403ab05c75"
+  ]
+}

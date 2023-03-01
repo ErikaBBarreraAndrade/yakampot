@@ -1,0 +1,217 @@
+<div class="block-section" style="{{ section.settings.custom_space }};background-image:url({{section.settings.image_section | img_url: 'master'}});">
+	<div class="container-fluid">
+		<div class="block_content row justify-content-center">
+			<div class="image-absolute image-position-right d-none d-lg-block">
+				{% if section.settings.image_absolute_right != blank %}
+					{{ section.settings.image_absolute_right | img_url: 'master' | img_tag: 'feature-row__image', 'img-responsive' }}
+				{% else %}
+				{% endif %}
+			</div>
+			<div class="col-12 col-lg-10">
+				<div class="row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-lg-4 offset-lg-3">
+								{% if section.settings.title != blank %}
+									<p class="title">{{ section.settings.title }}</p>
+								{% endif %}
+								{% if section.settings.text != blank %}
+									<div class="text-description">
+										{{ section.settings.text }}
+									</div>
+								{% endif %}
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 image-small-content">
+								{% if section.settings.image != blank %}
+									{{ section.settings.image | img_url: 'master' | img_tag: 'feature-row__image', 'img-responsive' }}
+								{% else %}
+									{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+								{% endif %}
+								{% if section.settings.button_label != blank and section.settings.button_link != blank %}
+									<p>
+										<a href="{{ section.settings.button_link }}" class="link-instagram" target="_blank">
+											{{ section.settings.button_label }}
+										</a>
+									</p>
+								{% endif %}
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-4 image-medium-content">
+								{% if section.settings.image_medium != blank %}
+									{{ section.settings.image_medium | img_url: 'master' | img_tag: 'feature-row__image', 'img-responsive' }}
+								{% else %}
+									{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+								{% endif %}
+								{% if section.settings.button_label_medium != blank and section.settings.button_link_medium != blank %}
+									<p>
+										<a href="{{ section.settings.button_link_medium }}" class="link-instagram" target="_blank">
+											{{ section.settings.button_label_medium }}
+										</a>
+									</p>
+								{% endif %}
+							</div>
+							<div class="col-12 col-sm-8 col-md-8 col-lg-5 image-large-content">
+								{% if section.settings.image_large != blank %}
+									{{ section.settings.image_large | img_url: 'master' | img_tag: 'feature-row__image', 'img-responsive' }}
+								{% else %}
+									{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+								{% endif %}
+								{% if section.settings.button_label_large != blank and section.settings.button_link != blank_large %}
+									<p>
+										<a href="{{ section.settings.button_link_large }}" class="link-instagram" target="_blank">
+											{{ section.settings.button_label_large }}
+										</a>
+									</p>
+								{% endif %}
+							</div>
+						</div>
+						<div class="row content-description-end">
+							<div class="col-12">
+								<div class="rte-setting">
+									{{ section.settings.text_end }}
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="image-absolute image-position-left">
+				{% if section.settings.image_absolute_left != blank %}
+					{{ section.settings.image_absolute_left | img_url: 'master' | img_tag: 'feature-row__image', 'img-responsive' }}
+				{% else %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Section images",
+"class": "pride-images-description",
+"settings": [
+{
+"type": "textarea",
+"id": "custom_space",
+"label": "Css Style Section",
+"default":"padding-top:100px;padding-bottom:100px"
+},
+{
+"type":      "radio",
+"id":        "set_box",
+"label":     "Set Layout Section",
+"options": [
+{ "value": "box-container", "label": "Box Container" },
+{ "value": "box-full", "label": "Box Full" },
+{ "value": "none", "label": "None" }
+],
+"default":   "box-full",
+"info":      "Set Layout Section"
+},
+{
+"type": "image_picker",
+"id": "image_section",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Text columns with images"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "image_picker",
+"id": "image_absolute_right",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image_absolute_left",
+"label": "Image"
+},
+{
+
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Name"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Instagram link"
+},
+{
+"type": "image_picker",
+"id": "image_medium",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "button_label_medium",
+"label": "Name"
+},
+{
+"type": "url",
+"id": "button_link_medium",
+"label": "Instagram link"
+},
+{
+"type": "image_picker",
+"id": "image_large",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "button_label_large",
+"label": "Name"
+},
+{
+"type": "url",
+"id": "button_link_large",
+"label": "Instagram link"
+},
+{
+"type": "richtext",
+"id": "text_end",
+"label": "Text",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "select",
+"id": "align_text",
+"label": "Text alignment",
+"default": "left",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "center",
+"label": "Centered"
+}
+]
+}
+],
+
+"presets": [
+{
+"name": "Section images",
+"category": "Text"
+}
+]
+}
+{% endschema %}

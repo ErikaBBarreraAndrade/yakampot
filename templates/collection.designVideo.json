@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "7fe03ffe-60c9-406e-85fa-c76c8e6fa038": {
+      "type": "banner-yakampot-collection",
+      "settings": {
+        "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/446d0ed533f64255b25bb7dd0d0b50ea.mp4",
+        "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d902a705dc20483b9adcb9756e20d74a.mp4",
+        "title": "iCÓNICOS YAKAMPOT",
+        "subtitle": "NUESTRA COLECCIÓN DE TEXTILES EMBLEMÁTICOS",
+        "enable_titulos": true,
+        "title_color": "#ffffff",
+        "text": "<p>- DISFRUTA DE LA SELECCIÓN DE NUESTRAS PIEZAS MAS EXITOSAS -<\/p>",
+        "text_color": "#ffffff"
+      }
+    },
+    "bc5e2b6e-b664-4f01-8c6d-657b4f335906": {
+      "type": "titulo-texto-simple",
+      "settings": {
+        "bg_section": "#ffffff",
+        "color_title": "#000000",
+        "title": "Para tenerla antes que nadie, aprovecha la preventa con el 15% off que tenemos para ti.",
+        "color_description": "#000000",
+        "description": "<p>En Yakampot escuchamos tus comentarios sobre tus productos favoritos y creamos una colección de piezas esenciales que se reinventan y perfeccionan a través de tus ideas. ¡Por eso estamos lanzando una reedición de nuestras prendas icónicas! <\/p>"
+      }
+    },
+    "product-grid": {
+      "type": "collection-template-design",
+      "settings": {
+      }
+    },
+    "14346ec5-a92c-4158-8807-3152833752e4": {
+      "type": "services",
+      "blocks": {
+        "template--18086185992507__14346ec5-a92c-4158-8807-3152833752e4-16772522504d38c103-0": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Card_3213534_92271cfb-25ef-4637-ae89-ad721e9c1ca6.png",
+            "heading_service": "",
+            "des_service": "TODAS LAS FORMAS DE PAGO"
+          }
+        },
+        "template--18086185992507__14346ec5-a92c-4158-8807-3152833752e4-16772522504d38c103-1": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_world_2163509_b05b8322-dc35-4287-8b71-ffc4f39795aa.png",
+            "heading_service": "",
+            "des_service": "ENVIOS WORLDWIDE"
+          }
+        },
+        "template--18086185992507__14346ec5-a92c-4158-8807-3152833752e4-16772522504d38c103-2": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Easy_Returns_2639560_efa35f3d-8a63-4ed1-8ead-f74fd65474d8.png",
+            "heading_service": "",
+            "des_service": "DEVOLUCIONES Y REEMBOLSOS"
+          }
+        }
+      },
+      "block_order": [
+        "template--18086185992507__14346ec5-a92c-4158-8807-3152833752e4-16772522504d38c103-0",
+        "template--18086185992507__14346ec5-a92c-4158-8807-3152833752e4-16772522504d38c103-1",
+        "template--18086185992507__14346ec5-a92c-4158-8807-3152833752e4-16772522504d38c103-2"
+      ],
+      "settings": {
+        "icon-left": false,
+        "color_border_box": "#e5e5e5",
+        "bg_section": "#ffffff",
+        "title": "Heading",
+        "color_title": "#222222",
+        "color_title_sub": "#888888",
+        "color_icon": "#222222",
+        "color_border": "#e5e5e5"
+      }
+    },
+    "a3389b38-4b54-40dd-aaff-53d1d9d57262": {
+      "type": "titulo-texto-simple",
+      "settings": {
+        "bg_section": "#000000",
+        "color_title": "",
+        "title": "",
+        "color_description": "#ffffff",
+        "description": "<p>Los icónicos de Yakampot son una selección de nuestras prendas más exitosas que serán reeditadas con nuevos detalles, colores y materiales, tendrán mejoras en el fit, más detalles bordados a mano y una nueva experimentación artesanal de teñido. <\/p>"
+      }
+    },
+    "802a1750-1925-4a35-8d6a-3869f9e19ee3": {
+      "type": "cintillo-only-link",
+      "custom_css": [
+        ".cintillo-link-only a {color: #fff;}"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "url": "shopify:\/\/pages\/puntos-de-venta",
+        "label": "Agenda tu cita en nuestro showroom"
+      }
+    },
+    "e54adad9-d913-43f9-a135-bd6d3213dd31": {
+      "type": "slider-stars",
+      "blocks": {
+        "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-0": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Amo la ropa de Yakampot<\/strong>. <br\/>Desde que los conocí, cada que puedo compro ropa ahí. Me encantan sus diseños y los colores que tienen.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-1": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>Siempre me preocupo por verme bien y tengo un estilo muy particular. En realidad, es difícil encontrar ropa que me guste mucho, pero desde que conocí Yakampot <strong>me encantaron sus diseños y ahora casi toda mi ropa la compro con ellos<\/strong>. Además está super que sea ropa mexicana.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Los conocí porque una amiga del trabajo usaba ropa que me gustaba mucho<\/strong>.<br\/>Un día le pregunté que dónde la compraba y me dijo que en Yakampot. Los busqué y quedé encantada con la ropa. Me gusta mucho los outfits que puedo hacer y combinar con los colores que manejan. Vi que algunas prendas son artesanales, lo cual está increíble.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "0f817243-1801-4993-a7d1-f1dd3bf3212f": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Me gusto mucho la ropa cuando la vi en facebook.<\/strong><br\/>Decidí comprarla y mi sorpresa al recibirla es que es  muy buena calidad y se ve mucho mejor en vivo. Gracias por todo.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        },
+        "acf1cf67-ed44-410e-a795-bfd465db5747": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p><strong>Todo es muy hermoso!<br\/><\/strong>Lo que pido, me llega en tiempo record! lo necesitaba para un regalo y fue todo un éxito! sin duda volvere a comprar<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-0",
+        "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-1",
+        "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-2",
+        "0f817243-1801-4993-a7d1-f1dd3bf3212f",
+        "acf1cf67-ed44-410e-a795-bfd465db5747"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "TESTIMONIOS VERIFICADOS DE NUESTRXS CLIENTES - FERA.AI",
+        "bg_section": "#ffffff"
+      }
+    },
+    "ffa50608-d5fb-42be-8f39-18f3cbed1822": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "conoce más sobre los icónicos yakampot",
+        "blog": "noticias"
+      }
+    }
+  },
+  "order": [
+    "7fe03ffe-60c9-406e-85fa-c76c8e6fa038",
+    "bc5e2b6e-b664-4f01-8c6d-657b4f335906",
+    "product-grid",
+    "14346ec5-a92c-4158-8807-3152833752e4",
+    "a3389b38-4b54-40dd-aaff-53d1d9d57262",
+    "802a1750-1925-4a35-8d6a-3869f9e19ee3",
+    "e54adad9-d913-43f9-a135-bd6d3213dd31",
+    "ffa50608-d5fb-42be-8f39-18f3cbed1822"
+  ]
+}

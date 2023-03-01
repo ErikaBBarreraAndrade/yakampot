@@ -1,0 +1,230 @@
+<div class="container-fluid">
+	<div class="row section-content justify-content-center" style="background: {{ section.settings.bg_section}};">
+		<div class="col-12 text-center">
+			{% if section.settings.title != blank %}
+				<p class="title">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.numero != blank %}
+				<p class="number">
+					{{ section.settings.numero }}
+				</p>
+			{% endif %}
+			{% if section.settings.text != blank %}
+				<div class="rte-settings">
+					{{ section.settings.text }}
+				</div>
+			{% endif %}
+			{% if section.settings.titulo_final != blank %}
+				<p class="titulo-final">
+					{{ section.settings.titulo_final }}
+				</p>
+			{% endif %}
+		</div>
+		{% if section.settings.enable_image_block %}
+			<div class="col-12 col-lg-10">
+				<div class="row content-images-section">
+					{% if section.settings.image != blank %}
+						<div class="col-12 col-sm-5 content-image pe-0">
+							<img class="img-fluid w-100 lazyload d-none d-sm-block"
+							     data-src="{{ section.settings.image | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+							<img class="img-fluid w-100 lazyload d-block d-sm-none"
+							     data-src="{{ section.settings.image_mobile | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+						</div>
+					{% endif %}
+					{% if section.settings.image != blank %}
+						<div class="col-12 col-sm-7 content-image ps-0">
+							<img class="img-fluid w-100 lazyload d-none d-sm-block"
+							     data-src="{{ section.settings.image_2 | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+							<img class="img-fluid w-100 lazyload d-block d-sm-none"
+							     data-src="{{ section.settings.image_2_mobile | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		{% endif %}
+		{% if section.settings.enable_image_block_2 %}
+			<div class="col-11 col-lg-10 section_image_block_2">
+				<div class="row content-images-section_block_2 justify-content-end">
+					{% if section.settings.image_block_2 != blank %}
+						<div class="col-12 col-sm-4 content-image_block_2 order-last order-sm-1">
+							<img class="img-fluid w-100 lazyload"
+							     data-src="{{ section.settings.image_block_2 | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+						</div>
+					{% endif %}
+					{% if section.settings.image_2_block_2 != blank %}
+						<div class="col-6 col-sm-3 content-image_block_2 offset-sm-2 pe-0 order-sm-2">
+							<img class="img-fluid w-100 lazyload"
+							     data-src="{{ section.settings.image_2_block_2 | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+						</div>
+					{% endif %}
+					{% if section.settings.image_2_block_2 != blank %}
+						<div class="col-6 col-sm-3 content-image_block_2 ps-0  order-sm-3">
+							<img class="img-fluid w-100 lazyload"
+							     data-src="{{ section.settings.image_3_block_2 | img_url:"master" }}"
+							     data-widths="[180, 360, 540, 720, 900, 1080]"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     data-sizes="auto"
+							     alt="{{ preview_image.alt | escape }}">
+						</div>
+					{% endif %}
+				</div>
+				{% if section.settings.btn_url != blank %}
+				<div class="row">
+					<div class="col-12">
+						<p class="content-button text-center">
+							<a href="{{ section.settings.btn_url }}" class="btn">
+								<span>{{ section.settings.btn_label }}</span>
+							</a>
+						</p>
+					</div>
+				</div>
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+</div>
+{% schema %}
+{
+"name": "Manifiesto 3",
+"class": "section-content-description-parallax section-manifiesto-texto-3 section-manifiesto-general",
+"settings": [
+{
+"type": "header",
+"content": "==== Background section ===="
+},
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background color",
+"default": "#FFF"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "text",
+"id": "numero",
+"label": "Número"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Descripción",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "text",
+"id": "titulo_final",
+"label": "Titulo final"
+},
+{
+"type": "header",
+"content": "==== Imagenes ===="
+},
+{
+"type": "checkbox",
+"id": "enable_image_block",
+"label": "Habilitar imagenes",
+"default": true
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "1° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "1° imagen mobile"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": "2° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_2_mobile",
+"label": "2° imagen mobile"
+},
+{
+"type": "header",
+"content": "==== Imagenes ===="
+},
+{
+"type": "checkbox",
+"id": "enable_image_block_2",
+"label": "Habilitar imagenes",
+"default": true
+},
+{
+"type": "image_picker",
+"id": "image_block_2",
+"label": "1° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_2_block_2",
+"label": "2° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_3_block_2",
+"label": "3° imagen"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Texto Botón"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Url Botón"
+}
+],
+
+"presets": [
+{
+"name": "Manifiesto 3",
+"category": "Text"
+}
+]
+}
+{% endschema %}

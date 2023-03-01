@@ -1,0 +1,63 @@
+<link rel="preload" href="{{ "menu-change-language.scss.css" | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "menu-change-language.scss.css" | asset_url }}"></noscript>
+<div class="container-fluid">
+	<div class="row justify-content-center content-global">
+		<div class="col-12 col-lg-11">
+			<ul class="d-flex list-unstyled justify-content-end">
+				{% if section.settings.title_es != blank %}
+					<li class="content-title language-es text-uppercase my-auto">
+						{{ section.settings.title_es }}
+					</li>
+				{% endif %}
+				{% if section.settings.title_en != blank %}
+					<li class="content-title language-en text-uppercase my-auto collapse">
+						{{ section.settings.title_en }}
+					</li>
+				{% endif %}
+				<li class="content-type-lang my-auto option-language-eng">
+					ENG
+				</li>
+				<li class="quote-list-between my-auto">
+					|
+				</li>
+				<li class="content-type-lang active my-auto option-language-esp">
+					ESP
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Menu cambio idioma",
+  "class": "menu-change-language",
+  "settings": [
+	  {
+		  "type": "header",
+		  "content": "===== Titulo español ====="
+	  },
+    {
+      "type": "text",
+      "id": "title_es",
+      "label": "Titulo",
+      "default": "Cambia el idioma"
+    },
+    {
+      "type": "header",
+      "content": "===== Titulo ingles ====="
+    },
+    {
+      "type": "text",
+      "id": "title_en",
+      "label": "Title",
+      "default": "Change the language"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Menu cambio idioma",
+      "category": "Menu"
+    }
+  ]
+}
+{% endschema %}

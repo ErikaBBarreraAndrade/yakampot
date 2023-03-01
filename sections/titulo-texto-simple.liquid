@@ -1,0 +1,66 @@
+<link rel="preload" href=" {{ 'titulo-texto-simple.css' | asset_url  }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href=" {{ 'titulo-texto-simple.css' | asset_url  }}"></noscript>
+<section class="container-fluid">
+	<div class="row content-global" style="background: {{ section.settings.bg_section }};">
+		<div class="col-12">
+			{% if section.settings.title != blank %}
+				<div class="content-title text-center text-uppercase mx-auto" style="color: {{ section.settings.color_title }}">
+					{{ section.settings.title }}
+				</div>
+			{% endif %}
+			{% if section.settings.description != blank %}
+				<div class="content-description mx-auto text-center" style="color: {{ section.settings.color_description }}">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+  "name": "Titulo texto simple",
+  "class": "titulo-texto-simple section-content-description-parallax",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_section",
+      "label": "Color de fondo"
+    },
+    {
+      "type": "header",
+      "content": "==== Titulos ===="
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color de titulo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titulo"
+    },
+    {
+      "type": "header",
+      "content": "==== Descripción ===="
+    },
+    {
+      "type": "color",
+      "id": "color_description",
+      "label": "Color de descripción"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Descripción"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Titulo texto simple",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

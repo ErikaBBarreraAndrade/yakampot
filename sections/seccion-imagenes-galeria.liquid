@@ -1,0 +1,81 @@
+<div class="container-fluid">
+	<div class="row content-image-gallery">
+		{% for block in section.blocks %}
+			<div class="col-6 col-sm-3 content-img">
+				{% if block.settings.enable_image %}
+					{% if block.settings.image != blank %}
+						<img class="w-100 img-fluid lazyload"
+						     data-src="{{ block.settings.image | img_url: 'master'}}"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     alt="{{ preview_image.alt | escape }}">
+					{% else %}
+						{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+					{% endif %}
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+	{% if section.settings.description != blank %}
+		<div class="row content-description">
+			<div class="col-12 text-center">
+				<div class="description">
+					{{section.settings.description}}
+				</div>
+			</div>
+		</div>
+	{% endif %}
+</div>
+{% schema %}
+{
+"name": "Seccion img galeria",
+"class":"section-content-description-parallax seccion-img-gallery",
+"settings": [
+{
+"type":"header",
+"content":"==== Descripcion ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "checkbox",
+"id": "enable_image",
+"label": "Show image",
+"default": true
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Seccion img galeria",
+"category": "Text",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,207 @@
+<div class="container-fluid">
+	<div class="row  justify-content-center section-content" style="background: {{ section.settings.bg_color_cap }};">
+		<div class="col-11 col-md-10 col-lg-9">
+			<div class="row">
+				<div class="col-12 text-center">
+					{% if section.settings.heading != blank %}
+						<p class="heading text-uppercase">
+							{{ section.settings.heading }}
+						</p>
+					{% endif %}
+					{% if section.settings.title != blank %}
+						<p class="title text-uppercase">
+							{{ section.settings.title }}
+						</p>
+					{% endif %}
+					{% if section.settings.description != blank %}
+						<div class="description-header">
+							{{ section.settings.description }}
+						</div>
+					{% endif %}
+				</div>
+				<div class="col-12 second-grid-products">
+						<div class="row">
+							<div class="col-12 col-sm-11 col-lg-11">
+								{%- for block in section.blocks -%}
+								{% assign mod = forloop.index | modulo: 2 %}
+								{% if mod == 0 %}
+								<div class="row second-row-grid">
+								{% if block.settings.product_2_cap_1 != blank %}
+										<div class="col-12 col-sm-5 col-lg-5 content-image">
+											<img class="img-fluid lazyload"
+											     data-src="{{ block.settings.product_2_cap_1 | img_url:"master" }}"
+											     data-widths="[180, 360, 540, 720, 900, 1080]"
+											     data-aspectratio="{{ preview_image.aspect_ratio }}"
+											     data-sizes="auto"
+											     alt="{{ preview_image.alt | escape }}">
+											{% if block.settings.btn_url_cap_1 != blank %}
+												<p class="content-button text-center text-sm-end">
+													<a href="{{ block.settings.btn_url_cap_1 }}" class="btn p-0">
+									<span>
+										{{ block.settings.btn_label_cap_1 }}
+									</span>
+													</a>
+												</p>
+											{% endif %}
+										</div>
+									{% endif %}
+										<div class="col-12 col-sm-7 col-lg-7 content-infografia my-auto text-center py-5 py-sm-0">
+										{% if block.settings.image_infografia != blank %}
+										<img class="img-fluid lazyload d-none d-lg-block m-auto"
+											     data-src="{{ block.settings.image_infografia | img_url:"master" }}"
+											     alt="{{ preview_image.alt | escape }}">
+											<img class="img-fluid lazyload d-block d-lg-none m-auto"
+											     data-src="{{ block.settings.image_infografia_mobile | img_url:"master" }}"
+											     alt="{{ preview_image.alt | escape }}">
+										{% endif %}
+											{% if block.settings.description!= blank %}
+											<p class="description">
+												{{ block.settings.description }}
+											</p>
+											{% endif %}
+										</div>
+								</div>
+								{% else %}
+								<div class="row">
+								<div class="col-12 col-sm-7 col-lg-7 content-infografia my-auto text-center order-last order-sm-first py-5 py-sm-0">
+									{% if block.settings.image_infografia != blank %}
+										<img class="img-fluid lazyload d-none d-lg-block m-auto"
+											     data-src="{{ block.settings.image_infografia | img_url:"master" }}"
+											     alt="{{ preview_image.alt | escape }}">
+											<img class="img-fluid lazyload d-block d-lg-none m-auto"
+											     data-src="{{ block.settings.image_infografia_mobile | img_url:"master" }}"
+											     alt="{{ preview_image.alt | escape }}">
+									{% endif %}
+											{% if block.settings.description!= blank %}
+												<p class="description">
+													{{ block.settings.description }}
+												</p>
+											{% endif %}
+										</div>
+									{% if block.settings.product_2_cap_1 != blank %}
+										<div class="col-12 col-sm-5 col-lg-5 content-image order-first order-sm-first">
+											<img class="img-fluid lazyload"
+											     data-src="{{ block.settings.product_2_cap_1 | img_url:"master" }}"
+											     data-widths="[180, 360, 540, 720, 900, 1080]"
+											     data-aspectratio="{{ preview_image.aspect_ratio }}"
+											     data-sizes="auto"
+											     alt="{{ preview_image.alt | escape }}">
+											{% if block.settings.btn_url_cap_1 != blank %}
+												<p class="content-button text-center text-sm-end">
+													<a href="{{ block.settings.btn_url_cap_1 }}" class="btn p-0">
+									<span>
+										{{ block.settings.btn_label_cap_1 }}
+									</span>
+													</a>
+												</p>
+											{% endif %}
+										</div>
+									{% endif %}
+								</div>
+								{% endif %}
+								{%- endfor -%}
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Rezos capitulo 2",
+"class": "section-content-description-parallax section-rezos-capitulo section-rezos-capitulo-2",
+"max_blocks": 2,
+"settings": [
+{
+"type": "header",
+"content": "==== Background section ===="
+},
+{
+"type": "color",
+"id": "bg_color_cap",
+"label": "Background",
+"default": "#FFF"
+},
+{
+"type": "header",
+"content": "==== Titulo y Descripción principal ===="
+},
+{
+"type": "text",
+"id": "heading",
+"label": "Titulo sección"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagenes producto ===="
+},
+{
+"type": "image_picker",
+"id": "product_2_cap_1",
+"label": "Imagen"
+},
+{
+"type": "text",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "text",
+"id": "btn_label_cap_1",
+"label": "Texto Botón"
+},
+{
+"type": "url",
+"id": "btn_url_cap_1",
+"label": "Botón Url"
+},
+{
+"type": "header",
+"content": "==== Imagen infografía ===="
+},
+{
+"type": "image_picker",
+"id": "image_infografia",
+"label": "Imagen"
+},
+{
+"type": "image_picker",
+"id": "image_infografia_mobile",
+"label": "Imagen Mobile"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Rezos capitulo 2",
+"category": "Text",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}

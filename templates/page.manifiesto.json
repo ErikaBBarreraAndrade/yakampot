@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "1647479857ad32e9c1": {
+      "type": "index-slider-yakampot",
+      "blocks": {
+        "16474798576277ef21-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Yakampot-166.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Yakampot-166-mobile.jpg",
+            "video_link": "",
+            "video_link_mobile": "",
+            "title": "",
+            "enable_image": false,
+            "title_color": "#ffffff",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16474798576277ef21-0"
+      ],
+      "settings": {
+      }
+    },
+    "164747996481fb3db9": {
+      "type": "manifiesto-texto-boton",
+      "settings": {
+        "bg_section": "#ffffff",
+        "title": "Manifiesto Yakampot 2022",
+        "numero": "i.",
+        "text": "<p>El ser humano es el único animal que produce su exterioridad, una segunda piel que sirve como una forma de protección, comunicación e identidad. En ese acto de creación, que desde un inicio fue un acto colectivo, se han tejido historias que dan sentido y arraigo a nuestra experiencia en el mundo. Una vez que vestimos el cuerpo, <strong>dejamos de estar solxs, aparecemos como un nosotrxs. <\/strong><\/p>",
+        "titulo_final": "Vestir también es una forma de sentir. A través de las prendas, siento el tiempo, me siento."
+      }
+    },
+    "1647481884198c882c": {
+      "type": "manifiesto-seccion-2",
+      "settings": {
+        "bg_section": "#000000",
+        "title": "",
+        "numero": "ii.",
+        "text": "<p>Nuestros ancestros a través de su indumentaria crearon un lenguaje que hoy nos da la posibilidad de conectar con el pasado y reinventar el presente. En Yakampot buscamos conservar esa memoria a través de ropa hecha en colaboración con artesanas mexicanas, honrando sus saberes y dándoles vida en el día a día. <\/p>",
+        "titulo_final": "La ropa atesora nuestra particular presencia en el tiempo.",
+        "image": "shopify:\/\/shop_images\/Cuadricula_de_repeticion_1.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/manifiesto-2-mobile.jpg"
+      }
+    },
+    "1647483045d979c9fc": {
+      "type": "manifiesto-seccion-3",
+      "settings": {
+        "bg_section": "#ffffff",
+        "title": "",
+        "numero": "Iii.",
+        "text": "<p>Creemos que la colaboración y el ingenio colectivo es la única forma de integrar el legado de nuestros antepasados a nuestro presente. Pensamos la innovación como una respuesta empática a los retos ambientales y sociales que se nos presentan. Creemos en la ropa como un espacio seguro que permite al cuerpo habitar una época en constante movimiento.<\/p>",
+        "titulo_final": "Para nosotros la memoria es un acto de convergencia y consciencia sobre el futuro.",
+        "enable_image_block": true,
+        "image": "shopify:\/\/shop_images\/Cuadricula_de_repeticion_2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/manifiesto-3-mobile.jpg",
+        "image_2": "shopify:\/\/shop_images\/Captura_de_Pantalla_2022-03-11_a_la_s_4.26.11_p.m..jpg",
+        "image_2_mobile": "shopify:\/\/shop_images\/manifiesto-3-1-mobile.jpg",
+        "enable_image_block_2": true,
+        "image_block_2": "shopify:\/\/shop_images\/Captura_de_Pantalla_2022-03-11_a_la_s_4.24.29_p.m..jpg",
+        "image_2_block_2": "shopify:\/\/shop_images\/Captura_de_Pantalla_2022-03-11_a_la_s_4.23.31_p.m..jpg",
+        "image_3_block_2": "shopify:\/\/shop_images\/Captura_de_Pantalla_2022-03-11_a_la_s_4.22.33_p.m..jpg",
+        "btn_label": "Descubre Yakampot",
+        "btn_url": "#"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1647479857ad32e9c1",
+    "164747996481fb3db9",
+    "1647481884198c882c",
+    "1647483045d979c9fc"
+  ]
+}

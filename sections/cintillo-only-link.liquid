@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <a href="{{section.settings.url}}">
+    <div class="row content-txt" style="background: {{section.settings.bg_color}};">
+      <div class="col-xs-12 text-center">
+        {{section.settings.label}} <span><svg xmlns="http://www.w3.org/2000/svg" width="20.198" height="14.563" viewBox="0 0 20.198 14.563">
+  <path id="Trazado_54" data-name="Trazado 54" d="M13.081,14.869a.683.683,0,1,0-.962.962l4.907,4.913H.807a.685.685,0,0,0,0,1.368H17.026l-4.915,4.907a.7.7,0,0,0,0,.962.679.679,0,0,0,.962,0L19.152,21.9a.667.667,0,0,0,0-.962Z" transform="translate(0.341 -14.116)" stroke="#f1f1f1" stroke-width="1"/>
+</svg>
+</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Cintillo link",
+  "class": "section-content-description-parallax cintillo-link-only",
+  "settings": [
+	{
+		"type":"header",
+		"content":"==== Background cintillo ===="
+	},
+	{
+		"type":"color",
+		"id":"bg_color",
+		"label":"Background"
+	},
+{
+		"type":"header",
+		"content":"==== Enlace===="
+	},
+	{
+		"type":"url",
+		"id":"url",
+		"label":"Url"
+	},
+	{
+		"type":"text",
+		"id":"label",
+		"label":"Label"
+	}
+  ],
+  "presets": [
+    {
+      "name": "Cintillo link",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,76 @@
+<div class="container-fluid">
+	<div class="row section-content" style="background: {{ section.settings.bg_section}};">
+		<div class="col-12 text-center">
+			{% if section.settings.title != blank %}
+				<p class="title">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.numero != blank %}
+				<p class="number">
+					{{ section.settings.numero }}
+				</p>
+			{% endif %}
+			{% if section.settings.text != blank %}
+				<div class="rte-settings">
+					{{ section.settings.text }}
+				</div>
+			{% endif %}
+			{% if section.settings.titulo_final != blank %}
+				<p class="titulo-final">
+						{{ section.settings.titulo_final }}
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Manifiesto 1",
+"class": "section-content-description-parallax section-manifiesto-texto-1 section-manifiesto-general",
+"settings": [
+{
+"type": "header",
+"content": "==== Background section ===="
+},
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background color",
+"default": "#FFF"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "text",
+"id": "numero",
+"label": "Número"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Descripción",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "text",
+"id": "titulo_final",
+"label": "Titulo final"
+}
+],
+
+"presets": [
+{
+"name": "Manifiesto 1",
+"category": "Text"
+}
+]
+}
+{% endschema %}

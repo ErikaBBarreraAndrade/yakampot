@@ -1,0 +1,55 @@
+<section id="columns" class="column-informative-yakampot envios-devoluciones-template">
+	<div class="container-fluid">
+		<div class="row">
+			<h1 class="text-left title-general">{{ page.title }}</h1>
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 pl-0">
+						<div class="navbar-section-footer row">
+							<div class="col-12 option-link">
+								<a href="/pages/preguntas-frecuentes">
+									Preguntas Frecuentes
+								</a>
+							</div>
+							<div class="col-12 option-link">
+								<a href="/pages/terminos-condiciones" class="active-section">
+                                  Terminos y Condiciones
+                              </a>
+                          </div>
+                          <div class="col-12 option-link">
+                            <a href="/pages/privacidad-politica">
+                              Política de Privacidad
+                            </a>
+                          </div>
+                          <div class="col-12 col-md-12 option-link">
+                            <a href="/pages/politicas-de-compra">
+                              Politicas de compra
+                            </a>
+                          </div>
+							<div class="col-12 option-link">
+								<a href="/pages/terminos-y-condiciones-del-buen-fin">
+									Términos y condiciones "Buen fin 2022"
+								</a>
+							</div>
+							<div class="col-12 option-link">
+								<a href="/pages/terminos-y-condiciones-black-weekend">
+									Términos y condiciones "Black Weekend"
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-7 offset-md-1 content-text-page-rte">
+						<div class="row">
+							<div class="col-12">
+								<h1 class="text-left title-general title-border"><strong>{{ page.title }}</strong></h1>
+							</div>
+							<div class="col-12 col-md-8 page-content-text-rte">
+								{% include 'shortcode' load: page.content %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

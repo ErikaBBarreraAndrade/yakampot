@@ -1,0 +1,191 @@
+<div class="container-fluid  ps-lg-0">
+	<div class="row content-bloque-puntos-generales m-0">
+		{% if section.settings.image != blank %}
+			<div class="col-12 col-lg-5 content-image" style="background: url({{ section.settings.image | img_url: "master"}})">
+				<img class="d-block d-lg-none img-responsive w-100 lazyload"
+				     data-src="{{ section.settings.image_mobile | img_url: "master"}}"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     alt="{{ preview_image.alt | escape }}">
+			</div>
+		{% endif %}
+		<div class="col-12 col-lg-7 block-description">
+			<div class=" content-description-txt">
+				{% if section.settings.title != blank %}
+					<p class="title">
+						{{ section.settings.title }}
+					</p>
+				{% endif %}
+				{% if section.settings.description != blank %}
+					<div class="description">
+                      {{ section.settings.description }}
+              </div>
+              {% endif %}
+				<div class="content-link-appointment">
+					<a class="link-appointment text-uppercase">
+						<span>Agenda una cita</span>
+					</a>
+				</div>
+              <div class="row content-form collapse">
+                <div class="col-12">
+                  <p>
+                    Por favor ingresa tu información de contacto y el horario en el que te gustaría visitarnos
+                  </p>
+                  {% form 'contact' %}
+                  {%- if form.posted_successfully? -%}
+                  <p class="note note--success">
+                    {{ 'contact.form.post_success' | t }}
+                  </p>
+                  <style>
+                    .form-puntos-venta{
+                      display: none;
+                    }
+                  </style>
+
+                  {%- endif -%}
+                  {{ form_errors | default_errors }}
+                  <div class="row form-puntos-venta">
+                    <div class="col-12 collapse">
+                      <input type="text" name="contact[tipoFormulario]" id="tipoFormulario" class="form-control" value="Previa Cita" />
+                    </div>
+                    <div class="col-12">
+                      <input type="text" name="contact[nombreCompleto]" id="nombreCompleto" class="form-control" placeholder="Nombre completo" required/>
+                    </div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<input type="tel" name="contact[telefono]" id="telefono"   pattern="[0-9\-]*" class="form-control" placeholder="Teléfono" required />
+									</div>
+									<div class="col-12 col-md-6">
+										<input type="email" name="contact[email]" id="email" class="form-control" placeholder="Correo electrónico" required/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="subtitle-form">
+									Selecciona el día y hora en la que te gustaría visitarnos
+								</p>
+								<input type="datetime-local" id="start" name="contact[hora_fecha]" class="form-control" placeholder="selecciona el dia y hora">
+							</div>
+							<div class="col-12">
+								<button type="submit"  class="btn">
+									Agendar cita
+								</button>
+							</div>
+							{% endform %}
+						
+						</div>
+					</div>
+				</div>
+				{% if section.settings.url_button != blank %}
+					<div class="content-button">
+						<a href="{{section.settings.ur_button}}" target="_blank">
+							{{ section.settings.label_button }}
+						</a>
+					</div>
+				{% endif %}
+				{% if section.settings.title_loop != blank %}
+					<p class="title-loop">
+						{{ section.settings.title_loop }}
+					</p>
+				{% endif %}
+			</div>
+			{% for block in section.blocks %}
+				<div class=" content-description-txt-block">
+					{% if block.settings.title != blank %}
+						<p class="title">
+							{{ block.settings.title }}
+						</p>
+					{% endif %}
+					{% if block.settings.text != blank %}
+						<div class="description">
+							{{ block.settings.text }}
+						</div>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Point of sale",
+"class": "seccion-puntos-venta",
+"settings": [
+{
+"type":"header",
+"content":"==== Imagen ===="
+},
+{
+"type":"image_picker",
+"id":"image",
+"label":"Imagen"
+},
+{
+"type":"image_picker",
+"id":"image_mobile",
+"label":"Imagen Mobile"
+},
+{
+"type":"header",
+"content":"==== Titulo y descripción ===="
+},
+{
+"type":"text",
+"id":"title",
+"label":"Titulo"
+},
+{
+"type":"richtext",
+"id":"description",
+"label":"Descripción"
+},
+{
+"type":"text",
+"id":"title_loop",
+"label":"Titulo"
+},
+{
+"type":"header",
+"content":"==== Botón ===="
+},
+{
+"type":"text",
+"id":"label_button",
+"label":"Texto Botón"
+},
+{
+"type":"url",
+"id":"url_button",
+"label":"Link Botón"
+}
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Descripción"
+}
+]
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<script>
+    let today = new Date().toISOString().substr(0, 10);
+    document.querySelector("#start").valueAsDate = new Date();
+</script>

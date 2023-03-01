@@ -1,0 +1,83 @@
+<style>
+  .section-slider-testimonials{
+    background: {{section.settings.bg_section}};
+  }
+</style>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<p class="text-center text-uppercase title">
+				Conoce lo que expertos opinan de Yakampot
+			</p>
+			<div class="slider-testimonials">
+				{% for block in section.blocks %}
+					<div>
+						{% if block.settings.quote != blank %}
+							<div class="rte-setting" >{{ block.settings.quote }}</div>
+						{% endif %}
+						{% if block.settings.image != blank %}
+							<div class="content-image" >
+								<img class=" lazyload"
+								     data-src="{{ block.settings.image | img_url:"master"}}"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     alt="{{ preview_image.alt | escape }}">
+							</div>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Slider Testimonials",
+"class": "section-slider-testimonials section-content-description-parallax",
+"settings": [
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background color",
+"default": "#ffffff"
+}
+
+],
+"blocks": [
+{
+"type": "quote",
+"name": "Quote",
+"settings": [
+{
+"type": "richtext",
+"id": "quote",
+"label": "Descripción",
+"default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": " Imagen marca"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Slider Testimonials",
+"category": "Text",
+"blocks": [
+{
+"type": "quote"
+},
+{
+"type": "quote"
+},
+{
+"type": "quote"
+}
+]
+}
+]
+}
+{% endschema %}

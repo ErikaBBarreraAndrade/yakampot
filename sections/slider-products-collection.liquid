@@ -1,0 +1,57 @@
+<link rel="preload" href="{{ "seccion-productos-coleccion.scss.css" | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "seccion-productos-coleccion.scss.css" | asset_url }}"></noscript>
+<div id="productTabs{{ block-producttabs }}" class="box-product-fnws">
+	<div class="container-fluid">
+		<div class="row content-box-products justify-content-lg-center">
+			<div class="col-12 col-lg-10">
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="slider-products-collection">
+							{%- assign collection_produclists = section.settings.collection -%}
+							{%- if collection_produclists == blank -%}
+								{%- assign collection_produclists = "all" -%}
+							{%- endif -%}
+							{%- assign collection = collections[collection_produclists] -%}
+							{% assign products = collection.products %}
+							{% for product in products %}
+								<div>
+									{%- render 'product-grid-slider', product: product, grid_item_width: grid_item_width, section_id: product.id -%}
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{%- if settings.quick_shop_enable -%}
+	{%- for product in collections[block.settings.collection].products limit: product_limit -%}
+		{%- render 'quick-shop-modal', product: product -%}
+	{%- endfor -%}
+{%- endif -%}
+{% schema %}
+{
+  "name": "Slider products",
+  "class":"seccion-productos-coleccion section-content-description-parallax",
+  "settings": [
+    {
+      "label": "Collection",
+      "id": "collection",
+      "type": "collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider products",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

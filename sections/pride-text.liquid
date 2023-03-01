@@ -1,0 +1,90 @@
+<div class="block-section text-pride" style="{{ section.settings.custom_space }};background-color: {{section.settings.bg_section }};" >
+	<div class="block_content container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8">
+				<ul class="d-block d-lg-flex m-0 list-unstyled ps-0 ms-0">
+					<li class="mb-3 mb-lg-0 ms-lg-5 text-center text-lg-start">
+						<div class="title text-uppercase">
+							{% if section.settings.title != blank %}
+								{{ section.settings.title }}
+							{% endif %}
+						</div>
+					</li>
+					<li class="ms-lg-4">
+						{% if section.settings.text != blank %}
+							<div class="rte-setting">{{ section.settings.text }}</div>
+						{% endif %}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Text pride",
+"class": "text-pride",
+"settings": [
+{
+"type": "textarea",
+"id": "custom_space",
+"label": "Css Style Section",
+"default":"padding-top:100px;padding-bottom:100px"
+},
+{
+"type":      "radio",
+"id":        "set_box",
+"label":     "Set Layout Section",
+"options": [
+{ "value": "box-container", "label": "Box Container" },
+{ "value": "box-full", "label": "Box Full" },
+{ "value": "none", "label": "None" }
+],
+"default":   "box-full",
+"info":      "Set Layout Section"
+},
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background Color",
+"default": "#ffffff"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Text columns with images"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "select",
+"id": "align_text",
+"label": "Text alignment",
+"default": "left",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "center",
+"label": "Centered"
+}
+]
+}
+],
+
+"presets": [
+{
+"name": "Text pride",
+"category": "Text"
+}
+]
+}
+{% endschema %}

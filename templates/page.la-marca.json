@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_black"
+      }
+    },
+    "16432409314317f87f": {
+      "type": "la-marca",
+      "settings": {
+        "custom_space": "",
+        "set_box": "none",
+        "bg_section": "#e5e3df",
+        "image": "shopify:\/\/shop_images\/nosotros.jpg",
+        "title": "NOSOTROS",
+        "text": "<p><\/p><p>“Tierra es mi cuerpo, agua es mi sangre, viento es mi aliento y fuego es mi espíritu.”<\/p><p>Somos una marca de moda mexicana que busca promover el patrimonio cultural al crear prendas únicas para vestir a mujeres comprometidas<\/p><p>Nacimos con el deseo de llevar el orgullo mexicano en la moda, así como de impactar positivamente al mundo.<\/p><p>Nos enfocamos en crear colecciones exclusivas conformadas por piezas de fusionando la intuición, el diseño y las técnicas ancestrales. <\/p><p>Para nosotros es importante plasmar las raíces de la cultura mexicana en nuestros diseños, pero agregándoles un toque contemporáneo. Por eso, buscamos converger el pasado, presente y futuro para convertir esos mundos en moda y estilo. <\/p><p>Nos guiamos por las tendencias del momento, pero al mismo tiempo ofrecemos piezas atemporales y clásicas. <\/p><p>Estamos comprometidos en hacer una diferencia en el mundo, por lo que trabajamos en conjunto con artesanos de distintas comunidades para crear nuestros diseños y apoyarlos. Buscamos crear una industria próspera para esas comunidades, dando un valor comercial y nueva vida a sus habilidades tradicionales.<\/p>",
+        "image_2": "shopify:\/\/shop_images\/nosotros-1.jpg",
+        "image_3": "shopify:\/\/shop_images\/banner-3_6f7c9632-a4a7-4a90-a717-5e95e7e0154e.jpg",
+        "title_nosotros": "MANIFIESTO",
+        "text_nosotros": "<p>Desde las raíces de las tierras de las comunidades indígenas mexicanas, las manos de las artesanas evocan técnicas ancestrales para confeccionar prendas. Todo esto combinado con la intuición y diseño dan como resultado exclusivas colecciones conformadas por piezas de arte contemporáneo.<\/p><p><\/p><p>Así es como Yakampot converge el pasado, presente y futuro; une esos mundos convergentes para convertir los en moda y estilo, y dejar en alto el nombre de la marca.<\/p><p><\/p><p>Mujeres soﬁsticadas, comprometidas y misteriosas visten la marca, del mismo modo en que la marca las viste a ellas.<\/p><p><\/p><p>Diosas Yakampot que cantan: Tierra es mi Cuerpo, Agua es mi Sangre, Viento es mi aliento y Fuego es mi espíritu.<\/p>",
+        "align_text": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16432409314317f87f"
+  ]
+}

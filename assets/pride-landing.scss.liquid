@@ -1,0 +1,347 @@
+@font-face {
+  font-family: 'Raleway-Semibold';
+  src: url(' {{ 'Raleway-SemiBold.ttf' | asset_url }} ');
+  font-weight: normal;
+  font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url(' {{ 'Raleway-Regular.ttf' | asset_url }} ');
+  font-weight: normal;
+  font-style: normal;
+    font-display: swap;
+}
+.somos-orgullo, .sumate-a-la-causa-pride{
+  background: #FFF !important;
+	#productTabs{
+		.content-tabs-products{
+			display: none;
+		}
+		#tabContentFN{
+			.content-product{
+        @media(min-width: 992px){
+          flex: 0 0 auto;
+          width: 33.33%;
+        }
+				.grid-product__content{
+					.grid-product__image-mask{
+						.button-buy-product{
+							display: none !important;
+						}
+					}
+          .content-title-price{
+            color: #666;
+            letter-spacing: -.3px;
+	          .grid-product__title{
+              font-family: 'Raleway-Semibold' !important;
+              text-align: center !important;
+              font-size: 13px;
+              line-height: 15px;
+		          letter-spacing: 1px;
+	          }
+	          .grid-product__price{
+              font-family: 'Raleway-Light' !important;
+              text-align: center !important;
+              font-size: 13px;
+              line-height: 15px;
+              color: #666;
+	          }
+          }
+				}
+			}
+		}
+  }
+}
+.banner-pride-home{
+  .hero--x-large{
+    @media(min-width: 1500px){
+      height: 1070px;
+    }
+  }
+}
+.p-0{
+  padding: 0px !important;
+}
+.text-pride{
+  @media(max-width: 767px){
+    background-image: none !important;
+  }
+  .section-header{
+    margin-bottom: 0px;
+    h2{
+      background: linear-gradient(to right, #FF4A69, #FE634F,#FE634F,#FE634F,#FE634F, #FF7439, #FF9401, #FCC600, #CCDB01, #90E001, #00DC19, #64D5B4, #00CDE8, #01B1FF, #02A2FD, #6187F5, #7784F1, #9A7BEC, #B274E8, #BC73E1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 35px;
+      text-transform: inherit;
+      line-height: 45px;
+      font-family: 'Raleway-Light';
+      margin-top: 60px;
+      @media(min-width: 768px){
+        font-size: 45px;
+        text-transform: inherit;
+        line-height: 55px;
+      }
+    }
+  }
+  .rte-setting{
+    text-align: justify;
+    @media(min-width: 992px){
+      width: 775px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+      @media(min-width: 768px){
+        font-size: 18px;
+        line-height: 22px;
+      }
+      strong{
+        font-family: 'Raleway-Semibold';
+      }
+    }
+  }
+  .rte-setting-number{
+    background: linear-gradient(to right,#ff4a69,#fe634f,#fe634f,#fe634f,#fe634f,#ff7439,#ff9401,#fcc600,#ccdb01,#90e001,#00dc19,#64d5b4,#00cde8,#01b1ff,#02a2fd,#6187f5,#7784f1,#9a7bec,#b274e8,#bc73e1);
+    padding: 3px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+    @media(min-width: 768px){
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    @media(min-width: 992px){
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+  .box-pride-count{
+    background: #FFF;
+    span{
+      font-size: 34px;
+      color: #000000;
+      font-family: 'Raleway-Light';
+      @media(min-width: 768px){
+        font-size: 54px;
+      }
+    }
+  }
+  .title-end{
+    font-family: 'Raleway-Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 30px;
+    @media(min-width: 768px){
+      font-size: 30px;
+    }
+  }
+}
+.section-products{
+  @media(min-width: 992px){
+    margin-top: 80px;
+  }
+  .product-featured-img{
+    width: 100%;
+  }
+  .product-single__meta{
+    padding: 0px;
+    padding-left: 0px;
+    font-size: 14px;
+    line-height: 0px;
+    font-family: 'Raleway-Light';
+    color: #000000;
+    margin-top: 15px;
+    @media(min-width: 768px){
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .product-single__title{
+      font-size: 14px;
+      line-height: 0px;
+      font-family: 'Raleway-Semibold';
+      @media(min-width: 768px){
+        font-size: 20px;
+      }
+    }
+  }
+  .product-single__photos{
+    margin-bottom: 0px;
+  }
+}
+.text-pride-society{
+  padding: 40px 0;
+  color: #FFF;
+  .section-header{
+    margin-bottom: 0px;
+    h2{
+      color: #FFF;
+      font-size: 20px;
+      font-family: 'Raleway-Light';
+      text-transform: initial;
+      font-weight: 100;
+      padding-bottom: 20px;
+      margin: 0;
+      @media(min-width: 768px){
+        font-size: 25px;
+      }
+    }
+    strong{
+      font-size: 18px;
+      font-weight: 100;
+    }
+  }
+  .rte-setting{
+    @media(min-width: 992px){
+      width: 800px;
+      margin: 0 auto;
+    }
+    p{
+      font-family: 'Raleway-Regular';
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+      text-align: center;
+      @media(min-width: 768px){
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+.text-pride-about{
+  .section-header{
+    margin-bottom: 0px;
+    margin-top: 35px;
+    h2{
+      font-size: 30px;
+      color: #000000;
+      font-family: 'Raleway-Regular';
+      @media(min-width: 768px){
+        font-size: 50px;
+      }
+    }
+  }
+  .rte-setting{
+    background: linear-gradient(to right,#ff4a69,#fe634f,#fe634f,#fe634f,#fe634f,#ff7439,#ff9401,#fcc600,#ccdb01,#90e001,#00dc19,#64d5b4,#00cde8,#01b1ff,#02a2fd,#6187f5,#7784f1,#9a7bec,#b274e8,#bc73e1);
+    padding: 3px;
+    border-radius: 50px;
+    width: 295px;
+    margin: 0 auto;
+    margin-top: 25px;
+    @media(min-width: 768px){
+      width: 395px;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+    .box-pride{
+      background: #FFF;
+      font-size: 12px;
+      font-family: 'Raleway-Bold';
+      padding: 8px;
+      border-radius: 50px;
+      @media(min-width: 768px){
+        font-size: 17px;
+        padding: 15px;
+        border-radius: 50px;
+      }
+      p{
+        color: #000000;
+      }
+    }
+  }
+}
+.pride-people{
+	.title-pride{
+    font-family: 'Raleway';
+    @media (min-width: 992px) {
+      color: #000;
+      font-size: 35px;
+      line-height: 41px;
+	    letter-spacing: 5px;
+    }
+  }
+	.content-button{
+    font-family: 'Raleway-Light';
+    font-size: 13px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 40px;
+    margin-top: 30px;
+		a{
+      &:hover{
+        background: transparent !important;
+      }
+      span{
+        border-bottom: 1px solid #000;
+      }
+		}
+  }
+  .section-products{
+    @media(max-width: 767px){
+      background-image: none !important;
+    }
+  }
+  .content-image-people{
+    padding: 0px;
+	  cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+  .rte-setting{
+    margin-top: 50px;
+    p{
+      font-family: 'Raleway-Semibold';
+      font-size: 13px;
+      line-height: 15px;
+      color: #000000;
+      margin: 0;
+      letter-spacing: 1px;
+      a{
+        font-family: 'Raleway-Light';
+        transition: all 0.5s ease;
+        color: #000;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none;
+        letter-spacing: 0px;
+	      border: none !important;
+        &:hover{
+          background: linear-gradient(to right, #FF4A69, #FE634F,#FE634F,#FE634F,#FE634F, #FF7439, #FF9401, #FCC600, #CCDB01, #90E001, #00DC19, #64D5B4, #00CDE8, #01B1FF, #02A2FD, #6187F5, #7784F1, #9A7BEC, #B274E8, #BC73E1);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+	        &:after{
+		        content: none !important;
+	        }
+        }
+      }
+    }
+	  &.block-social{
+		  p{
+        width: 100%;
+        @media (min-width: 992px) {
+          width: 33.33%;
+        }
+		  }
+	  }
+  }
+  .box-brand{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+.sumate-a-la-causa-pride{
+  #Productlists-product-1-slider{
+    .functional-buttons,.box-new-sold, .review{
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+<div class="container-fluid">
+	<div class="row content-image-gallery">
+		{% for block in section.blocks %}
+			<div class="col-6 col-md-3 content-img">
+				{% if block.settings.enable_image %}
+					{% if block.settings.image != blank %}
+						{% if block.settings.url_image != blank %}
+							<a href="{{block.settings.url_image }}"  {% if block.settings.enable_target %}target="_blank"{% endif %}>
+								<img class="img-fluid w-100 lazyload"
+								     data-src="{{block.settings.image | img_url: 'master' }}"
+								     alt="{{ preview_image.alt | escape }}">
+							</a>
+						{% else %}
+							<img class="img-fluid w-100 lazyload"
+							     data-src="{{block.settings.image | img_url: 'master' }}"
+							     alt="{{ preview_image.alt | escape }}">
+						{% endif %}
+					{% endif %}
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+	{% if section.settings.description != blank %}
+		<div class="row content-description">
+			<div class="col-12 text-center">
+				<div class="description">
+					{{section.settings.description}}
+				</div>
+			</div>
+		</div>
+	{% endif %}
+</div>
+{% schema %}
+{
+"name": "Seccion galeria link",
+"class":"section-content-description-parallax seccion-img-gallery",
+"settings": [
+{
+"type":"header",
+"content":"==== Descripcion ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "checkbox",
+"id": "enable_image",
+"label": "Show image",
+"default": true
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": false
+},
+{
+"type": "url",
+"id": "url_image",
+"label": "Url producto"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Seccion galeria link",
+"category": "Image",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}

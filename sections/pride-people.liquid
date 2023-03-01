@@ -1,0 +1,240 @@
+<div class="row section-products" style="{{ section.settings.custom_space }};background-image:url({{section.settings.image_section | img_url: 'master'}});" >
+	<div class="col-12 col-md-10 offset-md-1">
+		<div class="row">
+			<div class="col-12 d-none d-lg-block">
+				{% if section.settings.title != blank %}
+					<p class="title-pride text-center">
+						{{ section.settings.title }}
+					</p>
+				{%endif%}
+				{% if section.settings.btn_url != blank %}
+					<p class="content-button text-center">
+						<a href="{{ section.settings.btn_url }}" class="btn">
+							<span>{{ section.settings.btn_label }}</span>
+						</a>
+					</p>
+				{%endif%}
+			</div>
+			<div class="col-6 col-sm-6  col-md-3 content-image-people">
+				{% if section.settings.image != blank %}
+					<a data-src=" {{ section.settings.image| img_url: 'master'}}" data-fancybox>
+						<img class="img-fluid lazyload"
+						     data-src="{{ section.settings.image | img_url: 'master'}}"
+						     data-widths="[180, 360, 540, 720, 900, 1080]"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     data-sizes="auto"
+						     alt="{{ preview_image.alt | escape }}">
+					</a>
+				{% endif %}
+			</div>
+			<div class="col-6 col-sm-6  col-md-3 content-image-people">
+				{% if section.settings.image_1 != blank %}
+					<a data-src=" {{ section.settings.image_1| img_url: 'master'}}" data-fancybox>
+						<img class="img-fluid lazyload"
+						     data-src="{{ section.settings.image_1 | img_url: 'master'}}"
+						     data-widths="[180, 360, 540, 720, 900, 1080]"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     data-sizes="auto"
+						     alt="{{ preview_image.alt | escape }}">
+					</a>
+				{% endif %}
+			</div>
+			<div class="col-6 col-sm-6  col-md-3 content-image-people">
+				{% if section.settings.image_2 != blank %}
+					<a data-src=" {{ section.settings.image_2| img_url: 'master'}}" data-fancybox>
+						<img class="img-fluid lazyload"
+						     data-src="{{ section.settings.image_2 | img_url: 'master'}}"
+						     data-widths="[180, 360, 540, 720, 900, 1080]"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     data-sizes="auto"
+						     alt="{{ preview_image.alt | escape }}">
+					</a>
+				{% endif %}
+			</div>
+			<div class="col-6 col-sm-6  col-md-3 content-image-people">
+				{% if section.settings.image_3 != blank %}
+					<a data-src=" {{ section.settings.image_3| img_url: 'master'}}" data-fancybox>
+						<img class="img-fluid lazyload"
+						     data-src="{{ section.settings.image_3 | img_url: 'master'}}"
+						     data-widths="[180, 360, 540, 720, 900, 1080]"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     data-sizes="auto"
+						     alt="{{ preview_image.alt | escape }}">
+					</a>
+				{% endif %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="rte-setting text-center">
+					{{section.settings.text}}
+				</div>
+				<div class="rte-setting row block-social justify-content-center text-center">
+					{{section.settings.text_social}}
+				</div>
+			</div>
+		</div>
+		<div class="row box-brand">
+			<div class="col-12 col-md-10 offset-md-1">
+				<div class="box-brand">
+					<div class="row {% unless section.blocks.size == 5 %}{% endunless %} grid--flush-bottom">
+						{%- assign grid_item_width = 'col-12 text-center col-md-3' -%}
+						{%- assign image_size = '345x' -%}
+						{% case section.blocks.size %}
+							{% when 1 %}
+								{%- assign grid_item_width = 'col-12 text-center col-md-12' -%}
+								{%- assign image_size = '530x' -%}
+							{% when 2 %}
+								{%- assign grid_item_width = 'col-12 text-center col-md-3' -%}
+								{%- assign image_size = '530x' -%}
+							{% when 4 %}
+								{%- assign grid_item_width = 'col-12 text-center col-md-3' -%}
+								{%- assign image_size = '530x' -%}
+						{% endcase %}
+						{% for block in section.blocks %}
+							{% if section.blocks.size == 5 and forloop.index < 3 %}
+								{%- assign column_width = 'col-12 text-center col-md-3' -%}
+							{% else %}
+								{%- assign column_width = grid_item_width -%}
+							{% endif %}
+							<div class="{{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }}>
+								{% if block.settings.enable_image %}
+									{% if block.settings.image != blank %}
+										<img class="img-fluid lazyload"
+										     data-src="{{ block.settings.image | img_url: 'master' }}"
+										     alt="{{ preview_image.alt | escape }}">
+									{% else %}
+										{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+									{% endif %}
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Pride people",
+"class": "pride-people container-fluid",
+"settings": [
+{
+"type": "textarea",
+"id": "custom_space",
+"label": "Css Style Section",
+"default":"padding-top:100px;padding-bottom:100px"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Url"
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Texto Botón"
+},
+{
+"type": "image_picker",
+"id": "image_section",
+"label": "Background Image"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image_3",
+"label": "Image"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "richtext",
+"id": "text_social",
+"label": "Text",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "select",
+"id": "align_text",
+"label": "Text alignment",
+"default": "left",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "center",
+"label": "Centered"
+}
+]
+}
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "checkbox",
+"id": "enable_image",
+"label": "Show image",
+"default": true
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Pride people",
+"category": "Image",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}
+

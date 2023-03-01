@@ -1,0 +1,25 @@
+{% schema %}
+{
+"name": "seccion",
+"tag": "section",
+"class": "spaced-section",
+"settings": [
+{
+"type":      "radio",
+"id":        "class_body",
+"label":     "header color",
+"options": [
+{ "value": "header_transparent", "label": "Header transparente" },
+{ "value": "header_black", "label": "Header normal" }
+],
+"default":     "header_transparent"
+}
+]
+}
+{% endschema %}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+	$(document).ready(function (){
+        $("body").addClass("{{ section.settings.class_body }}");
+	})
+</script>

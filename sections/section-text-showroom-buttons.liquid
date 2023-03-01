@@ -1,0 +1,197 @@
+<link rel="preload" href="{{ "section-text-showroom-buttons.scss.css" | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "section-text-showroom-buttons.scss.css" | asset_url }}"></noscript>
+<div class="container-fluid">
+	<div class="row justify-content-center content-global">
+		<div class="col-12 col-lg-12">
+			{% if section.settings.description_es != blank %}
+				<div class="content-description language-es mx-auto">
+					{{ section.settings.description_es }}
+				</div>
+			{% endif %}
+			{% if section.settings.description_en != blank %}
+				<div class="content-description language-en collapse mx-auto">
+					{{ section.settings.description_en }}
+				</div>
+			{% endif %}
+			{% if section.settings.title_es != blank %}
+				<div class="content-title language-es mx-auto">
+					{{ section.settings.title_es }}
+				</div>
+			{% endif %}
+			{% if section.settings.title_en != blank %}
+				<div class="content-title language-en collapse mx-auto">
+					{{ section.settings.title_en }}
+				</div>
+			{% endif %}
+		</div>
+		<div class="col-12 content-box-buttons">
+			{% if section.settings.url_wp != blank %}
+				<div class="text-center">
+					<a href="{{ section.settings.url_wp }}" target="_blank" class="content-button mx-auto d-block">
+						<span class="language-es">
+							{{ section.settings.label_es }}
+						</span>
+						<span class="language-en collapse">
+							{{ section.settings.label_en }}
+						</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20.198" height="14.563" viewBox="0 0 20.198 14.563">
+							<path id="Trazado_54" data-name="Trazado 54" d="M13.081,14.869a.683.683,0,1,0-.962.962l4.907,4.913H.807a.685.685,0,0,0,0,1.368H17.026l-4.915,4.907a.7.7,0,0,0,0,.962.679.679,0,0,0,.962,0L19.152,21.9a.667.667,0,0,0,0-.962Z" transform="translate(0.341 -14.116)" stroke="#f1f1f1" stroke-width="1"/>
+						</svg>
+					</a>
+				</div>
+			{% endif %}
+			<div class="content-button email-toggle mx-auto text-center">
+					<span class="language-es">
+						{{ section.settings.email_label_es }}
+					</span>
+				<span class="language-en collapse">
+						{{ section.settings.email_label_en }}
+					</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="20.198" height="14.563" viewBox="0 0 20.198 14.563">
+					<path id="Trazado_54" data-name="Trazado 54" d="M13.081,14.869a.683.683,0,1,0-.962.962l4.907,4.913H.807a.685.685,0,0,0,0,1.368H17.026l-4.915,4.907a.7.7,0,0,0,0,.962.679.679,0,0,0,.962,0L19.152,21.9a.667.667,0,0,0,0-.962Z" transform="translate(0.341 -14.116)" stroke="#f1f1f1" stroke-width="1"/>
+				</svg>
+			</div>
+			<div class="row content-form collapse mx-auto">
+				<div class="col-12">
+					<p>
+						<span class="language-es">
+						Por favor ingresa tu información de contacto y el horario en el que te gustaría visitarnos
+					</span>
+						<span class="language-en collapse">
+					Please enter your contact information and the time you would like to visit us
+					</span>
+					</p>
+					{% form 'contact' %}
+					{%- if form.posted_successfully? -%}
+						<p class="note note--success">
+							{{ 'contact.form.post_success' | t }}
+						</p>
+						<style>
+              .form-puntos-venta{
+                display: none;
+              }
+						</style>
+
+					{%- endif -%}
+					{{ form_errors | default_errors }}
+					<div class="row form-puntos-venta">
+						<div class="col-12 collapse">
+							<input type="text" name="contact[tipoFormulario]" id="tipoFormulario" class="form-control" value="Previa Cita" />
+						</div>
+						<div class="col-12">
+							<input type="text" name="contact[nombreCompleto]" id="nombreCompleto" class="form-control" placeholder="Nombre completo" required/>
+						</div>
+						<div class="col-12">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<input type="tel" name="contact[telefono]" id="telefono"   pattern="[0-9\-]*" class="form-control" placeholder="Teléfono" required />
+								</div>
+								<div class="col-12 col-md-6">
+									<input type="email" name="contact[email]" id="email" class="form-control" placeholder="Correo electrónico" required/>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<p class="subtitle-form">
+						<span class="language-es">
+								Selecciona el día y hora en la que te gustaría visitarnos
+					</span>
+								<span class="language-en collapse">
+				Select the day and time you would like to visit us
+					</span>
+							</p>
+							<input type="datetime-local" id="start" name="contact[hora_fecha]" class="form-control" placeholder="selecciona el dia y hora">
+						</div>
+						<div class="col-12 text-center">
+							<button type="submit"  class="btn">
+										<span class="language-es">
+														Agendar cita
+					</span>
+								<span class="language-en collapse">
+				Schedule appointment
+					</span>
+							</button>
+						</div>
+						{% endform %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Botones showroom",
+  "class": "section-text-showroom-buttons section-content-description-parallax",
+  "settings": [
+    {
+      "type": "header",
+      "content": "===== Descripción ====="
+    },
+    {
+      "type": "richtext",
+      "id": "description_es",
+      "label": "Descripción"
+    },
+    {
+      "type": "richtext",
+      "id": "description_en",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "===== Titulo ====="
+    },
+    {
+      "type": "text",
+      "id": "title_es",
+      "label": "Titulo"
+    },
+    {
+      "type": "text",
+      "id": "title_en",
+      "label": "Title"
+    },
+    {
+      "type": "header",
+      "content": "===== Botón whatsapp ====="
+    },
+    {
+      "type": "url",
+      "id": "url_wp",
+      "label": "Url"
+    },
+    {
+      "type": "text",
+      "id": "label_es",
+      "label": "Texto botón"
+    },
+    {
+      "type": "text",
+      "id": "label_en",
+      "label": "Text button"
+    },
+    {
+      "type": "header",
+      "content": "===== Botón email ====="
+    },
+    {
+      "type": "text",
+      "id": "email_label_es",
+      "label": "Texto botón"
+    },
+    {
+      "type": "text",
+      "id": "email_label_en",
+      "label": "Text button"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Botones showroom",
+      "category": "text"
+    }
+  ]
+}
+{% endschema %}

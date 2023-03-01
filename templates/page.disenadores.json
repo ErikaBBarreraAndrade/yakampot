@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16432245906e682b89": {
+      "type": "box-texto-simple",
+      "settings": {
+        "bg_color": "#000000",
+        "color_text": "#ffffff",
+        "title": "Cada prenda cuenta una historia que forma parte del legado de las comunidades originarias de México.",
+        "color_des": "#ffffff",
+        "description": "<p>En colaboración con mujeres artesanas reinterpretamos elementos icónicos de la indumentaria tradicional de los Altos de Chiapas. Tableados, bordados, plisados y volúmenes hechos a mano se convierte en el alma de una propuesta de diseño atemporal con identidad milenaria.<\/p>",
+        "button_color": "#ffffff",
+        "button_text": "Colaboración artesanal",
+        "button_link": "shopify:\/\/pages\/colaboraciones"
+      }
+    },
+    "1643227759cd4132ce": {
+      "type": "galeria-link",
+      "blocks": {
+        "16432277597da1c825-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/producto-1.jpg",
+            "enable_target": true,
+            "url_image": "https:\/\/yakampot.com.mx\/collections\/2021\/products\/abrigo-angela-azul-pre-order?variant=39746999517229"
+          }
+        },
+        "16432277597da1c825-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/producto-2.jpg",
+            "enable_target": true,
+            "url_image": "https:\/\/yakampot.com.mx\/collections\/2021\/products\/vestido-hombros-plisados-negro?variant=34753183449133"
+          }
+        },
+        "36d99ecd-cd56-49ba-ace1-2d77ffff3e94": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/producto_3.jpg",
+            "enable_target": false,
+            "url_image": "https:\/\/yakampot.com.mx\/collections\/2021\/products\/ensamble-mangas-volumen-blanco"
+          }
+        },
+        "ac2b9293-d0c4-4dcd-8c83-f5b54f00cffd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/producto-4.jpg",
+            "enable_target": true,
+            "url_image": "https:\/\/yakampot.com.mx\/collections\/2021\/products\/falda-pantalon-gris-cemento?variant=39746975498285"
+          }
+        }
+      },
+      "block_order": [
+        "16432277597da1c825-0",
+        "16432277597da1c825-1",
+        "36d99ecd-cd56-49ba-ace1-2d77ffff3e94",
+        "ac2b9293-d0c4-4dcd-8c83-f5b54f00cffd"
+      ],
+      "settings": {
+        "description": ""
+      }
+    },
+    "1643227932c73df33d": {
+      "type": "seccion-texto-boton",
+      "settings": {
+        "title": "Intuición, diseño y tradición.",
+        "description": "<p>Nuestras siluetas están inspiradas en formas esenciales que son producto de la síntesis que los pueblos originarios han logrado en la confección y diseño para la ropa de uso cotidiano y ceremonial. La simpleza de la silueta Yakampot permite al cuerpo habitar y moverse con total libertad para escribir su presente y abrirse camino en el futuro.<\/p>",
+        "button_label": "Somos",
+        "button_link": "shopify:\/\/pages\/somos-pride"
+      }
+    },
+    "1643228484d2547566": {
+      "type": "section-image-list-text",
+      "blocks": {
+        "16432284844ccd871c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/list_image_1_98e19f61-a925-4733-bfb5-cc809ca681ed.jpg",
+            "size_img": "small_image"
+          }
+        },
+        "16432284844ccd871c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/list_image_3.jpg",
+            "size_img": "big_image"
+          }
+        },
+        "16432284844ccd871c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/list_image_2.jpg",
+            "size_img": "small_image"
+          }
+        }
+      },
+      "block_order": [
+        "16432284844ccd871c-0",
+        "16432284844ccd871c-1",
+        "16432284844ccd871c-2"
+      ],
+      "settings": {
+        "description": "<p>Los materiales que ocupamos en la confección de nuestras prendas son telas y fibras naturales de la más alta calidad. La textura, el peso y el color de cada material ha sido cuidadosamente seleccionado para realizar una traducción textil de la fuerza y movimiento que nos inspiran las mujeres que visten y forman parte de nuestra marca.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16432245906e682b89",
+    "1643227759cd4132ce",
+    "1643227932c73df33d",
+    "1643228484d2547566"
+  ]
+}

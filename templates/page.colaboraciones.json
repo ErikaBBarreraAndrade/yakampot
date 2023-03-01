@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "16432144337e6d776a": {
+      "type": "index-slider-yakampot",
+      "blocks": {
+        "164321443344aa165f-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-colaboraciones.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/ColaboracionArtesanal-Mobile.jpg",
+            "video_link": "",
+            "video_link_mobile": "",
+            "title": "Creemos en un sistema de comercio justo, no discriminatorio",
+            "subtitle": "y equitativo para la difusión del patrimonio artesanal.",
+            "enable_image": false,
+            "enable_titulos": true,
+            "title_color": "#ffffff",
+            "text": "Actualmente, Grupo Jolc impacta de manera positiva a 227 artesanos en 7 comunidades pertenecientes a 4 estados. Destinamos el 27% del valor de cada producto al pago justo de salarios y la creación de programas de desarrollo y empoderamiento de las comunidades.",
+            "text_color": "#ffffff",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164321443344aa165f-0"
+      ],
+      "settings": {
+      }
+    },
+    "1643214764fba25f50": {
+      "type": "modelo-impacto",
+      "blocks": {
+        "1643214764d73fb641-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icono_investigacion.png",
+            "image_mobile": "shopify:\/\/shop_images\/investigacion_mobile.png",
+            "title": "Investigación",
+            "description": "<p>Buscamos comunidades de artesanos en México para trabajar de la mano y aliarnos en el desarrollo de productos y procesos que les ayuden a mejorar y conservar sus técnicas textiles.<\/p><p>Garantizamos el acceso igualitario para personas vulnerables, incluidas personas con discapacidad, apoyamos en procesos educativos y de enseñanza que les ayuden a integrarse al mercado laboral.<\/p>"
+          }
+        },
+        "1643214764d73fb641-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon_capacitaciones.png",
+            "image_mobile": "shopify:\/\/shop_images\/icono_capacitaciones_mobile.png",
+            "title": "Co-diseño y capacitaciones",
+            "description": "<p>El área de diseño trabaja de la mano con los artesanos en la innovación de diferentes técnicas textiles para preservar su riqueza cultural. El empoderamiento de los artesanos es un factor clave para el desarrollo de la artesanía por eso implementamos capacitaciones para generar competencias en técnicas de costura de calidad, logrando un empleo digno.<\/p>"
+          }
+        },
+        "1643214764d73fb641-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon_produccion.png",
+            "image_mobile": "shopify:\/\/shop_images\/icono_produccion_mobile.png",
+            "title": "Producción",
+            "description": "<p>El equipo de diseño recibe las artesanías para comenzar con la producción en maquilas y después finalizar detalladamente cada una de nuestras prendas.<\/p>"
+          }
+        },
+        "b1af5a29-bb69-41b4-9b15-089c1b809d2e": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon_venta.png",
+            "image_mobile": "shopify:\/\/shop_images\/icono_venta_mobile.png",
+            "title": "Venta",
+            "description": "<p>Una vez terminada la producción, las prendas salen a diferentes <a href=\"\/pages\/puntos-de-venta\" title=\"Puntos de Venta\"><strong>puntos de venta<\/strong><\/a> nacionales e internacionales.<\/p>"
+          }
+        },
+        "6def2b9b-40e2-401a-90e7-74dace9c93bc": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon_artesanias.png",
+            "image_mobile": "shopify:\/\/shop_images\/icono_artesanias_mobile.png",
+            "title": "Activación de artesanías y su comunidad",
+            "description": "<p>Destinamos el 27% del valor de cada producto al pago justo de salarios y la creación de programas de desarrollo y empoderamiento para mejorar las condiciones de las comunidades con enfoque sostenible.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1643214764d73fb641-0",
+        "1643214764d73fb641-1",
+        "1643214764d73fb641-2",
+        "b1af5a29-bb69-41b4-9b15-089c1b809d2e",
+        "6def2b9b-40e2-401a-90e7-74dace9c93bc"
+      ],
+      "settings": {
+        "bg_color": "#f2ede8",
+        "title": "MODELO DE IMPACTO"
+      }
+    },
+    "16432152522f9c83f8": {
+      "type": "seccion-imagenes-galeria",
+      "blocks": {
+        "164321525228b86648-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/colaboraciones.jpg"
+          }
+        },
+        "164321525228b86648-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/colaboraciones-2.jpg"
+          }
+        },
+        "164321525228b86648-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/colaboraciones-3.jpg"
+          }
+        },
+        "46b0f739-b8a7-416d-a985-62c6ca76b60c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/colaboraciones-4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "164321525228b86648-0",
+        "164321525228b86648-1",
+        "164321525228b86648-2",
+        "46b0f739-b8a7-416d-a985-62c6ca76b60c"
+      ],
+      "settings": {
+        "description": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16432144337e6d776a",
+    "1643214764fba25f50",
+    "16432152522f9c83f8"
+  ]
+}

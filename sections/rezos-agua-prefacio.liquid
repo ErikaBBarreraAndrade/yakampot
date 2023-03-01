@@ -1,0 +1,57 @@
+<div class="container-fluid">
+	<div class="row section-content" style="background: {{ section.settings.bg_color }};">
+		<div class="col-12 text-center">
+			{% if section.settings.title != blank %}
+				<p class="title text-uppercase">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.text != blank %}
+				<div class="rte-settings">
+					{{ section.settings.text }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Rezos prefacio",
+"class": "section-content-description-parallax section-rezos-prefacio",
+"settings": [
+{
+"type": "header",
+"content": "==== Background section ===="
+},
+{
+"type": "color",
+"id": "bg_color",
+"label": "Background",
+"default": "#FFF"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Descripción",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+}
+
+],
+
+"presets": [
+{
+"name": "Rezos prefacio",
+"category": "Text"
+}
+]
+}
+{% endschema %}

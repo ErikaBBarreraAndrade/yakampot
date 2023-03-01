@@ -1,0 +1,1132 @@
+{
+  "current": {
+    "type_headers_align_text": true,
+    "type_product_style": "body",
+    "quick_shop_enable": true,
+    "quick_shop_text": "Vista Rápida",
+    "product_grid_image_size": "natural",
+    "product_hover_image": true,
+    "enable_payment_button": false,
+    "product_zoom_enable": true,
+    "collection_color_swatches": true,
+    "product_content_collapse_1": false,
+    "product_content_collapse_2": false,
+    "product_content_collapse_3": false,
+    "enable_product_reviews": true,
+    "cart_terms_conditions_enable": false,
+    "cart_terms_conditions_link": "shopify:\/\/pages\/terminos-condiciones",
+    "favicon": "shopify:\/\/shop_images\/favicon_32x32_7b0e8cae-fb14-4f88-b18f-ab4c78e01f7e.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/IMG-3-3.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Yakampot_logo_CMYK_2_b90bfaa1-5fba-47bb-b6ae-f24b22487056.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#dddddd",
+    "checkout_accent_color": "#1c1d1d",
+    "checkout_button_color": "#1c1d1d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "f7065152-d39c-4c18-bd94-d0f49574401f": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/yakampot-blanco_fa9a8b82-b813-4817-81bc-1ac28635f0f6.png",
+              "logo-inverted": "shopify:\/\/shop_images\/yakampot-blanco_b92857ba-3e6d-430d-a812-0d33f4d87179.png",
+              "desktop_logo_width": 200,
+              "mobile_logo_width": 140
+            }
+          }
+        },
+        "block_order": [
+          "f7065152-d39c-4c18-bd94-d0f49574401f"
+        ],
+        "settings": {
+          "main_menu_link_list": "menu-principal-prueba",
+          "main_menu_mobile_link_list": "menu-principal-prueba-mobile",
+          "mega_menu_images": true,
+          "main_menu_alignment": "center-left",
+          "header_style": "sticky",
+          "sticky_index": false,
+          "sticky_collection": false,
+          "announcement_compact": false,
+          "announcement_above_header": false,
+          "toolbar_menu": "",
+          "toolbar_social": false,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_currency_flags": true
+        }
+      },
+      "footer-promotions": {
+        "type": "footer-promotions",
+        "settings": {
+          "hide_homepage": true,
+          "image_size": "wide"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "popup_title": "Sign up and save",
+          "popup_image": "shopify:\/\/shop_images\/Banner-Campana1-MOB.jpg",
+          "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+          "close_text": "No thanks",
+          "enable_newsletter": true,
+          "button_label": "Optional button",
+          "button_link": "",
+          "enable_button": false
+        }
+      },
+      "1643328988340a4b00": {
+        "type": "index-slider-yakampot",
+        "blocks": {
+          "1643328988340a4b00-0": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2desk2023.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/1mob2023.jpg",
+              "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/96f0ba8bc92a42ada94347d93621e3ee.mp4",
+              "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f0259e54e06247d48960b3e98c333b79.mp4",
+              "title": "moda mundana",
+              "subtitle": "Prendas inspiradas en elementos icónicos mexicanos",
+              "enable_image": false,
+              "enable_titulos": true,
+              "title_color": "#ffffff",
+              "text": "",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "VER  PRODUCTOS",
+              "button_link": "shopify:\/\/collections\/all"
+            }
+          },
+          "1643328988340a4b00-2": {
+            "type": "text_block",
+            "settings": {
+              "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/be5ad667fd54453bbd365f7c42311371.mp4",
+              "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a57d1b303f9045b0b7a514d357e62e5f.mp4",
+              "title": "celebra a los que amas",
+              "subtitle": "Descuentos ¡hasta el 70%!",
+              "enable_image": false,
+              "enable_titulos": true,
+              "title_color": "#ffffff",
+              "text": "Promoción válida del 1ro al 28 de febrero de 2023 en Colección Rezos del agua y piezas únicas. <br> Descuentos válidos en tienda en línea",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "Viste Yakampot",
+              "button_link": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1"
+            }
+          },
+          "b4da12de-4d66-4dc4-bd82-ee0132c63bbd": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Banner-Campana1-DESKTOP.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Banner-Campana1-MOB.jpg",
+              "video_link": "",
+              "video_link_mobile": "",
+              "title": "",
+              "subtitle": "Add a subtitle or tagline",
+              "enable_image": false,
+              "enable_titulos": false,
+              "title_color": "#ffffff",
+              "text": "",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "Descubre los nuevos colores",
+              "button_link": "shopify:\/\/collections\/2022"
+            }
+          },
+          "15921433-debc-44e0-bfb8-42c097ac29bf": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Yakampot_HotSale-24.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Yakampot_HotSale-25.jpg",
+              "video_link": "",
+              "video_link_mobile": "",
+              "title": "Add a title or tagline",
+              "subtitle": "Add a subtitle or tagline",
+              "enable_image": false,
+              "enable_titulos": false,
+              "title_color": "#ffffff",
+              "text": "",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Yakampot_HotSale-21.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Yakampot_HotSale-22.jpg",
+              "video_link": "",
+              "video_link_mobile": "",
+              "title": "",
+              "subtitle": "Add a subtitle or tagline",
+              "enable_image": false,
+              "enable_titulos": false,
+              "title_color": "#ffffff",
+              "text": "",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "7ae79269-59cf-4300-b529-59c774a97845": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "video_link": "",
+              "video_link_mobile": "",
+              "title": "Add a title or tagline",
+              "subtitle": "Add a subtitle or tagline",
+              "enable_image": false,
+              "enable_titulos": false,
+              "title_color": "#ffffff",
+              "text": "Add a text or tagline",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1643328988340a4b00-0",
+          "1643328988340a4b00-2",
+          "b4da12de-4d66-4dc4-bd82-ee0132c63bbd",
+          "15921433-debc-44e0-bfb8-42c097ac29bf",
+          "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d",
+          "7ae79269-59cf-4300-b529-59c774a97845"
+        ],
+        "settings": {
+        }
+      },
+      "16433290912ba7e43d": {
+        "type": "products-tabs",
+        "blocks": {
+          "36f12b53-3150-4e6f-a6d0-9f4ea5bca4d0": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Rebajas Invierno",
+              "collection": "febrero60",
+              "btn_link": "shopify:\/\/collections\/todos-los-productos-por-rebajas",
+              "btn_link_all": ""
+            }
+          },
+          "686589e0-c240-4fb3-ba5a-d8b339cffaca": {
+            "type": "item",
+            "disabled": true,
+            "settings": {
+              "tab_name": "Lo nuevo",
+              "collection": "noviembre-2022",
+              "btn_link": "shopify:\/\/collections\/productos",
+              "btn_link_all": ""
+            }
+          },
+          "2387ff7c-8f0c-4d1b-b5f3-be9b05133906": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Rezos del Agua",
+              "collection": "rezos",
+              "btn_link": "https:\/\/yakampot.com.mx\/collections\/rezos",
+              "btn_link_all": ""
+            }
+          },
+          "16433290912ba7e43d-0": {
+            "type": "item",
+            "disabled": true,
+            "settings": {
+              "tab_name": "Rebajas",
+              "collection": "rebajas",
+              "btn_link": "https:\/\/yakampot.com.mx\/collections\/todos-los-productos-ordenados-por-descuento",
+              "btn_link_all": ""
+            }
+          },
+          "16433290912ba7e43d-1": {
+            "type": "item",
+            "disabled": true,
+            "settings": {
+              "tab_name": "Somos pride",
+              "collection": "somos-pride",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          },
+          "16433290912ba7e43d-2": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Vestidos",
+              "collection": "vestidos",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          },
+          "e5d4aa97-9c34-4df0-9655-836281ecd5f3": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Blusas",
+              "collection": "tops",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          },
+          "f9249e01-776c-4496-91ff-14d796c37556": {
+            "type": "item",
+            "disabled": true,
+            "settings": {
+              "tab_name": "Camisas",
+              "collection": "camisas",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          },
+          "e1b3fcdc-212c-4c5d-b966-6a8200ade69f": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Tops",
+              "collection": "tops-1",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          },
+          "97f5724d-f596-4e03-b727-f30f10414864": {
+            "type": "item",
+            "settings": {
+              "tab_name": "BOTTOMS",
+              "collection": "bottoms",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          },
+          "bcb065af-e6d2-465b-add6-4ff8e2a5086b": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Outerwear",
+              "collection": "outerwear",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          }
+        },
+        "block_order": [
+          "36f12b53-3150-4e6f-a6d0-9f4ea5bca4d0",
+          "686589e0-c240-4fb3-ba5a-d8b339cffaca",
+          "2387ff7c-8f0c-4d1b-b5f3-be9b05133906",
+          "16433290912ba7e43d-0",
+          "16433290912ba7e43d-1",
+          "16433290912ba7e43d-2",
+          "e5d4aa97-9c34-4df0-9655-836281ecd5f3",
+          "f9249e01-776c-4496-91ff-14d796c37556",
+          "e1b3fcdc-212c-4c5d-b966-6a8200ade69f",
+          "97f5724d-f596-4e03-b727-f30f10414864",
+          "bcb065af-e6d2-465b-add6-4ff8e2a5086b"
+        ],
+        "settings": {
+          "title": "",
+          "enable_full_list": true,
+          "enable_columns": true,
+          "btn_url": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1",
+          "btn_label": "Todos los Productos"
+        }
+      },
+      "1643329456d6e81824": {
+        "type": "services",
+        "blocks": {
+          "1643329456d6e81824-0": {
+            "type": "text",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/noun_Card_3213534_aa4161f8-e905-452d-9a45-1fb052c0a811.png",
+              "heading_service": "",
+              "des_service": "COMPRA SEGURA"
+            }
+          },
+          "1643329456d6e81824-1": {
+            "type": "text",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/www.png",
+              "heading_service": "",
+              "des_service": "ENVÍOS EXPRESS LOCALES GRÁTIS \/ GLOBALES"
+            }
+          },
+          "1643329456d6e81824-2": {
+            "type": "text",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/noun_Easy_Returns_2639560_4d38ead0-0e0a-424c-a887-acac2ca180a1.png",
+              "heading_service": "",
+              "des_service": "CAMBIOS GRATUITOS"
+            }
+          }
+        },
+        "block_order": [
+          "1643329456d6e81824-0",
+          "1643329456d6e81824-1",
+          "1643329456d6e81824-2"
+        ],
+        "settings": {
+          "icon-left": false,
+          "color_border_box": "#e5e5e5",
+          "bg_section": "#ffffff",
+          "title": "",
+          "color_title": "#222222",
+          "color_title_sub": "#888888",
+          "color_icon": "#222222",
+          "color_border": "#e5e5e5"
+        }
+      },
+      "16433295822c6e3b4c": {
+        "type": "slider-testimonial",
+        "blocks": {
+          "16433295822c6e3b4c-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Inspirado en las tradiciones indígenas de nahuas, huicholes, tzotiles y tzetzales, Yakampot crea piezas con una visión effortless chic propia de la mujer contemporánea con mente viajera y estilo natural.<\/p>",
+              "image": "shopify:\/\/shop_images\/logotipo_vogue_d94ed7e8-157a-4626-93b4-92afe0e7272f.png"
+            }
+          },
+          "16433295822c6e3b4c-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Yakampot ha permeado su firma con solidez... Ha destacado por la continua investigación textil, las relaciones con las comunidades indígenas y un proceso de capacitación en la industria textil marginal que admite proponer indumentaria mexicana sin caer en el estereotipo global o cliché folclórico.<\/p>",
+              "image": "shopify:\/\/shop_images\/codigo_9769abbc-0484-4610-9820-f4057cde3d59.png"
+            }
+          },
+          "16433295822c6e3b4c-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"Fue muy difícil escoger solo a uno entre tanto talento y creatividad\" continúa Talamas y entre flashes esperando y un pequeño salto al corazón...¿La respuesta? YAKAMPOT.<\/p><p>Kelly Talamas, \"Vogue Who´s On Next, 2014<\/p>",
+              "image": "shopify:\/\/shop_images\/logotipo_vogue_d94ed7e8-157a-4626-93b4-92afe0e7272f.png"
+            }
+          },
+          "a5c13c03-63f6-4b45-8da3-e49f0a821dea": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Yakampot se caracteriza por la inspiración en la indumentaria indígena y los procesos artesanales dando así a sus prendas un toque único que hace recordar a México sin caer en el folklore.<\/p>",
+              "image": "shopify:\/\/shop_images\/hilando_historias_f7306b7e-4935-4ee3-af79-7dc025715472.png"
+            }
+          },
+          "a7f0fb13-419f-4ded-8828-628674af5e40": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Descendiendo en un profundo viaje hacia sus raíces, Yakampot sorprende con una sencilla y pura conceptualización. <\/p>",
+              "image": "shopify:\/\/shop_images\/logotipo_vogue_33588220-2322-4869-87b3-779f8c0ad241.png"
+            }
+          },
+          "2fdb51a6-6bd9-46db-b9c6-13c43a11cfbc": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>La propuesta de Yakampot, caracterizada por sus tejidos orgánicos como el algodón y el lino, con fuertes referencias a la mujer indígena mexicana desde una reinterpretación contemporánea, ha sido reconocida en eventos internacionales como el Capsule Show de París.<\/p>",
+              "image": "shopify:\/\/shop_images\/fashion_3d60a509-e642-4008-a859-dc21f9dec59b.png"
+            }
+          },
+          "2eef9886-b2e4-473c-b444-9bd59acedec6": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Ahora soy fan de Yakampot. Me identifico mucho con la marca, con la fusión de lo artesanal y lo moderno.<\/p><p>Julieta Venegas<\/p>",
+              "image": "shopify:\/\/shop_images\/logotipo_vogue_33588220-2322-4869-87b3-779f8c0ad241.png"
+            }
+          },
+          "7ae92e5d-54ab-46e4-900d-ff1d725c9326": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Cecilia Suárez es la nueva imagen de Yakampot.<\/p>",
+              "image": "shopify:\/\/shop_images\/el_universal_1.png"
+            }
+          },
+          "9c189c01-85a1-4d9e-81a8-4d0ab6a9bc85": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Siluetas favorecedoras para muchos tipos de cuerpo; materiales fluyentes y de delicada fortaleza; alforzados, bordados y terminados propios de la alta moda… los pasos firmes de Yakampot.<\/p>",
+              "image": "shopify:\/\/shop_images\/i-d_vice_376634ea-197a-4c6b-94f5-b3f6824fae85.png"
+            }
+          },
+          "acf81270-c4d8-430d-a49b-4bb5aa1fbb46": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>La mujer Yakampot, nuevamente, se alza como una poderosa representación de la mujer mexicana: urbana pero con interés en sus tradiciones.<\/p>",
+              "image": "shopify:\/\/shop_images\/logotipo_vogue_33588220-2322-4869-87b3-779f8c0ad241.png"
+            }
+          },
+          "cc1d5e1e-65d1-4a4f-a0c7-94e27b64caa4": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>“No sabía que podía”. Yalitza Aparicio viste marcas de diseñadores mexicanos para Elle México.<\/p>",
+              "image": "shopify:\/\/shop_images\/rsvp_c2d05964-0490-4b69-a1ae-39395950d7ea.png"
+            }
+          },
+          "09cdd07e-d9c1-4457-9204-cb3047d175c3": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Además de ser referente de la moda mexicana, Yakampot se distingue por algo muy particular: la pasión que tiene todo su equipo de trabajo. En especial, la de su fundadora y su directora general, Concha Orvañanos. <\/p>",
+              "image": "shopify:\/\/shop_images\/milenio_1_7a540650-0d11-4a53-bc38-2acf1502433c.png"
+            }
+          },
+          "f072b34f-a7d8-4fc8-8b2e-db329428966d": {
+            "type": "quote",
+            "disabled": true,
+            "settings": {
+              "quote": "<p>Yakampot tiene una gran influencia de las culturas indígenas, ha trabajado con más de 45 comunidades logrando mezclar ideas sofisticadas y minimalistas con diseños tradicionales y artesanales. <\/p>"
+            }
+          },
+          "737135c5-b275-4755-ada3-abf6684facc9": {
+            "type": "quote",
+            "disabled": true,
+            "settings": {
+              "quote": "<p>Natalia quiso llevar sus raíces bien puestas, literal, pues un diseño de YAKAMPOT la acompañará hasta el escenario del Dolby Theatre.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "16433295822c6e3b4c-0",
+          "16433295822c6e3b4c-2",
+          "16433295822c6e3b4c-1",
+          "a5c13c03-63f6-4b45-8da3-e49f0a821dea",
+          "a7f0fb13-419f-4ded-8828-628674af5e40",
+          "2fdb51a6-6bd9-46db-b9c6-13c43a11cfbc",
+          "2eef9886-b2e4-473c-b444-9bd59acedec6",
+          "7ae92e5d-54ab-46e4-900d-ff1d725c9326",
+          "9c189c01-85a1-4d9e-81a8-4d0ab6a9bc85",
+          "acf81270-c4d8-430d-a49b-4bb5aa1fbb46",
+          "cc1d5e1e-65d1-4a4f-a0c7-94e27b64caa4",
+          "09cdd07e-d9c1-4457-9204-cb3047d175c3",
+          "f072b34f-a7d8-4fc8-8b2e-db329428966d",
+          "737135c5-b275-4755-ada3-abf6684facc9"
+        ],
+        "settings": {
+          "bg_section": "#ffffff"
+        }
+      },
+      "164332962395135d69": {
+        "type": "index-video-final",
+        "settings": {
+          "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/Atraccion02_Wide.mp4?v=1647978967",
+          "video_link_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/Atraccion02_Wide.mp4?v=1647978967"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "description_style": "default",
+          "social_enable": true,
+          "image_position": "left",
+          "image_size": "medium",
+          "thumbnail_position": "beside",
+          "thumbnail_arrows": false,
+          "enable_video_looping": true,
+          "product_video_style": "muted"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "También te puede interesar",
+          "related_count": 3
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "show_section": false,
+          "recent_count": 5
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "enable": false,
+          "collection_image_enable": true,
+          "parallax": true
+        }
+      },
+      "collection-sidebar": {
+        "type": "collection-sidebar",
+        "settings": {
+          "enable_sidebar": true,
+          "filter_style": "drawer",
+          "tags_combine": false,
+          "enable_sort": true
+        }
+      },
+      "collection-promotions": {
+        "type": "collection-promotions",
+        "settings": {
+          "gutter_size": 20
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "description_position": "top",
+          "subcollection_style": "above",
+          "subcollections_per_row": 5,
+          "enable_collection_count": true,
+          "per_row": 3,
+          "rows_per_page": 20,
+          "mobile_flush_grid": false
+        }
+      },
+      "index-slider-yakampot": {
+        "type": "index-slider-yakampot",
+        "blocks": {
+          "c5214ddb-bff9-4c5f-badd-893fffaa83ad": {
+            "type": "text_block",
+            "settings": {
+              "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/Video-Somos.mp4?v=1637965974",
+              "video_link_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/Video-Home-MOBILE_645a6d88-ba08-42a0-8377-a1c0686db821.mp4?v=1637965974",
+              "title": "",
+              "title_color": "#ffffff",
+              "text": "",
+              "text_color": "#ffffff",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "c5214ddb-bff9-4c5f-badd-893fffaa83ad"
+        ],
+        "settings": {
+        }
+      },
+      "text-pride": {
+        "type": "text-pride",
+        "settings": {
+          "title": "Elementos icónicos para dar sentido de identidad y arraigo a lo contemporáneo",
+          "text": "<p>Somos es un espacio de Yakampot que surge con una iniciativa en julio 2021 en búsqueda de una sociedad más inclusiva y diversa. Hoy, evolucionó a un espacio real con representaciones verdaderas del ser. <\/p>",
+          "button_label": "CONOCE  YAKAMPOT",
+          "button_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "section-about-images": {
+        "type": "section-about-images",
+        "blocks": {
+          "3f2dbc1f-e9ef-4b2d-a332-f01b697efabf": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Captura_de_Pantalla_2021-09-28_a_la_s_3.22.14_p.m._777ee232-4e52-4512-a258-cd40be448853.jpg"
+            }
+          },
+          "8244be35-8abd-492f-b80f-7227d69b182f": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Captura_de_Pantalla_2021-09-28_a_la_s_3.22.47_p.m._3665e135-f03a-49e1-9029-0f57d8f0ba3b.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "3f2dbc1f-e9ef-4b2d-a332-f01b697efabf",
+          "8244be35-8abd-492f-b80f-7227d69b182f"
+        ],
+        "settings": {
+        }
+      },
+      "only-text-button": {
+        "type": "only-text-button",
+        "settings": {
+          "bg_section": "#1c1d1d",
+          "title": "Tierra es mi cuerpo, agua es mi sangre, viento es mi aliento y fuego es mi espíritu.",
+          "color": "#ffffff",
+          "button_label": "DESCUBRE NUESTRA HISTORIA",
+          "color_btn": "#ffffff",
+          "button_link": "shopify:\/\/pages\/conoce-la-marca"
+        }
+      },
+      "banner-image": {
+        "type": "banner-image",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/banner-somos-orgullo-desktop_1bb9c3a6-b11a-4e23-84bc-41c5259b7250.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/banner-somos-orgullo-mobile_18e0bc40-5820-486e-9643-0725500f54f9.jpg"
+        }
+      },
+      "text-pride-2": {
+        "type": "text-pride-2",
+        "settings": {
+          "title": "Celebra tu orgullo y súmate a la causa",
+          "text": "<p>Unimos fuerzas para crear una edición limitada de 800 productos que celebran la diversidad y el orgullo. Las ganancias obtenidos por la venta de los productos serán donadas a Yaaj México, una organización civil mexicana que desde hace màs de 15 años trabaja para promover y defender los derechos de personas LGBTI+.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "product-1-slider": {
+        "type": "product-1-slider",
+        "blocks": {
+          "0e1d9cc2-b896-4664-b622-f71f506ce8e7": {
+            "type": "item",
+            "settings": {
+              "tab_name": "Tab",
+              "collection": "somos-pride",
+              "btn_link": "",
+              "btn_link_all": ""
+            }
+          }
+        },
+        "block_order": [
+          "0e1d9cc2-b896-4664-b622-f71f506ce8e7"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "only-text-button-2": {
+        "type": "only-text-button-2",
+        "settings": {
+          "bg_section": "#500b18",
+          "title": "Por una sociedad inclusiva y diversa",
+          "color": "#ffffff",
+          "description": "<p>Este proyecto fue realizado en colaboración con mujeres artesanas de las comunidades de Chimalhuacán, Chenalhó, Zinacantán y Yakampot. Los productos se elaboraron bajo un modelo de comercio justo y ético que promueve el desarrollo y la economía local.<\/p>",
+          "color_des": "#ffffff",
+          "button_label": "",
+          "color_btn": "#ffffff",
+          "button_link": "#"
+        }
+      },
+      "pride-people": {
+        "type": "pride-people",
+        "blocks": {
+          "2f066902-b383-41e8-9c94-ad10a665c90c": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/logo-yakampot_9b16b05b-cce8-4015-8728-7c3413298e38.jpg"
+            }
+          },
+          "6f685966-0353-4919-aaa0-e494f6b56fd7": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/logo-collectiva_531105fd-911a-4840-9a73-e4598cd747e3.jpg"
+            }
+          },
+          "52c82b4f-c5ec-4934-a371-a5db98fe3579": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/logo-yaaj_01da4b5c-a325-4603-b855-c28cbc4f149f.jpg"
+            }
+          },
+          "73942626-0ee4-46a5-87ca-d01e08a5705d": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/logo-mac_f9312bb9-1c44-48e0-a540-c290423e13ba.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "2f066902-b383-41e8-9c94-ad10a665c90c",
+          "6f685966-0353-4919-aaa0-e494f6b56fd7",
+          "52c82b4f-c5ec-4934-a371-a5db98fe3579",
+          "73942626-0ee4-46a5-87ca-d01e08a5705d"
+        ],
+        "settings": {
+          "custom_space": "",
+          "title": "#SOMOSORGULLO",
+          "btn_url": "shopify:\/\/pages\/somos-pride",
+          "btn_label": "CONOCE LAS HISTORIAS DETRÁS DE LA CAMPAÑA",
+          "image_section": "shopify:\/\/shop_images\/bg_blanco_simple_6d4e3563-ddf7-4d04-aeab-ee27fed0d090.jpg",
+          "image": "shopify:\/\/shop_images\/Fabian_2bcf4bed-eed8-4aa8-b489-1643c385da25.jpg",
+          "image_1": "shopify:\/\/shop_images\/Luisa_ca02a1fa-a33d-47e6-adcd-9c1ea7012671.jpg",
+          "image_2": "shopify:\/\/shop_images\/Zemmoa_73379667-a5b8-438f-8ae8-79066d5bb4e9.jpg",
+          "image_3": "shopify:\/\/shop_images\/hada_3436cf02-9398-4802-9f78-ff3f19257d98.jpg",
+          "text": "<p>Síguenos en instagram:  <br\/><\/p>",
+          "text_social": "<p><a href=\"https:\/\/www.instagram.com\/yakampot\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/yakampot\/\">@yakampot<\/a><\/p><p><a href=\"https:\/\/www.instagram.com\/collectivaconcepcion\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/collectivaconcepcion\/\">@collectivaconcepción<\/a><\/p><p><a href=\"https:\/\/www.instagram.com\/yaajmexico\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/yaajmexico\/\">@yaajmexico<\/a><\/p>",
+          "align_text": "left"
+        }
+      },
+      "puntos-venta": {
+        "type": "puntos-venta",
+        "blocks": {
+          "120a2f45-fdb8-4534-b405-b42459eb9811": {
+            "type": "text_block",
+            "settings": {
+              "title": "CDMX",
+              "text": "<p>Zapatería El Tigre<br\/>Colima 107, Col. Roma Norte, Cuauhtémoc, CDMX.<\/p><p><\/p><p><strong>Nuup Shop<br\/><\/strong>Monte athos 340<br\/>Lomas de Chapultepec, Miguel Hidalgo, CDMX, CP 1100<br\/>Lunes a Sábado 11am a 7 pm<\/p>"
+            }
+          },
+          "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "title": "Mérida, Yucatán",
+              "text": "<p>Casa Tho Concept House <br\/>Todo el mes de noviembre <br\/>Paseo de Montejo 498, Mérida, Yucatán.<br\/>Lunes a Domingo de 10:00 am - 9:00 pm <\/p>"
+            }
+          },
+          "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8": {
+            "type": "text_block",
+            "settings": {
+              "title": "Porton Madera Concept Store",
+              "text": "<p>Calle Positos No. 33, Colonia Centro, Guanajuato, Gto. Dentro del Hotel Boutique Casa del Rector<br\/>Miércoles a Lunes de 10:30am -8:00pm <br\/>Martes Cerrado<\/p>"
+            }
+          },
+          "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e": {
+            "type": "text_block",
+            "settings": {
+              "title": "Casa R Concept Store",
+              "text": "<p>Mesones 83, Zona Centro, 37700, San Miguel de Allende, Gto.<br\/>Lunes a domingo de 11:00am -8:00pm<\/p>"
+            }
+          },
+          "6990f233-059d-46cc-8f0a-b3a85d7df34f": {
+            "type": "text_block",
+            "settings": {
+              "title": "Mérida Trunk Show",
+              "text": "<p>Calle 30 #391, Col. Campestre, Mérida, Yucatán, CP 97129 <br\/>Lunes a viernes 11 am a 7 pm<br\/>Sábados 9 am a 2 pm<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "120a2f45-fdb8-4534-b405-b42459eb9811",
+          "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7",
+          "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8",
+          "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e",
+          "6990f233-059d-46cc-8f0a-b3a85d7df34f"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/imagen_puntos_de_venta_8b08e229-2b6a-4923-9644-5cb95534ac5e.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/imagen_puntos_de_venta_48ca9c24-97d0-4403-a6ce-597be3711d05.jpg",
+          "title": "Visita nuestro showroom",
+          "description": "<p>Salvatierra 45, San Miguel Chapultepec II Sección, Miguel Hidalgo, CDMX<br\/>Horarios de atención: Lunes a Viernes de 10:00 a 17:00 hrs <\/p>",
+          "title_loop": "Puntos de venta",
+          "label_button": "",
+          "url_button": ""
+        }
+      },
+      "16436439204c7d82b3": {
+        "type": "box-texto-simple",
+        "disabled": true,
+        "settings": {
+          "bg_color": "#000000",
+          "color_text": "#fffcfc",
+          "title": "Tierra es mi cuerpo, agua es mi sangre, viento es mi aliento y fuego es mi espíritu.",
+          "color_des": "#fffcfc",
+          "description": "",
+          "button_color": "",
+          "button_text": "",
+          "button_link": ""
+        }
+      },
+      "1643643989e11be2ef": {
+        "type": "only-text-button",
+        "disabled": true,
+        "settings": {
+          "bg_section": "#000000",
+          "title": "Tierra es mi cuerpo, agua es mi sangre, viento es mi aliento y fuego es mi espíritu.",
+          "color": "#ffffff",
+          "button_label": "DESCUBRE NUESTRA HISTORIA",
+          "color_btn": "#ffffff",
+          "button_link": "shopify:\/\/pages\/la-marca"
+        }
+      },
+      "16437438910a3d8c5c": {
+        "type": "cintillo-only-link",
+        "settings": {
+          "bg_color": "#e4d4e9",
+          "url": "shopify:\/\/pages\/puntos-de-venta",
+          "label": "<b>¿Necesitas ver y probar las prendas? Agenda cita en showroom<\/b>"
+        }
+      },
+      "164738936267baed6f": {
+        "type": "home-comercio-justo",
+        "disabled": true,
+        "blocks": {
+          "164738936267baed6f-0": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Fondo.jpg"
+            }
+          },
+          "164738936267baed6f-1": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/arroz358.jpg"
+            }
+          },
+          "164738936267baed6f-2": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/arroz353.jpg"
+            }
+          },
+          "08efe100-4cfb-4289-896b-60f8d77da1fc": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/arroz386.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "164738936267baed6f-0",
+          "164738936267baed6f-1",
+          "164738936267baed6f-2",
+          "08efe100-4cfb-4289-896b-60f8d77da1fc"
+        ],
+        "settings": {
+          "bg_section": "#ffffff",
+          "title": "En Yakampot creemos en el comercio justo, no discriminatorio y equitativo.",
+          "btn_label": "Conoce nuestro modelo de impacto",
+          "btn_url": "shopify:\/\/pages\/colaboraciones"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog_show_date": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "image_hero": true,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": true,
+          "social_sharing_blog": false
+        }
+      },
+      "1647982846b8618b83": {
+        "type": "featured-collection",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_products": "descuento-30",
+          "per_row": 4,
+          "rows": 1,
+          "mobile_scrollable": true,
+          "view_all": true,
+          "divider": false
+        }
+      },
+      "1663784892c5786ae6": {
+        "type": "seccion-texto-boton-edit",
+        "settings": {
+          "bg_section": "#fafafa",
+          "title": "YAKAMPOT",
+          "color_title": "#0a0000",
+          "description": "<p>Yakampot es una marca de moda que crea ropa para mujeres y promueve el patrimonio de México a través del diseño de prendas inspiradas en elementos icónicos de la indumentaria tradicional.<\/p>",
+          "color_description": "#0a0000",
+          "button_label": "Conócenos",
+          "color_button": "#0a0000",
+          "button_link": "https:\/\/yakampot.com.mx\/pages\/conoce-la-marca"
+        }
+      },
+      "1664237317bc421b52": {
+        "type": "index-slider-token",
+        "blocks": {
+          "1664237317bc421b52-0": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/be5ad667fd54453bbd365f7c42311371.mp4",
+              "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a57d1b303f9045b0b7a514d357e62e5f.mp4",
+              "title": "celebra a los que amas",
+              "subtitle": "Descuentos ¡hasta el 70%! + 15% por que te queremos.",
+              "enable_image": false,
+              "enable_titulos": true,
+              "title_color": "#ffffff",
+              "text": "Válida del 1ro al 28 <p style=\"color:red\">Activa tu DESCUENTO EXTRA registrándote primero en el ícono de usuario arriba la derecha.<\/p>",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "Viste Yakampot",
+              "button_link": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1"
+            }
+          }
+        },
+        "block_order": [
+          "1664237317bc421b52-0"
+        ],
+        "settings": {
+        }
+      },
+      "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d": {
+        "type": "slider-stars",
+        "blocks": {
+          "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Amo la ropa de Yakampot<\/strong>. <br\/>Desde que los conocí, cada que puedo compro ropa ahí. Me encantan sus diseños y los colores que tienen.<\/p>",
+              "image": "shopify:\/\/shop_images\/stars.png"
+            }
+          },
+          "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Siempre me preocupo por verme bien y tengo un estilo muy particular. En realidad, es difícil encontrar ropa que me guste mucho, pero desde que conocí Yakampot <strong>me encantaron sus diseños y ahora casi toda mi ropa la compro con ellos<\/strong>. Además está super que sea ropa mexicana.<\/p>",
+              "image": "shopify:\/\/shop_images\/stars.png"
+            }
+          },
+          "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Los conocí porque una amiga del trabajo usaba ropa que me gustaba mucho<\/strong>.<br\/>Un día le pregunté que dónde la compraba y me dijo que en Yakampot. Los busqué y quedé encantada con la ropa. Me gusta mucho los outfits que puedo hacer y combinar con los colores que manejan. Vi que algunas prendas son artesanales, lo cual está increíble.<\/p>",
+              "image": "shopify:\/\/shop_images\/stars.png"
+            }
+          },
+          "d70ee174-ca16-42b3-87e9-05112e0af775": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Me gusto mucho la ropa cuando la vi en facebook.<\/strong><br\/>Decidí comprarla y mi sorpresa al recibirla es que es  muy buena calidad y se ve mucho mejor en vivo. Gracias por todo.<\/p>",
+              "image": "shopify:\/\/shop_images\/stars.png"
+            }
+          },
+          "5e3d3326-2701-4416-bd62-2a6238d7a783": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p><strong>Todo es muy hermoso!<br\/><\/strong>Lo que pido, me llega en tiempo record! lo necesitaba para un regalo y fue todo un éxito! sin duda volvere a comprar<\/p>",
+              "image": "shopify:\/\/shop_images\/stars.png"
+            }
+          }
+        },
+        "block_order": [
+          "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-0",
+          "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-1",
+          "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-2",
+          "d70ee174-ca16-42b3-87e9-05112e0af775",
+          "5e3d3326-2701-4416-bd62-2a6238d7a783"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "TESTIMONIOS VERIFICADOS DE NUESTRXS CLIENTES - <a href=\"https:\/\/fera.ai\/fake-reviews\">FERA.AI<\/a>",
+          "bg_section": "#ffffff"
+        }
+      },
+      "95acabd1-d7de-407c-92ab-dc313e9e3024": {
+        "type": "instafeed",
+        "disabled": true,
+        "settings": {
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "f4332dfd-2bfb-4d33-bdda-c68b5b923792": {
+        "type": "instafeed",
+        "settings": {
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "point-of-sale": {
+        "type": "point-of-sale",
+        "blocks": {
+          "443eeb94-950a-4efe-b750-13a91a8db3e3": {
+            "type": "text_block",
+            "settings": {
+              "title": "CDMX",
+              "text": "<p>Zapatería El Tigre<br\/>Colima 107, Col. Roma Norte, Cuauhtémoc, CDMX.<\/p><p><\/p><p><strong>Nuup Shop<br\/><\/strong>Monte athos 340<br\/>Lomas de Chapultepec, Miguel Hidalgo, CDMX, CP 1100<br\/>Lunes a Sábado 11am a 7 pm<\/p>"
+            }
+          },
+          "67d56011-4e04-4c88-b497-364f906e09ab": {
+            "type": "text_block",
+            "settings": {
+              "title": "Porton Madera Concept Store",
+              "text": "<p>Calle Positos No. 33, Colonia Centro, Guanajuato, Gto. Dentro del Hotel Boutique Casa del Rector<br\/>Miércoles a Lunes de 10:30am -8:00pm <br\/>Martes Cerrado<\/p>"
+            }
+          },
+          "613090b5-9100-4f5b-9124-8ad397dfc218": {
+            "type": "text_block",
+            "settings": {
+              "title": "Casa R Concept Store",
+              "text": "<p>Mesones 83, Zona Centro, 37700, San Miguel de Allende, Gto.<br\/>Lunes a domingo de 11:00am -8:00pm<\/p>"
+            }
+          },
+          "3effd497-42d1-4126-96b4-4c0dadeebadd": {
+            "type": "text_block",
+            "settings": {
+              "title": "Mesones 83, Zona Centro, 37700, San Miguel de Allende, Gto.Lunes a domingo de 11:00am -8:00pm",
+              "text": "<p>Calle 30 #391, Col. Campestre, Mérida, Yucatán, CP 97129 <br\/>Lunes a viernes 11 am a 7 pm<br\/>Sábados 9 am a 2 pm<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "443eeb94-950a-4efe-b750-13a91a8db3e3",
+          "67d56011-4e04-4c88-b497-364f906e09ab",
+          "613090b5-9100-4f5b-9124-8ad397dfc218",
+          "3effd497-42d1-4126-96b4-4c0dadeebadd"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/imagen_puntos_de_venta_8b08e229-2b6a-4923-9644-5cb95534ac5e.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/imagen_puntos_de_venta_48ca9c24-97d0-4403-a6ce-597be3711d05.jpg",
+          "title": "Visit our showroom",
+          "description": "<p>Salvatierra 45, San Miguel Chapultepec II Sección, Miguel Hidalgo, CDMX<br\/>Horarios de atención: Lunes a Viernes de 10:00 a 17:00 hrs <\/p>",
+          "title_loop": "Book Appointment",
+          "label_button": "",
+          "url_button": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1643328988340a4b00",
+      "1664237317bc421b52",
+      "16433290912ba7e43d",
+      "16437438910a3d8c5c",
+      "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d",
+      "1643329456d6e81824",
+      "164332962395135d69",
+      "16433295822c6e3b4c",
+      "f4332dfd-2bfb-4d33-bdda-c68b5b923792",
+      "1643643989e11be2ef",
+      "16436439204c7d82b3",
+      "164738936267baed6f",
+      "1647982846b8618b83",
+      "95acabd1-d7de-407c-92ab-dc313e9e3024",
+      "1663784892c5786ae6"
+    ],
+    "blocks": {
+      "15154131639906026026": {
+        "type": "shopify:\/\/apps\/seo-speed-image-optimizer\/blocks\/broken-link-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "942670587456160541": {
+        "type": "shopify:\/\/apps\/discount-ninja\/blocks\/discountninja-app-embed-stable\/b9a933ba-e276-459f-a4bf-3571d5a1e81c",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "14417550493701535262": {
+        "type": "shopify:\/\/apps\/discount-ninja\/blocks\/discountninja-app-embed-latest\/b9a933ba-e276-459f-a4bf-3571d5a1e81c",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "11349500561483629931": {
+        "type": "shopify:\/\/apps\/ReStock\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
+}

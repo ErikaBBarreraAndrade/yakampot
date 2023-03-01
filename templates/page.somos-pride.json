@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "16432288642d0ef06c": {
+      "type": "pride-videos-carousel-1",
+      "settings": {
+        "title": "Text columns with images",
+        "align_text": "left"
+      }
+    },
+    "164322951495d6fc18": {
+      "type": "pride-images-description",
+      "settings": {
+        "custom_space": "background-position: bottom, left;\n    background-repeat: no-repeat;\n    background-size: contain;",
+        "set_box": "box-full",
+        "image_section": "shopify:\/\/shop_images\/bg-left-2.jpg",
+        "title": "Somos",
+        "text": "<p><strong>somos <\/strong>tierra,<\/p><p><strong>Somos<\/strong> trans, travestis, diversas, locas, maricas, jotas, gordas, estriadas, celulíticas, malas, pero qué bonitas chingá.<\/p>",
+        "image_absolute_right": "shopify:\/\/shop_images\/flower-right.png",
+        "image": "shopify:\/\/shop_images\/Aletze_a69b63a4-4271-4c40-9c21-3060e3bc3ac0.jpg",
+        "button_label": "Aletze Estrada | @alkestro",
+        "button_link": "https:\/\/www.instagram.com\/alkestro\/",
+        "image_medium": "shopify:\/\/shop_images\/Hadassah.jpg",
+        "button_label_medium": "Hadassah Tirosh | @hadassahtirosh",
+        "button_link_medium": "https:\/\/www.instagram.com\/hadassahtirosh\/",
+        "image_large": "shopify:\/\/shop_images\/Fabian_0f0e62ae-7ffa-405b-87dd-098eb2a77345.jpg",
+        "button_label_large": "Fabián Chairez | @fabian_chairez",
+        "button_link_large": "https:\/\/www.instagram.com\/fabian_chairez\/",
+        "text_end": "<p><strong>SOMOS nace en el corazón de Yakampot y Collectiva Concepción<\/strong>, es una campaña hecha por quienes nos identificamos con alguna disidencia y nos sentimos orgullosas, orgulloses y orgullosos de existir.<\/p>",
+        "align_text": "left"
+      }
+    },
+    "1643229492073b6b35": {
+      "type": "pride-images-description-2",
+      "settings": {
+        "custom_space": "background-position: bottom, left;\n    background-repeat: no-repeat;\n    background-size: contain;",
+        "set_box": "box-full",
+        "image_section": "shopify:\/\/shop_images\/bg-left-2.jpg",
+        "text": "<p><strong>Somos<\/strong> fuertes,<\/p><p><strong>Somos<\/strong> hermanxs, aunque no nos conozcamos, <strong>somos<\/strong>, somes cuerpos celestiales enterrados en cuerpos físicos.<\/p>",
+        "image_medium": "shopify:\/\/shop_images\/Luisa_aab11ccd-2f3f-4d4e-99a4-2c0b91783f8f.jpg",
+        "button_label_medium": "Luisa Almaguer | @almaguerluisa",
+        "button_link_medium": "https:\/\/www.instagram.com\/almaguerluisa\/",
+        "image": "shopify:\/\/shop_images\/Tefy_d4c887aa-e7f9-436c-a919-39c7d753dcd6.jpg",
+        "button_label": "Tefy Ortiz | @seducememujer",
+        "button_link": "https:\/\/www.instagram.com\/seducememujer\/",
+        "image_large": "shopify:\/\/shop_images\/Zemmoa_2c43ff24-2f7d-408a-8876-88bcbab230dc.jpg",
+        "button_label_large": "Zemmoa | @zemmoa",
+        "button_link_large": "https:\/\/www.instagram.com\/zemmoa\/",
+        "image_end": "shopify:\/\/shop_images\/Sofia_c525cefb-fe43-404d-b74d-3ec6eb067c07.jpg",
+        "button_label_end": "Sofía Moreno | @sofia________moreno",
+        "button_link_end": "https:\/\/www.instagram.com\/sofia________moreno\/",
+        "text_end": "<p><strong>somos<\/strong> una fuerza imparable,<\/p><p><strong>Somos<\/strong> seres mágicos, duales,<br\/>queer, diferentes<br\/><strong>somos<\/strong> el futuro.<\/p><p><\/p>",
+        "align_text": "left"
+      }
+    },
+    "1643230374baeca8c6": {
+      "type": "pride-text",
+      "settings": {
+        "custom_space": "",
+        "set_box": "box-full",
+        "bg_section": "#c6c1a9",
+        "title": "Inspiración artesanal",
+        "text": "<p>Nos inspiramos en las flores de Zinacantán, Chiapas -artesanía textil de la región- para hablar de las transiciones, luchas y resistencias de aquellas personas que transitan por el camino hacia la visibilidad y el amor a unx mismx. SOMOS es un homenaje a quienes defienden su identidad y la libertad de amar a pesar de la discriminación y la violencia hacia la diferencia.<\/p>",
+        "align_text": "left"
+      }
+    },
+    "164323036090da080d": {
+      "type": "pride-text-with-logo",
+      "settings": {
+        "custom_space": "",
+        "set_box": "box-full",
+        "bg_section": "#ffffff",
+        "enable_image": false,
+        "button_link_text": "https:\/\/www.yaajmexico.org\/",
+        "title": "súmate a la causa",
+        "text": "<p>Todas las ganancias obtenidas de la venta de los productos serán destinadas a apoyar la labor de <a href=\"https:\/\/www.yaajmexico.org\/\" target=\"_blank\" title=\"https:\/\/www.yaajmexico.org\/\">Yaaj México<\/a>. Una organización civil mexicana que desde hace màs de 15 años trabaja para promover y defender los derechos de personas LGBTI+. <\/p>",
+        "button_label": "¡QUIERO APOYAR!",
+        "button_link": "https:\/\/yakampot.com.mx\/pages\/somos-orgullo#shopify-section-pruduct-1",
+        "align_text": "left"
+      }
+    },
+    "1643230814dbd7ac61": {
+      "type": "pride-people-about",
+      "blocks": {
+        "1643230814bb42bace-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/logo-footer_200x_7694330e-bbd4-496e-ae89-e6edf2a9b320.png"
+          }
+        },
+        "1643230814bb42bace-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/logo-collectiva_f040eb42-e1ae-4713-9de4-8b0911bfda41.jpg"
+          }
+        },
+        "1643230814bb42bace-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/logo-yaaj_329e2ed1-8050-406e-ba1a-6bf5220747c3.jpg"
+          }
+        },
+        "bc624d14-fd07-4cbe-8a56-c4e924635072": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/logo-mac_1e04471e-3401-492b-92d1-ff3b967f143c.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1643230814bb42bace-0",
+        "1643230814bb42bace-1",
+        "1643230814bb42bace-2",
+        "bc624d14-fd07-4cbe-8a56-c4e924635072"
+      ],
+      "settings": {
+        "custom_space": "",
+        "image": "shopify:\/\/shop_images\/SofiaLuisa.jpg",
+        "image_1": "shopify:\/\/shop_images\/FabianZemmoa.jpg",
+        "image_2": "shopify:\/\/shop_images\/AletzeHadassahTefy.jpg",
+        "align_text": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16432288642d0ef06c",
+    "164322951495d6fc18",
+    "1643229492073b6b35",
+    "1643230374baeca8c6",
+    "164323036090da080d",
+    "1643230814dbd7ac61"
+  ]
+}

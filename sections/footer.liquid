@@ -1,0 +1,195 @@
+<footer class="site-footer container-fluid site-footer-7 lazyloaded" style="padding-top:70px;padding-bottom:0px;;background-color: #e4e4e4;" data-bgset="" data-sizes="auto" data-parent-fit="cover">
+	<div class="footer-7">
+		<div class="footer-container">
+			<section id="footercenter" class="footer-center">
+				<div class="page-content">
+					<div class="footer-center-wrap">
+						<div class="row col--block">
+							<div class="col-12 col-footer ">
+								<div class=" box-footer box_links">
+									<div class="row">
+										<div class="col-12 col-sm-7">
+											<div class="row">
+												<div class="col-12 col-sm-6">
+													<div class="block footer-block">
+														<h4 class="title_block">
+															<a href="/" itemprop="url" class="footer_logo">
+																<img class="js lazyloaded" src="//cdn.shopify.com/s/files/1/0387/4393/2973/files/Grupo_270_300x300.png?v=1633533369" alt="Yakampot Store" style="max-width: 250px">
+															</a>
+														</h4>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 box-newsletter">
+													<p class="title">
+														Suscríbete a nuestro boletín
+													</p>
+													{%- assign formId = 'ContactFooter' -%}
+													{% form 'customer', id: formId, novalidate: 'novalidate' %}
+														{%- if form.posted_successfully? -%}
+															<p class="form-message form-message--success" tabindex="-1" data-form-status>
+																{{ 'general.newsletter_form.confirmation' | t }}
+															</p>
+														{%- endif -%}
+														<input type="hidden" name="contact[tags]" value="newsletter">
+														<div class="input-group {% if form.errors %} input-group--error{% endif %}">
+															<input type="email"
+															       name="contact[email]"
+															       id="{{ formId }}-email"
+															       class="form-control input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+															       value="{{ form.email }}"
+															       placeholder="Tu correo electrónico"
+															       aria-label="Tu correo electrónico"
+															       aria-required="true"
+															       required
+															       autocorrect="off"
+															       autocapitalize="off"
+															{% if form.errors %}
+																aria-invalid="true"
+																aria-describedby="{{ formId }}-email-error"
+																data-form-status
+																	{% endif %}>
+															<span class="input-group__btn button-send-newsletter">
+                                        <button type="submit" class="btn newsletter__submit" name="commit" >
+                                          <span class="newsletter__submit-text--large">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.395" height="18.234" viewBox="0 0 25.395 18.234">
+                                              <g id="noun_Arrow_3134190" transform="translate(-75.068 -67.364)">
+                                                <path id="Trazado_16" data-name="Trazado 16" d="M16.58,14.936a.868.868,0,1,0-1.222,1.222L21.593,22.4H.983a.87.87,0,0,0,0,1.738h20.61l-6.245,6.235a.885.885,0,0,0,0,1.222.863.863,0,0,0,1.222,0l7.724-7.724a.848.848,0,0,0,0-1.222Z" transform="translate(75.41 53.248)" stroke="#f1f1f1" stroke-width="1"/>
+                                              </g>
+                                            </svg>
+
+                                          </span>
+                                        </button>
+                                      </span>
+														</div>
+														{% if form.errors contains 'email' %}
+															<span id="{{ formId }}-email-error" class="input-error-message">
+                                      <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                                      <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                                    </span>
+														{% endif %}
+													{% endform %}
+
+                                                  
+												</div>
+											</div>
+										
+										</div>
+										
+										<div class="col-12 col-sm-5">
+											<div class="row">
+												<div class="col-12 col-sm-4">
+													
+													
+													
+													
+													<div class="block footer-block footerAccordion" id="block_links_footer_1">
+														
+														<h4 class="title_block p-0">NOSOTROS</h4>
+														
+														<div class="block_content">
+															<ul style="" class="toggle-footer list-unstyled  ps-0 ms-0">
+																
+																<li class="item">
+																	<a href="/pages/conoce-la-marca" title="Marca">Marca</a>
+																</li>
+																
+																<li class="item">
+																	<a href="/pages/contactanos" title="Contacto">Contacto</a>
+																</li>
+																
+																<li class="item">
+																	<a href="/pages/puntos-de-venta" title="Punto de Venta">Punto de Venta</a>
+																</li>
+															
+															</ul>
+														</div>
+													</div>
+												
+												</div>
+												<div class="col-12 col-sm-4">
+													<div class="block footer-block footerAccordion" id="block_links_footer_2">
+														
+														<h4 class="title_block p-0">AYUDA</h4>
+														
+														<div class="block_content">
+															<ul style="" class="toggle-footer list-unstyled ps-0 ms-0">
+																
+																<li class="item">
+																	<a href="/pages/preguntas-frecuentes" title="Preguntas Frecuentes">Preguntas Frecuentes</a>
+																</li>
+																
+																<li class="item">
+																	<a href="/pages/politicas-de-compra" title="Envíos y cambios">Envíos y cambios</a>
+																</li>
+																
+																<li class="item">
+																	<a href="/pages/privacidad-politica" title="Políticas de Privacidad">Políticas de Privacidad</a>
+																</li>
+																
+																<li class="item">
+																	<a href="/pages/terminos-condiciones" title="Términos y Condiciones">Términos y Condiciones</a>
+																</li>
+															<li class="item">
+																	<a href="/pages/terminos-y-condiciones-del-buen-fin" title="Términos y Condiciones">Buen fin 2022</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												
+												</div>
+												<div class="col-12 col-sm-4">
+													
+													<div id="social_block" class="social_block block">
+														
+														<h4 class="title_block text-center p-0">SÍGUENOS</h4>
+														
+														<div class="block_content w-100">
+															<ul class="list-unstyled clearfix d-flex justify-content-center ms-0">
+																
+																<li class="facebook">
+																	<a target="_blank" href="https://www.facebook.com/Yakampot/" title="Yakampot Store on Facebook" class="btn-tooltip" data-original-title="Facebook">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="26.61" height="26.61" viewBox="0 0 26.61 26.61">
+																			<path id="icono-facebook" d="M22.609,0H3A3,3,0,0,0,0,3V22.609a3,3,0,0,0,3,3H22.609a3,3,0,0,0,3-3V3A3,3,0,0,0,22.609,0Zm1,22.609a1,1,0,0,1-1,1h-5.9v-7.3h3.2l.373-3.1H16.707V9.854a1.468,1.468,0,0,1,1.5-1.5h2.251v-2.9a22.248,22.248,0,0,0-2.251-.2A4.632,4.632,0,0,0,15,6.6a4.555,4.555,0,0,0-1.394,3.26v3.343H10.354v3.1h3.251v7.3H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H22.609a1,1,0,0,1,1,1Zm0,0" transform="translate(0.5 0.5)" stroke="#f1f1f1" stroke-width="1"></path>
+																		</svg>
+																	
+																	</a>
+																</li>
+																<li class="instagram">
+																	<a target="_blank" href="https://www.instagram.com/yakampot/" title="Yakampot Store on Instagram" class="btn-tooltip" data-original-title="Instagram">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="26.61" height="26.61" viewBox="0 0 26.61 26.61">
+																			<path id="instagram-3" d="M19.608,25.61H6a6.009,6.009,0,0,1-6-6V6A6.009,6.009,0,0,1,6,0H19.608a6.009,6.009,0,0,1,6,6V19.608A6.009,6.009,0,0,1,19.608,25.61ZM6,2A4.006,4.006,0,0,0,2,6V19.608a4.006,4.006,0,0,0,4,4H19.608a4.006,4.006,0,0,0,4-4V6a4.006,4.006,0,0,0-4-4ZM19.858,4.5a1.25,1.25,0,1,0,1.25,1.25A1.25,1.25,0,0,0,19.858,4.5ZM12.8,19.308a6.5,6.5,0,1,1,6.5-6.5A6.51,6.51,0,0,1,12.8,19.308Zm0-11a4.5,4.5,0,1,0,4.5,4.5A4.507,4.507,0,0,0,12.8,8.3Z" transform="translate(0.5 0.5)" stroke="#f1f1f1" stroke-width="1"></path>
+																		</svg>
+																	
+																	</a>
+																</li>
+															
+															
+															
+															
+															
+															</ul>
+														</div>
+													</div>
+												
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="text-copyright-box" font size="14">
+										<b> © Copyright 2022  Yakampot - Todos los derechos reservados. Estrategia Digital y Contenido por: <a class="item-link-copy" href="https://www.undertk.com" target="_blank" style="color:#eb3434" font size="14";>undertkstudio</a></b>
+                                          
+                                          									
+									</a>
+								</div>
+							</div>
+							<!-- <div class="col-md-3 col-sm-12 col-xs-12"></div>-->
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</footer>

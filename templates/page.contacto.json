@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_black"
+      }
+    },
+    "16432416060ce5269b": {
+      "type": "contact-us",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/contact-us_1512x_6cd8cd47-c871-4433-a937-92361ea221ab.jpg",
+        "title": "",
+        "titleAbout": "Contáctanos",
+        "colorAbout": "#000000",
+        "color": "#2b2a27",
+        "color_subtitle": "#000000",
+        "text": "<p><strong>Dirección del Showroom:<\/strong><br\/>Salvatierra 45, San Miguel Chapultepec II Sección, Miguel Hidalgo, 11850, Ciudad de México. <\/p><p><br\/><\/p><p><strong>Servicio al cliente y consultas generales<\/strong><br\/><a href=\"mailto:Info@collectivaconcepcion.com\" title=\"mailto:Info@collectivaconcepcion.com\">Info@collectivaconcepcion.com<\/a><\/p><p><br\/><br\/><strong>Ventas<\/strong><br\/><a href=\"mailto:aidee@collectivaconcepcion.com\" title=\"mailto:aidee@collectivaconcepcion.com\">aidee@collectivaconcepcion.com<\/a><\/p><p><br\/><\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16432416060ce5269b"
+  ]
+}

@@ -1,0 +1,114 @@
+<link rel="preload" href=" {{ 'banner-collection-global.css' | asset_url  }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href=" {{ 'banner-collection-global.css' | asset_url  }}"></noscript>
+<section class="banner__slider banner-video-general">
+  <div class="slide">
+      <div class="slide__img d-none d-lg-block">
+        {% if section.settings.image != blank %}
+          <img src=""  data-src="{{ section.settings.image | img_url: 'master'}}" class=" lazyload img-fluid w-100 full-image animated" data-animation-in="zoomInImage">
+        {% else %}
+          {% if section.settings.video_link != blank %}
+            <video class="full-image animated lazy" width="100%" preload="none" autoplay loop muted playsinline poster="" data-animation-in="zoomInImage">
+              <source data-src="{{ section.settings.video_link }}" type="video/mp4">
+            </video>
+          {% endif %}
+        {% endif %}
+      </div>
+      <div class="slide__img d-block d-lg-none">
+        {% if section.settings.image_mobile != blank %}
+          <img src=""  data-src="{{ section.settings.image_mobile | img_url: 'master'}}" class=" lazyload img-fluid w-100 full-image animated" data-animation-in="zoomInImage">
+        {% else %}
+          {% if section.settings.video_link_mobile != blank %}
+            <video class="full-image animated lazy" width="100%" preload="none" autoplay loop muted playsinline poster="" data-animation-in="zoomInImage">
+              <source data-src="{{ section.settings.video_link_mobile }}" type="video/mp4">
+            </video>
+          {% endif %}
+        {% endif %}
+      </div>
+      <div class="slide__content {% if section.settings.enable_titulos %} slide__content__absolute {% endif %}">
+        <div class="slide__content--headings text-center">
+          {% if section.settings.title != blank %}
+            <div class="animated top-title"  style="color:{{section.settings.title_color}}" data-animation-in="fadeInUp" data-delay-in="0.3">{{ section.settings.title }}</div>
+            <div class="animated top-subtitle"  style="color:{{section.settings.title_color}}" data-animation-in="fadeInUp" data-delay-in="0.3">{{ section.settings.subtitle }}</div>
+
+          {% endif %}
+          {% if section.settings.text != blank %}
+            <div class="animated description-content-banner mx-auto" style="color:{{section.settings.text_color}}" data-animation-in="fadeInUp">{{ section.settings.text }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Banner Collection",
+  "class": "index-section-slider",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
+    },
+    {
+      "type": "url",
+      "id": "video_link",
+      "label": "Video link"
+    },
+    {
+      "type": "url",
+      "id": "video_link_mobile",
+      "label": "Video link mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Add a title or tagline"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Heading",
+      "default": "Add a subtitle or tagline"
+    },
+    {
+      "type": "header",
+      "content": "==== Titulos ===="
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_titulos",
+      "label": "Activar titulos",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color Title",
+      "default": "#FFF"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color Text",
+      "default": "#FFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Collection",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

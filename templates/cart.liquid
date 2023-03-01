@@ -1,0 +1,247 @@
+
+<style>
+  .empty-cart .icon-empty{ width: 70px;height: 70px; margin: 15px 0 25px; fill:#ccc;}
+  .link-continue-shopping-cart{
+    width: 100%;
+    text-transform: inherit;
+    font-size: 14px;
+    margin-top: 20px;
+    background: transparent;
+    color: #000;
+  }
+  .additional-checkout-buttons .shopify-cleanslate ._1mqqPYZtCQtz5_i0b-po4l{
+    display: initial !important;
+  }
+</style>
+<div class="container-fluid" data-section-id="{{ section.id }}" data-section-type="cart-template">
+	
+	{% if cart.item_count > 0 %}
+		<!--<div class="section-header text-center">
+<h1>{{ 'cart.general.title' | t }}</h1>
+</div>-->
+{% comment %}
+Added/Modified by Limoni Apps on 8th-march-2022 to support Discount Ninja
+The data tags below are used by Limoni Apps Discount Ninja to provide information
+to the app about the products displayed in the collection.
+                  {% render 'banana-stand-cart-top-container' %}
+
+{% endcomment %}		<form action="/cart" method="post" novalidate class="cart limoniapps-discountninja-cart-root row">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="row">
+							<div class="col-12 d-none d-lg-block col-md-4 pe-0">
+								<div class="slider-index-nav-cart">
+									{% assign line = 0 %}
+									{% for item in cart.items %}
+										{% assign line = line | plus: 1 %}
+										<div>
+											<img class="cart__image" src="{{ item | img_url: '300x' }}" alt="{{ item.title | escape }}" class="img-responsive w-100">
+										</div>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="col-12 col-lg-8 ps-0 d-none d-lg-block">
+								<div class="slider-index-for-cart">
+									{% assign line = 0 %}
+									{% for item in cart.items %}
+										{% assign line = line | plus: 1 %}
+										<div>
+											<a href="{{ item.url | within: collections.all }}">
+												<img class="cart__image" src="{{ item | img_url: '700x' }}" alt="{{ item.title | escape }}" class="img-responsive w-100">
+											</a>
+										</div>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					
+					
+					</div>
+					<div class="col-12 col-lg-4 offset-lg-1 vh-90 option-cart-template">
+						<div class="content-products-cart">
+							<div>
+								{% assign line = 0 %}
+								{% for item in cart.items %}
+									{% assign line = line | plus: 1 %}
+									<div class="row cart__row border-bottom line{{ forloop.index }} cart-flex{% if forloop.first %} {% endif %}" data-price={{ item.price }} data-line="{{line}}">
+										<div class="col-12 content-image-cart text-center col-md-6 col-lg-3">
+											<div class="cart__image-wrapper cart-flex-item">
+												<a href="{{ item.url | within: collections.all }}">
+													<img class="cart__image" src="{{ item | img_url: '100x' }}" alt="{{ item.title | escape }}">
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 col-lg-9">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="row">
+														<div class="col-12 col-lg-6">
+															<div class="cart__meta small--text-left cart-flex-item">
+																<div class="list-view-item__title">
+																	<a href="{{ item.url }}">
+																		{{ item.product.title }}
+																		{% if item.quantity > 1 %}
+																			<span class="medium-up--hide"><span class="visually-hidden">{{ 'cart.label.quantity' | t }}</span>(x{{ item.quantity }})</span>
+																		{% endif %}
+																	</a>
+																</div>
+																{% unless item.variant.title contains 'Default' %}
+																	<div class="cart__meta-text">
+																		{% for option in item.product.options %}
+																			{{ option }}: {{ item.variant.options[forloop.index0] }}</br>
+																		{% endfor %}
+																	</div>
+																{% endunless %}
+																{%- assign property_size = item.properties | size -%}
+																{% if property_size > 0 %}
+																	<div class="cart__meta-text">
+																		{% for p in item.properties %}
+																			{% unless p.last == blank %}
+																				{{ p.first }}:
+																				
+																				{% comment %}
+																				Check if there was an uploaded file associated
+																				{% endcomment %}
+																				{% if p.last contains '/uploads/' %}
+																					<a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+																				{% else %}
+																					{{ p.last }}
+																				{% endif %}
+																			{% endunless %}
+																		{% endfor %}
+																	</div>
+																{% endif %}
+															</div>
+														</div>
+														<div class="col-12 col-lg-6 small--hide text-end">
+															{% if item.original_line_price != item.line_price %}
+																<div class="cart-item__original-price"><s>{{ item.original_line_price | money }}</s></div>
+															{% endif %}
+															{% comment %}Added/Modified by Limoni Apps on April 13 2021 to support Discount Ninja{% endcomment %}
+															<div class="total-price-row limoniapps-discountninja-cart-item-line-price" data-limoniapps-discountninja-cart-key="{{item.key}}">
+																{{ item.line_price | money }}
+															</div>
+															
+															{% for discount in item.discounts %}
+																<div class="cart-item__discount">{{ discount.title }}</div>
+															{% endfor %}
+														</div>
+													</div>
+												
+												</div>
+												<div class="col-lg-12">
+													
+													<div class="cart__update-wrapper cart-flex-item text-left">
+														<div class="cart__qty text-left">
+															<!--<label for="updates_{{ item.key }}" class="cart__qty-label">{{ 'cart.label.quantity' | t }}</label>-->
+															<div>
+                        <span>
+                          {{ 'cart.label.quantity' | t }}:
+                        </span>
+																{{ item.quantity }}
+															</div>
+															<!--<input class="cart__qty-input" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" pattern="[0-9]*">-->
+														</div>
+													</div>
+												</div>
+												<div class="col-12 text-right">
+													<p class="cart__product-meta">
+														<a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" class="btn btn--secondary btn--small small--hide">
+															{{ 'cart.general.remove' | t }}
+														</a>
+														<a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small medium-up--hide">
+															<small>{{ 'cart.general.remove' | t }}</small>
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+						<footer class="cart__footer">
+							<div class="row">
+								<!--<div class="col-12 col-md-6 cart-note">
+<label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
+<textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
+</div>-->
+								<div class="col-12 small--text-center">
+									<div class="row">
+										<div class="col-12 col-lg-6 text-left box-subtotal">
+											<span class="cart__subtotal-title"><span id="bk-cart-subtotal-label">{{ 'cart.general.subtotal' | t }}</span></span>
+										</div>
+{% comment %}
+Added/Modified by Limoni Apps on 8th-march-2022 to support Discount Ninja
+The data tags below are used by Limoni Apps Discount Ninja to provide information
+to the app about the products displayed in the collection.
+{% endcomment %}										<div class="col-12 col-lg-6 text-right limoniapps-discountninja-cart-subtotal-price">
+											{% comment %}Added/Modified by Limoni Apps on April 13 2021 to support Discount Ninja{% endcomment %}
+											<span class="cart__subtotal"><span id="bk-cart-subtotal-price">{{ cart.total_price | money }}</span></span>
+										</div>
+{% comment %}
+Added/Modified by Limoni Apps on 8th-march-2022 to support Discount Ninja
+The data tags below are used by Limoni Apps Discount Ninja to provide information
+to the app about the products displayed in the collection.
+{% endcomment %}                                      <div class="limoniapps-discountninja-cart-promotionsummary"></div>
+                                      <div class="limoniapps-discountninja-cartdiscountfield-placeholder"></div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											{% if settings.cart_terms_conditions_enable %}
+												<p class="ajaxcart__note ajaxcart__note--terms">
+													<input type="checkbox" id="CartPageAgree" />
+													<label for="CartPageAgree">
+														{% if settings.cart_terms_conditions_link != blank %}
+															{{ 'cart.general.terms_html' | t: url: settings.cart_terms_conditions_link }}
+														{% else %}
+															{{ 'cart.general.terms' | t }}
+														{% endif %}
+													</label>
+												</p>
+											{% endif %}
+										</div>
+										<div class="col-12">
+											{% if cart.total_discounts > 0 %}
+												<div class="cart__savings">
+													{{ 'cart.general.savings' | t }}
+													<span class="cart__savings-amount text-center">{{ cart.total_discounts | money }}</span>
+												</div>
+											{% endif %}
+										</div>
+										<div class="col-12 text-center box-buttons">
+											<div class="cart__shipping text-center">{{ 'cart.general.shipping_at_checkout' | t }}</div>
+											<button type="submit" name="checkout" class="btn btn-general cart__checkout{% if settings.cart_terms_conditions_enable %} cart__checkout--page{% endif %}">
+												{{ 'cart.general.checkout' | t }}
+											</button>
+											<a href="/collections/all" class="btn link-continue-shopping-cart">Continuar Comprando</a>
+										
+										</div>
+									</div>
+									
+						
+									<!--{% if additional_checkout_buttons %}
+<div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
+{% endif %}-->
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</form>
+	{% else %}
+		<div class="row text-center empty-cart content-empty-cart">
+			<h1 class="title-general py-4">{{ 'cart.general.title' | t }}</h1>
+			<div class="col-12 text-center mb-auto">
+				<svg class="icon icon-empty" enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <path d="M43,17v-6c0-6.065-4.935-11-11-11S21,4.935,21,11v6H9v47h46V17H43z M23,11c0-4.962,4.038-9,9-9s9,4.038,9,9v6H23V11z    M53,62H11V19h10v5h2v-5h18v5h2v-5h10V62z"/>
+					<polygon points="39.706 35.708 38.292 34.293 32 40.586 25.708 34.293 24.293 35.707 30.586 42 24.292 48.293 25.706 49.708 32 43.414 38.293 49.707 39.707 48.293 33.414 42"/>
+  </svg>
+				<p>{{ 'cart.general.empty' | t }}</p>
+				<a href="/collections/all" class="btn btn-general">Seguir comprando</a>
+			</div>
+		</div>
+	{% endif %}
+</div>

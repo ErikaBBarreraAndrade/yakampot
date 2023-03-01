@@ -1,0 +1,44 @@
+<div class="container-fluid">
+	<div class="row content-bloque-banner">
+		{% if section.settings.image != blank %}
+			<div class="col-12 content-image">
+				<img class="d-none d-lg-block img-fluid w-100 lazyload"
+				     data-src="{{ section.settings.image | img_url: "master"}}"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     alt="{{ preview_image.alt | escape }}">
+				<img class="d-block d-lg-none img-fluid w-100 lazyload"
+				     data-src="{{ section.settings.image_mobile | img_url: "master"}}"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     alt="{{ preview_image.alt | escape }}">
+			</div>
+		{% endif %}
+	</div>
+</div>
+{% schema %}
+{
+"name": "Banner image",
+"class": "section-banner-image",
+"settings": [
+{
+"type":"header",
+"content":"==== Imagen ===="
+},
+{
+"type":"image_picker",
+"id":"image",
+"label":"Imagen"
+},
+{
+"type":"image_picker",
+"id":"image_mobile",
+"label":"Imagen Mobile"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,64 @@
+{{ 'component-facets.css' | asset_url | stylesheet_tag }}
+<link rel="preload" href="{{ 'grid-global-collection.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ 'grid-global-collection.css' | asset_url }}"></noscript>
+{%- assign per_row = section.settings.per_row -%}
+{%- assign paginate_by = per_row | times: section.settings.rows_per_page -%}
+<style>
+  .quick-view{
+    display: none;
+  }
+</style>
+{%- paginate collection.products by 8 -%}
+<div class="container-fluid page-width">
+	<div class="row justify-content-center content-products-grid-box-global">
+    {%  if collection.metafields.yakampot.menu_colecciones != blank %}
+      <div class="col-11 col-lg-12 content-submenu-options-collections">
+        <ul class="d-flex list-unstyled justify-content-lg-center">
+          {%- for product in collection.metafields.yakampot.menu_colecciones.value -%}
+            <li>
+              <a href="{{ product.url }}">
+                {{ product.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%endif%}
+    <div class="col-11 col-lg-12 content-global-grid-products">
+      <div class="row products-on-page" data-next-url="{{paginate.next.url}}">
+        {%- for product in collection.products -%}
+          {%- render 'product-grid-item-new', product: product -%}
+        {%- else -%}
+          <div class="grid__item">
+            <p>{{ 'collections.general.no_matches' | t }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="load-more">
+      <a class="load-more_btn" onclick="loadMoreProducts()">Ver más</a>
+      <div class="load-more_spinner"></div>
+    </div>
+	</div>
+</div>
+
+
+  {%- if settings.quick_shop_enable -%}
+    {%- for product in collection.products -%}
+      {%- if product.available -%}
+        {%- render 'quick-shop-modal', product: product -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+{%- endpaginate -%}
+
+{% schema %}
+  {
+    "name": "Collection pages",
+    "class": "grid-global-collection section-content-description-parallax",
+    "settings": [
+
+    ]
+  }
+{% endschema %}

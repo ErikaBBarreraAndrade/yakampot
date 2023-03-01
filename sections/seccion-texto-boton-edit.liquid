@@ -1,0 +1,97 @@
+<link rel="preload" href="{{ "section-btn-txt-edit.scss.css" | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "section-btn-txt-edit.scss.css" | asset_url }}"></noscript>
+<style>
+  .section-btn-txt-edit{
+    background: {{ section.settings.bg_section }};
+  }
+</style>
+<div class="container-fluid">
+	<div class="row content-txt">
+		<div class="col-12 text-center">
+			{% if section.settings.title != blank%}
+				<p class="title" style="color: {{ section.settings.color_title }}">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.description != blank%}
+				<div class="description" style="color: {{ section.settings.color_description }}">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+			{% if section.settings.button_link != blank%}
+				<p class="content-button">
+					<a href="{{section.settings.button_link}}" class="btn" style="color: {{ section.settings.color_button }}">
+						<span style="border-bottom: 1px solid {{ section.settings.color_button }};">{{section.settings.button_label}}</span>
+					</a>
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Section texto boton",
+"class":"section-content-description-parallax section-btn-txt-edit",
+"settings": [
+  {
+"type":"header",
+"content":"==== Background ===="
+},
+{
+"type":"color",
+"id": "bg_section",
+"label": "Background color"
+},
+{
+"type":"header",
+"content":"==== Titulo & descripción ===="
+},
+{
+"type":"text",
+"id": "title",
+"label": "Titulo"
+},
+  {
+"type":"color",
+"id": "color_title",
+"label": "Color titulo"
+},
+{
+"type":"richtext",
+"id": "description",
+"label": "Descripción"
+},
+    {
+"type":"color",
+"id": "color_description",
+"label": "Color descripción"
+},
+{
+"type":"header",
+"content":"==== Botón ===="
+},
+{
+"type":"text",
+"id": "button_label",
+"label": "Texto de Botón"
+},
+  {
+"type":"color",
+"id": "color_button",
+"label": "Color de Botón"
+},
+{
+"type":"url",
+"id": "button_link",
+"label": "Link de Botón"
+}
+],
+"presets": [
+{
+"name": "Section texto boton",
+"category": "Image"
+}
+]
+}
+{% endschema %}

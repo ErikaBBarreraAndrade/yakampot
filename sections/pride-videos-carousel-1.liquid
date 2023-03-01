@@ -1,0 +1,193 @@
+<div class="container-fluid">
+	<div class="row {% unless section.blocks.size == 5 %}{% endunless %} grid--flush-bottom">
+		<div class="col-12 p-0 content-video-idx">
+			<button id="btnPlayVideo" onclick="openFullscreen();" class="btn d-none d-lg-block"><span class="name-people">IV. Somos orgullo</span><span class="icon-button-people">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+             height="23.1px" viewBox="0 0 24 23.1" enable-background="new 0 0 24 23.1" xml:space="preserve">
+          <defs>
+          </defs>
+          <polygon fill="#FFFFFF" points="24,11.5 0,23.1 0,0 "/>
+        </svg>
+        </span></button>
+			<div class="box-video">
+				<video width="100%" controls loop disablePictureInPicture controlslist="nodownload" id="myvideo" onplay="hidePlayer()" onpause="showPlayer()"
+				       poster="https://cdn.shopify.com/s/files/1/0387/4393/2973/files/Parte4.jpg?v=1623264224">
+					<source src="https://www.kiradev.mx/yakampot/videoplayback4.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+		
+		<div class="line-rainbow">
+		</div>
+		<div class="col-12 content-images-slider-nav p-0">
+			<div class="row m-0 justify-content-center">
+				<div class="col-12 p-0 col-md col-lg p-lg-0 image-disabled image-box-active">
+					<img src="https://cdn.shopify.com/s/files/1/0387/4393/2973/files/parte1.jpg?v=1623263444" class="img-fluid w-100">
+					<div class="video-box-thumb collapse">
+						<video>
+							<source src="https://www.kiradev.mx/yakampot/luisaSofia1.mp4#t=0.7" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="title-big row">
+						<div class="title-text col-12">
+							<div class="row h-100">
+								<div class="col-12 my-auto text-center">
+									<button class="btn d-none d-lg-block"><span class="name-people">I. Luisa, Sofía</span><span class="icon-button-people">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+                         height="23.1px" viewBox="0 0 24 23.1" enable-background="new 0 0 24 23.1" xml:space="preserve">
+                      <defs>
+                      </defs>
+                      <polygon fill="#FFFFFF" points="24,11.5 0,23.1 0,0 "/>
+                    </svg>
+                    </span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 p-0 col-md col-lg p-lg-0 image-disabled image-box-active">
+					<img src="https://cdn.shopify.com/s/files/1/0387/4393/2973/files/parte2.jpg?v=1623263962" class="img-fluid w-100">
+					<div class="video-box-thumb collapse">
+						<video>
+							<source src="https://www.kiradev.mx/yakampot/Aletze_Hadassah_Tefy.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="title-big row">
+						<div class="title-text col-12">
+							<div class="row h-100">
+								<div class="col-12 my-auto text-center">
+									<button class="btn d-none d-lg-block"><span class="name-people">II. Aletze, Hadassah</span><span class="icon-button-people">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+                         height="23.1px" viewBox="0 0 24 23.1" enable-background="new 0 0 24 23.1" xml:space="preserve">
+                      <defs>
+                      </defs>
+                      <polygon fill="#FFFFFF" points="24,11.5 0,23.1 0,0 "/>
+                    </svg>
+                    </span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-12 p-0 col-md col-lg p-lg-0 image-disabled image-box-active">
+					<img src="https://cdn.shopify.com/s/files/1/0387/4393/2973/files/Parte3.jpg?v=1623264179" class="img-fluid w-100">
+					<div class="video-box-thumb collapse">
+						<video>
+							<source src="https://www.kiradev.mx/yakampot/videoplayback.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="title-big row">
+						<div class="title-text col-12">
+							<div class="row h-100">
+								<div class="col-12 my-auto text-center">
+									<button class="btn d-none d-lg-block"><span class="name-people">III. Zemmoa, Fábian</span><span class="icon-button-people">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+                         height="23.1px" viewBox="0 0 24 23.1" enable-background="new 0 0 24 23.1" xml:space="preserve">
+                      <defs>
+                      </defs>
+                      <polygon fill="#FFFFFF" points="24,11.5 0,23.1 0,0 "/>
+                    </svg>
+                    </span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Carousel pride videos",
+"class": "pride-videos-carousel",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Text columns with images"
+},
+{
+"type": "select",
+"id": "align_text",
+"label": "Text alignment",
+"default": "left",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "center",
+"label": "Centered"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Carousel pride videos",
+"category": "Carousel"
+}
+]
+}
+{% endschema %}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    var elem = document.getElementById("myvideo");
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+        elem.play();
+    }
+    function hidePlayer(){
+        document.getElementById("btnPlayVideo").setAttribute("style", "display : none !important;");
+    }
+    function showPlayer(){
+        document.getElementById("btnPlayVideo").removeAttribute("style", "display : none !important;");
+    }
+    //I. Luisa, Sofía
+    //document.getElementById("btnPlayVideo").setAttribute("style", "display : none !important;");
+    //$('.slider-for') .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    //$('#myvideo'+currentSlide)[0].pause();
+
+    //$('#myvideo'+nextSlide)[0].play();
+    //play upcoming
+    //});
+
+    $('.image-box-active').click(function(){
+        var posterImg = $('.box-video video').attr('poster');
+        var srcVideo = $('.box-video video source').attr('src');
+        var srcVideoThumb = $(this).find('video source').attr('src');
+        var buttonVideo = $('.content-video-idx').find('.name-people').text();
+        console.log(buttonVideo)
+        var posterImgThumb = $(this).find('img').attr('src');
+        var buttonVideoThumb = $(this).find('.name-people').text();
+        console.log(buttonVideoThumb)
+        $('.box-video video source').attr('src', srcVideoThumb).get(0);
+        $('.box-video video').attr('poster', posterImgThumb);
+        $('.content-video-idx').find('.name-people').text(buttonVideoThumb);
+        $(this).find('img').attr('src', posterImg);
+        $(this).find('.name-people').text(buttonVideo);
+        $(this).find('video source').attr('src', srcVideo);
+        $('.box-video video').trigger('pause');
+        $(".box-video video")[0].load();
+    });
+</script>

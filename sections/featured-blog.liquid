@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="{{ 'section-featured-blog.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}</noscript>
+{%- liquid
+	assign posts_displayed = section.settings.blog.articles_count
+	if section.settings.post_limit <= section.settings.blog.articles_count
+		assign posts_exceed_limit = true
+		assign posts_displayed = section.settings.post_limit
+	endif
+-%}
+<div class="container-fluid">
+		<div class="row justify-content-center content-global">
+			<div class="col-11 col-lg-11 slider-blog-featured">
+				{% if section.settings.heading != blank %}
+					<div class="content-title-heading text-center text-uppercase mx-auto">
+						{{ section.settings.heading | escape }}
+					</div>
+				{% endif %}
+			<div class="row justify-content-center">
+				<div class="col-10 col-lg-10">
+					<div class="row">
+
+{% for article in section.settings.blog.articles %} 
+{% if article.tags contains 'iconicos' %} 
+	{% render 'article-grid-item-featured', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author %}	
+ {% endif %} 
+ {% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Featured blog",
+  "tag": "section",
+  "class": "section-featured-blog section-content-description-parallax",
+  "settings": [
+    {
+      "type": "header",
+      "content": "===== Titulo ====="
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titulo"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.featured-blog.settings.blog.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured blog",
+      "settings": {
+        "blog": "News"
+      }
+    }
+  ]
+}
+{% endschema %}

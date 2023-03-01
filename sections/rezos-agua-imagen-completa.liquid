@@ -1,0 +1,70 @@
+<div class="container-fluid">
+	<div class="row section-content">
+		<div class="col-12 p-0">
+			{% if section.settings.image != blank %}
+				<img class="d-none d-lg-block w-100 img-fluid lazyload"
+				     data-src="{{ section.settings.image | img_url:"master" }}"
+				     data-widths="[180, 360, 540, 720, 900, 1080]"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     data-sizes="auto"
+				     alt="{{ preview_image.alt | escape }}">
+				<img class="d-block d-lg-none w-100 img-fluid lazyload"
+				     data-src="{{ section.settings.image_mobile | img_url:"master" }}"
+				     data-widths="[180, 360, 540, 720, 900, 1080]"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     data-sizes="auto"
+				     alt="{{ preview_image.alt | escape }}">
+			{% endif %}
+			{% if section.settings.btn_url != blank %}
+				<p class="content-button text-center text-lg-end">
+					<a href="{{ section.settings.btn_url }}" class="btn">
+						<span>{{ section.settings.btn_label }}</span>
+					</a>
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Rezos imagen completa",
+"class": "section-content-description-parallax section-rezos-imagen-completa",
+"settings": [
+{
+"type": "header",
+"content": "==== Image ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "image"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "image Mobile"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Texto Botón"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Botón Url"
+}
+],
+
+"presets": [
+{
+"name": "Rezos imagen completa",
+"category": "Image"
+}
+]
+}
+{% endschema %}

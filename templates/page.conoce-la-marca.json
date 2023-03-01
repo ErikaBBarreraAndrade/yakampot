@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1643213089b298842a": {
+      "type": "index-slider-yakampot",
+      "blocks": {
+        "164321308917598c1a-0": {
+          "type": "text_block",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/WEB_DESKTOP.mp4?v=1637965732",
+            "video_link_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0387\/4393\/2973\/files\/WEB_MOBILE.mp4?v=1637965732",
+            "title": "",
+            "title_color": "#ffffff",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164321308917598c1a-0"
+      ],
+      "settings": {
+      }
+    },
+    "1643213373324a363c": {
+      "type": "seccion-texto-boton",
+      "settings": {
+        "title": "10 años de diseño con raíces mexicanas",
+        "description": "<p>Yakampot (lugar donde nace el agua en lengua tsotsil) es una marca de ropa que busca promover el patrimonio de México a través del diseño de prendas inspiradas en elementos icónicos de la indumentaria tradicional para dar un sentido de identidad y arraigo a la mujer contemporánea.<\/p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "1643213701ee12f1c3": {
+      "type": "seccion-imagenes-galeria",
+      "blocks": {
+        "1643213701fffd7e5b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DSC07421.jpg"
+          }
+        },
+        "1643213701fffd7e5b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DSC07344.jpg"
+          }
+        },
+        "1643213701fffd7e5b-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DSC07472.jpg"
+          }
+        },
+        "dab066bb-0f93-40fd-88c3-16e52899497e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DSC07541.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1643213701fffd7e5b-0",
+        "1643213701fffd7e5b-1",
+        "1643213701fffd7e5b-2",
+        "dab066bb-0f93-40fd-88c3-16e52899497e"
+      ],
+      "settings": {
+        "description": "<p>Colaboramos productores locales y grupos de artesanas en Chiapas y Estado de México quienes plasman su legado en cada prenda creando una convergencia entre pasado, presente y futuro a través de la moda. <\/p><p>Buscamos crear una industria próspera, inclusiva y equitativa. Trabajamos bajo un modelo de comercio justo que impulsa el desarrollo de grupos de artesanas y sus comunidades, dando nueva vida a sus habilidades y conocimientos fortaleciendo el tejido social y la conservación de sus tradiciones.<\/p>"
+      }
+    },
+    "164321404184ec3fe7": {
+      "type": "banners-end",
+      "blocks": {
+        "164321404193640575-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nosotros-1_74a1f9f9-d031-4eb5-a6a3-a6bb4211697d.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/nosotros-1_74a1f9f9-d031-4eb5-a6a3-a6bb4211697d.jpg",
+            "button_link": ""
+          }
+        },
+        "164321404193640575-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Captura_de_Pantalla_2021-11-05_a_la_s_11.39.00_a.m..jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Captura_de_Pantalla_2021-11-05_a_la_s_11.39.00_a.m..jpg",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164321404193640575-0",
+        "164321404193640575-1"
+      ],
+      "settings": {
+      }
+    },
+    "164321414499844f88": {
+      "type": "only-text-button",
+      "settings": {
+        "bg_section": "#000000",
+        "title": "Tierra es mi cuerpo, agua es mi sangre, viento es mi aliento y fuego es mi espíritu.",
+        "color": "#FFFFFF",
+        "button_label": "",
+        "color_btn": "#FFFFFF",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643213089b298842a",
+    "1643213373324a363c",
+    "1643213701ee12f1c3",
+    "164321404184ec3fe7",
+    "164321414499844f88"
+  ]
+}

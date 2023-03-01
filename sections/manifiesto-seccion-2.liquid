@@ -1,0 +1,112 @@
+<div class="container-fluid">
+	<div class="row section-content">
+		<div class="col-12 col-lg-6 content-box-information">
+			<div class="row row-content-box-information h-100" style="background: {{ section.settings.bg_section}};">
+				<div class="col-12 my-auto">
+					<div class="content-text-global">
+						{% if section.settings.title != blank %}
+							<p class="title">
+								{{ section.settings.title }}
+							</p>
+						{% endif %}
+						{% if section.settings.numero != blank %}
+							<p class="number">
+								{{ section.settings.numero }}
+							</p>
+						{% endif %}
+						{% if section.settings.text != blank %}
+							<div class="rte-settings">
+								{{ section.settings.text }}
+							</div>
+						{% endif %}
+						{% if section.settings.titulo_final != blank %}
+							<p class="titulo-final">
+								{{ section.settings.titulo_final }}
+							</p>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% if section.settings.image != blank %}
+			<div class="col-12 col-lg-6 p-0">
+				<img class="w-100 lazyload d-none d-sm-block"
+				     data-src="{{ section.settings.image | img_url:"master" }}"
+				     data-widths="[180, 360, 540, 720, 900, 1080]"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     data-sizes="auto"
+				     alt="{{ preview_image.alt | escape }}">
+				<img class="w-100 lazyload d-block d-sm-none"
+				     data-src="{{ section.settings.image | img_url:"master" }}"
+				     data-widths="[180, 360, 540, 720, 900, 1080]"
+				     data-aspectratio="{{ preview_image.aspect_ratio }}"
+				     data-sizes="auto"
+				     alt="{{ preview_image.alt | escape }}">
+			</div>
+		{% endif %}
+	</div>
+</div>
+{% schema %}
+{
+"name": "Manifiesto 2",
+"class": "section-content-description-parallax section-manifiesto-texto-2 section-manifiesto-general",
+"settings": [
+{
+"type": "header",
+"content": "==== Background section ===="
+},
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background color",
+"default": "#FFF"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "text",
+"id": "numero",
+"label": "Número"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Descripción",
+"default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+},
+{
+"type": "text",
+"id": "titulo_final",
+"label": "Titulo final"
+},
+{
+"type": "header",
+"content": "==== Imagen ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Imagen desktop"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Imagen mobile"
+}
+],
+
+"presets": [
+{
+"name": "Manifiesto 2",
+"category": "Text"
+}
+]
+}
+{% endschema %}

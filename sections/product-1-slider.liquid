@@ -1,0 +1,133 @@
+<div id="productTabs{{ block-producttabs }}" class="box-product-fnws">
+	<div class="container-fluid">
+		<div class="row content-box-products justify-content-center">
+			<div class="col-12 col-lg-10  productTabsNav">
+				<div class="row">
+					<div class="col-12 text-center">
+						{% if section.settings.title != blank %}
+							<p class="title">
+								{{ section.settings.title }}
+							</p>
+						{% endif %}
+					</div>
+					<div class="col-12">
+						<div class="text-center content-tabs-products">
+							<ul class="nav nav-tabs justify-content-center" id="TabFN" role="tablist">
+								{%- for block in section.blocks -%}
+									<li class="text-center nav-item" role="presentation">
+										<button class="nav-link m-auto  {{ block.settings.tab_name }} {% if forloop.first %}active{% endif %}" id="FNT{{ section.id }}{{ forloop.index }}-tab" data-bs-toggle="tab" data-bs-target="#FNT{{ section.id }}{{ forloop.index }}" type="button" role="tab" aria-controls="FNT{{ section.id }}{{ forloop.index }}"
+										        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ block.settings.tab_name }}</button>
+									</li>
+								{%-endfor -%}
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-lg-12">
+						<div class="tab-content row justify-content-center" id="tabContentFN">
+							{%- for block in section.blocks -%}
+								{%- assign collection_produclists = block.settings.collection -%}
+								{%- if collection_produclists == blank -%}
+									{%- assign collection_produclists = "all" -%}
+								{%- endif -%}
+								{%- assign collection = collections[collection_produclists] -%}
+								<div class="col-12 col-lg-12 tab-pane fade{% if forloop.first %} show active{% endif %}" id="FNT{{ section.id }}{{ forloop.index }}" role="tabpanel" aria-labelledby="FNT{{ section.id }}{{ forloop.index }}-tab">
+									<div class="nuestra_clase row">
+										{% assign products = collection.products %}
+										{% for product in products limit:5 %}
+											{%- render 'product-grid-item-tabs', product: product, grid_item_width: grid_item_width, section_id: product.id, tab_name: block.settings.tab_name -%}
+										{% endfor %}
+										<div class="col-12">
+											{%- if block.settings.btn_link_all != blank -%}
+												<div class="btn-tabs text-center">
+													<a class="btn btn-outline-inverse" href="{{block.settings.btn_link}}"><span>{{block.settings.btn_link_all}}</span></a>
+												</div>
+											{%- endif -%}
+										</div>
+									</div>
+								</div>
+							{%- endfor -%}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{%- if settings.quick_shop_enable -%}
+	{%- for product in collections[section.settings.home_featured_products].products limit: product_limit -%}
+		{%- render 'quick-shop-modal', product: product -%}
+	{%- endfor -%}
+{%- endif -%}
+{% schema %}
+{
+"name": "Product Tabs",
+"class":"seccion-productos-coleccion section-content-description-parallax",
+"settings": [
+{
+"type":"header",
+"content":"==== Titulo ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+}
+],
+"blocks": [
+{
+"type": "item",
+"name": "Tab",
+"settings": [
+{
+"type": "text",
+"id": "tab_name",
+"label": "Tab Name",
+"default": "Tab"
+},
+{
+"label": "Collection",
+"id": "collection",
+"type": "collection"
+},
+{
+"type":"header",
+"content":"==== Botón ===="
+},
+{
+"type": "url",
+"id": "btn_link",
+"label": "Botón Link"
+},
+{
+"type": "text",
+"id": "btn_link_all",
+"label": "Botón Texto"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Product Tabs",
+"category": "Collection",
+"blocks": [
+{
+"type": "item"
+},
+{
+"type": "item"
+},
+{
+"type": "item"
+}
+]
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

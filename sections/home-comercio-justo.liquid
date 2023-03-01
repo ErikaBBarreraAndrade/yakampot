@@ -1,0 +1,112 @@
+<div class="container-fluid">
+	<div class="row content-image-gallery justify-content-center" style="background: {{ section.settings.bg_section }};">
+		<div class="col-11 col-lg-10">
+			<div class="row">
+				<div class="col-12 text-center">
+					{% if section.settings.title != blank %}
+					<p class="title">
+						{{section.settings.title}}
+					</p>
+					{% endif %}
+					{% if section.settings.btn_url != blank %}
+						<p class="content-button">
+							<a href="{{ section.settings.btn_url }}" class="btn">
+								<span>{{section.settings.btn_label}}</span>
+							</a>
+						</p>
+					{% endif %}
+				</div>
+				{% for block in section.blocks %}
+					<div class="col-6 col-sm-3 content-img p-0">
+						{% if block.settings.enable_image %}
+							{% if block.settings.image != blank %}
+								<img class="w-100 img-fluid lazyload"
+								     data-src="{{ block.settings.image | img_url: 'master'}}"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     alt="{{ preview_image.alt | escape }}">
+							{% else %}
+								{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+							{% endif %}
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Comercio justo",
+"class":"section-content-description-parallax seccion-comercio-justo",
+"settings": [
+{
+"type":"header",
+"content":"==== Background ===="
+},
+{
+"type": "color",
+"id": "bg_section",
+"label": "Background"
+},
+{
+"type":"header",
+"content":"==== Titulo ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type":"header",
+"content":"==== Botón ===="
+},
+{
+"type": "text",
+"id": "btn_label",
+"label": "Botón texto"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "Url Botón"
+}
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "checkbox",
+"id": "enable_image",
+"label": "Show image",
+"default": true
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Comercio justo",
+"category": "image",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}

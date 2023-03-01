@@ -1,0 +1,112 @@
+<style>
+  .box-simple-text{
+    background: {{section.settings.bg_color }};
+  }
+  .box-simple-text .content-text .description p{
+    color: {{section.settings.color_des}};
+  }
+  .box-simple-text .content-text .content-button a{
+    color: {{section.settings.button_color}};
+  }
+  .box-simple-text .content-text .content-button a span{
+    border-bottom: 1px solid {{section.settings.button_color}};
+  }
+</style>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 content-text">
+			{% if section.settings.title != blank%}
+				<p class="title" style="color:{{section.settings.color_text }}">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.description != blank%}
+				<div class="description">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+			{% if section.settings.button_link != blank%}
+				<p class="content-button">
+					<a href="{{ section.settings.button_link}}">
+						<span>{{ section.settings.button_text }}</span>
+					</a>
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Texto simple",
+"class": "box-simple-text",
+"settings": [
+{
+"type":"header",
+"content":"==== Background ===="
+},
+{
+"type":"color",
+"id":"bg_color",
+"label":"Background"
+},
+{
+"type":"header",
+"content":"==== Titulo & Descripción ===="
+},
+{
+"type":"color",
+"id":"color_text",
+"label":"Color Titulo",
+"default": "#FFF"
+},
+
+{
+"type":"text",
+"id":"title",
+"label":"Titulo"
+},
+{
+"type":"color",
+"id":"color_des",
+"label":"Color Descripción",
+"default": "#FFF"
+},
+{
+"type":"richtext",
+"id":"description",
+"label":"Descripción"
+},
+{
+"type":"header",
+"content":"==== Botón ===="
+},
+{
+"type":"color",
+"id":"button_color",
+"label":"Color Botón"
+},
+{
+"type":"text",
+"id":"button_text",
+"label":"Texto Botón"
+},
+{
+"type":"url",
+"id":"button_link",
+"label":"Link Botón"
+}
+],
+"presets": [
+{
+"name": "Texto simple",
+"category": "Text"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

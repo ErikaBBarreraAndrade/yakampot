@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "e1993af6-128a-4345-b503-e0a2d9a823e4": {
+      "type": "menu-change-language",
+      "settings": {
+        "title_es": "Cambia el idioma",
+        "title_en": "Change the language"
+      }
+    },
+    "c3a71925-087f-4de7-bc37-f469d86ef821": {
+      "type": "slider-yakampot-language",
+      "blocks": {
+        "template--15430006374445__c3a71925-087f-4de7-bc37-f469d86ef821-1668620556f645f8b6-0": {
+          "type": "text_block",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/446d0ed533f64255b25bb7dd0d0b50ea.mp4",
+            "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d902a705dc20483b9adcb9756e20d74a.mp4",
+            "title": "Moda mundana",
+            "title_en": "Worldly Fashion",
+            "subtitle": "Lujo y significado de lo cotidiano",
+            "subtitle_en": "Luxury for every day life",
+            "enable_image": false,
+            "enable_titulos": true,
+            "title_color": "#ffffff",
+            "text": "Visita el showroom y se parte del dieño mexicano.",
+            "text_en": "Visit our showroom. Experience the ultimate in modern mexican design.",
+            "text_color": "#ffffff",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_label_en": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15430006374445__c3a71925-087f-4de7-bc37-f469d86ef821-1668620556f645f8b6-0"
+      ],
+      "settings": {
+      }
+    },
+    "05e7e2d6-4ba7-4c23-add9-a7e507661ae1": {
+      "type": "section-text-showroom-buttons",
+      "settings": {
+        "description_es": "<p>Somos una marca de moda mundana para mujeres que crea piezas icónicas inspiradas en la indumentaria tradicional y que busca promover el patrimonio de México a través del diseño. <\/p><p>Impulsamos el desarrollo de artesanas mexicanas y sus comunidades, dando nueva vida y siendo una ventana a sus habilidades y conocimientos, siempre preservando sus tradiciones. Somos Yakampot (lugar donde nace el agua en lengua tsotsil).<\/p>",
+        "description_en": "<p>We are a worldly fashion brand for woman creating iconic styles inspired by Mesoamerican aesthetics - bringing cultural heritage  to the world through design. <\/p><p>We have built partnerships with artisans and their communities, inspiring them to brig new life to traditional designs, opening a window through which the world can experience their skill and knowledge. We are Yakampot (a place where water is born in the Tsotsil language)<\/p>",
+        "title_es": "AGENDA UNA CITA",
+        "title_en": "SCHEDULE AN APPOINTMENT",
+        "url_wp": "https:\/\/wa.me\/+5215539230432",
+        "label_es": "Agenda tu cita POR WHATSAPP",
+        "label_en": "Schedule your appointment by WHATSAPP",
+        "email_label_es": "Agenda tu cita POR E-MAIL",
+        "email_label_en": "Schedule your appointment BY E-MAIL"
+      }
+    },
+    "0de55417-bdd4-4d16-8bce-441bf5f03b25": {
+      "type": "slider-products-collection",
+      "settings": {
+        "collection": "2022"
+      }
+    },
+    "884ee484-cf1f-48d6-97b4-b9f34e66c538": {
+      "type": "services-language",
+      "blocks": {
+        "template--15430006374445__884ee484-cf1f-48d6-97b4-b9f34e66c538-16686211916d921364-0": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Card_3213534_92271cfb-25ef-4637-ae89-ad721e9c1ca6.png",
+            "heading_service": "TODAS LAS FORMAS DE PAGO",
+            "heading_service_en": "ALL FORMS OF PAYMENT"
+          }
+        },
+        "template--15430006374445__884ee484-cf1f-48d6-97b4-b9f34e66c538-16686211916d921364-1": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_world_2163509_b05b8322-dc35-4287-8b71-ffc4f39795aa.png",
+            "heading_service": "ENVIOS WORLDWIDE",
+            "heading_service_en": "WORLDWIDE SHIPPING"
+          }
+        },
+        "template--15430006374445__884ee484-cf1f-48d6-97b4-b9f34e66c538-16686211916d921364-2": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Easy_Returns_2639560_efa35f3d-8a63-4ed1-8ead-f74fd65474d8.png",
+            "heading_service": "DEVOLUCIONES Y REEMBOLSOS",
+            "heading_service_en": "RETURNS AND REFUNDS"
+          }
+        }
+      },
+      "block_order": [
+        "template--15430006374445__884ee484-cf1f-48d6-97b4-b9f34e66c538-16686211916d921364-0",
+        "template--15430006374445__884ee484-cf1f-48d6-97b4-b9f34e66c538-16686211916d921364-1",
+        "template--15430006374445__884ee484-cf1f-48d6-97b4-b9f34e66c538-16686211916d921364-2"
+      ],
+      "settings": {
+        "icon-left": false,
+        "color_border_box": "#e5e5e5",
+        "bg_section": "#ffffff",
+        "title": "Heading",
+        "color_title": "#222222",
+        "color_title_sub": "#888888",
+        "color_icon": "#222222",
+        "color_border": "#e5e5e5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e1993af6-128a-4345-b503-e0a2d9a823e4",
+    "c3a71925-087f-4de7-bc37-f469d86ef821",
+    "05e7e2d6-4ba7-4c23-add9-a7e507661ae1",
+    "0de55417-bdd4-4d16-8bce-441bf5f03b25",
+    "884ee484-cf1f-48d6-97b4-b9f34e66c538"
+  ]
+}

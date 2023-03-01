@@ -1,0 +1,132 @@
+{%- liquid
+	unless limit
+		assign limit = main_menu.links.size
+	endunless
+	unless offset
+		assign offset = 0
+	endunless
+-%}
+
+<ul
+	class="site-nav site-navigation small--hide"
+{% unless disable_aria %}
+	role="navigation" aria-label="Primary"
+	{% endunless %}>
+	{%- for link in main_menu.links limit: limit offset: offset -%}
+		{%- liquid
+			assign has_dropdown = false
+			assign is_megamenu = false
+			if link.links != blank
+				assign has_dropdown = true
+				if link.levels > 1
+					assign is_megamenu = true
+				endif
+			endif
+		-%}
+
+		<li
+			class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}"
+			{% if has_dropdown %}aria-haspopup="true"{% endif %}>
+
+			<a href="{{ link.url }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
+				{{ link.title }}
+			</a>
+			{%- if is_megamenu -%}
+				{%- assign previous_column_type = '' -%}
+				{%- assign animation_column = 1 -%}
+
+				<div class="site-nav__dropdown megamenu text-left">
+					<div class="page-width content-box-megamenu-global submenu-megamenu-hover-global">
+						<div class="grid {% if dropdown_alignment == 'center' %} grid--center{% endif %} {%- for childlink in link.links limit: 1 -%}{% if childlink.title contains '[i]' %}w-100 row-cols-5 d-flex row{% else %}{% endif %} {%- endfor -%}">
+							<div class="grid__item medium-up--one-fifth appear-animation appear-delay-{{ animation_column }} 	{%- for childlink in link.links limit: 1 -%}{% if childlink.title contains '[i]' %}{% else %}d-none{% endif %} {%- endfor -%}">
+								{%- for childlink in link.links -%}
+									{% if childlink.title contains '[i]' %}
+										{% assign splitTitle = childlink.title | split : '[i]' %}
+										<div class="my-auto content-image-banner-header gx-5">
+											<a href="{{ childlink.url }}" data-switch="{{ splitTitle[1] | file_img_url: '1200x1200' }}" class="parent_first_link site-nav__dropdown-link dropdown-switch site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+												<img srcset="{{ splitTitle[1] | file_img_url: '1200x1200' }}" src="{{ splitTitle[1] | file_img_url: '1200x1200' }}" width="300" height="300" alt="Imagen banner promociones" loading="lazy" class="img-fluid">
+											</a>
+											{%- for grandchildlink in childlink.links -%}
+												<div>
+													<a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+														{{grandchildlink.title}}
+													</a>
+												</div>
+											{%- endfor -%}
+										</div>
+									{%- endif -%}
+							</div>
+							<div class="grid__item medium-up--one-fifth appear-animation appear-delay-{{ animation_column }}">
+								{% if childlink.title contains '[i]' %}
+								{% assign splitTitle = childlink.title | split : '[i]' %}
+									{% else %}
+									<a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
+								{% endif %}
+								{% if childlink.title contains '[i]' %}
+								{% else %}
+									{%- for grandchildlink in childlink.links -%}
+										<div class=" option-menu-alone-global">
+											<a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+												{{grandchildlink.title}}
+											</a>
+										</div>
+									{%- endfor -%}
+								{% endif %}
+								{%- endfor -%}
+							</div>
+						</div>
+					</div>
+				</div>
+			{%- elsif has_dropdown -%}
+				<div class="site-nav__dropdown">
+					<ul class="text-left submenu-megamenu-hover-global page-width">
+						{%- for childlink in link.links -%}
+						{%- liquid
+							assign has_sub_dropdown = false
+							if childlink.links != blank
+								assign has_sub_dropdown = true
+							endif
+						-%}
+						{% if childlink.title contains '[i]' %}
+							{% assign splitTitle = childlink.title | split : '[i]' %}
+								<li class="my-auto content-image-banner-header">
+									<a href="{{ childlink.url }}" data-switch="{{ splitTitle[1] | file_img_url: '1200x1200' }}" class="parent_first_link site-nav__dropdown-link dropdown-switch site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+										<img srcset="{{ splitTitle[1] | file_img_url: '1200x1200' }}" src="{{ splitTitle[1] | file_img_url: '1200x1200' }}" width="300" height="300" alt="Imagen banner promociones" loading="lazy" class="img-fluid">
+									</a>
+								</li>
+						{% else %}
+							<li class="{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+								<a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+									{{ childlink.title | escape }}
+									{%- if has_sub_dropdown -%}
+										<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+									{%- endif -%}
+								</a>
+								{%- if has_sub_dropdown -%}
+									<ul class="site-nav__deep-dropdown">
+										{%- for grandchildlink in childlink.links -%}
+											{% if childlink.title contains '[i]' %}
+												{% assign splitTitle = childlink.title | split : '[i]' %}
+												<li class="my-auto content-image-banner-header">
+													<a href="{{ childlink.url }}" data-switch="{{ splitTitle[1] | file_img_url: '1200x1200' }}" class="parent_first_link site-nav__dropdown-link dropdown-switch site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+														<img srcset="{{ splitTitle[1] | file_img_url: '1200x1200' }}" src="{{ splitTitle[1] | file_img_url: '1200x1200' }}" width="300" height="300" alt="Imagen banner promociones" loading="lazy" class="img-fluid">
+													</a>
+												</li>
+											{% else %}
+											<li>
+												<a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+											</li>
+											{%- endif -%}
+										{%- endfor -%}
+
+									</ul>
+								{%- endif -%}
+							</li>
+						{% endif %}
+						{% endfor %}
+					</ul>
+				</div>
+			{%- endif -%}
+		</li>
+	{%- endfor -%}
+</ul>
