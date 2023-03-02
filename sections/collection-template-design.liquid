@@ -3,6 +3,7 @@
 <noscript><link rel="stylesheet" href="{{ 'grid-global-collection.css' | asset_url }}"></noscript>
 {%- assign per_row = section.settings.per_row -%}
 {%- assign paginate_by = per_row | times: section.settings.rows_per_page -%}
+{% assign show_tags = "DRESSES,BLUSAS,CAMISAS,TOPS, BOTTOMS,OUTERWEAR" | split: "," %}
 <style>
   .quick-view{
     display: none;
@@ -17,13 +18,28 @@
     {%  if collection.metafields.yakampot.menu_colecciones != blank %}
       <div class="col-11 col-lg-12 content-submenu-options-collections">
         <ul class="d-flex list-unstyled justify-content-lg-center">
-          {%- for product in collection.metafields.yakampot.menu_colecciones.value -%}
+          <li>
+            <a href="{{ collection.url }}" class="active">
+              Ver todo
+            </a>
+          </li>
+          {% for tag in collection.all_tags %}
+            {% unless show_tags contains tag %}
+              {% continue %}
+            {% endunless %} {% if current_tags contains tag %}
             <li>
-              <a href="{{ product.url }}">
-                {{ product.title }}
+              <a href="{{ collection.url }}/{{ tag }}" class="active">
+                {{ tag }}
               </a>
             </li>
-          {%- endfor -%}
+          {% else %}
+            <li>
+              <a href="{{ collection.url }}/{{ tag }}">
+                {{ tag }}
+              </a>
+            </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
     {%endif%}
@@ -38,14 +54,15 @@
         {%- endfor -%}
       </div>
     </div>
-    <div class="load-more">
-      <a class="load-more_btn" onclick="loadMoreProducts()">Ver más</a>
-      <div class="load-more_spinner"></div>
-    </div>
+    {% if collection.products_count > 8 %}
+      <div class="load-more">
+        <a class="load-more_btn" onclick="loadMoreProducts()">Ver más</a>
+        <div class="load-more_spinner"></div>
+      </div>
+      {% else %}
+    {% endif %}
 	</div>
 </div>
-
-
   {%- if settings.quick_shop_enable -%}
     {%- for product in collection.products -%}
       {%- if product.available -%}
