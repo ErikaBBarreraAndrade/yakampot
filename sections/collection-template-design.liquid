@@ -15,8 +15,7 @@
     <div class="col-11 col-lg-12 content-title-collection-box text-center">
       {{ collection.title }}
     </div>
-    {%  if collection.metafields.yakampot.menu_colecciones != blank %}
-      <div class="col-11 col-lg-12 content-submenu-options-collections">
+    <div class="col-11 col-lg-12 content-submenu-options-collections">
         <ul class="d-flex list-unstyled justify-content-lg-center">
           <li>
             <a href="{{ collection.url }}" class="active">
@@ -42,7 +41,6 @@
           {% endfor %}
         </ul>
       </div>
-    {%endif%}
     <div class="col-11 col-lg-12 content-global-grid-products">
       <div class="row products-on-page" data-next-url="{{paginate.next.url}}">
         {%- for product in collection.products -%}
