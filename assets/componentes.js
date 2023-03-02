@@ -133,9 +133,9 @@ $('.slider').slick('slickRemove', $('.slick-slide').index(this) - 1);
 function create_filter_price_bar(){
     var min=0;
     var max=0;
-    $( ".grid--collection .grid-product" ).each(function() {      
+    $( ".grid--collection .grid-product" ).each(function() {
       if(eval($(this).data('price'))>max) max = eval($(this).data('price'));
-      if(min==0) min =  eval($(this).data('price')); else if(eval($(this).data('price'))<min) min =  eval($(this).data('price'));      
+      if(min==0) min =  eval($(this).data('price')); else if(eval($(this).data('price'))<min) min =  eval($(this).data('price'));
     });
 
     function change1(ui ){
@@ -144,7 +144,7 @@ function create_filter_price_bar(){
         var price2 = (Shopify.formatMoney(ui[ 1 ], theme.moneyFormat));
         $(".total-range span.min-price").html(price1);
         $(".total-range span.max-price").html(price2);
-        
+
         $( ".grid--collection .grid-product" ).each(function() {
           if(eval($(this).data('price'))>= ui[0] && eval($(this).data('price'))<=ui[1]){
             $(this).fadeIn();
@@ -161,7 +161,7 @@ function create_filter_price_bar(){
     var price1 = (Shopify.formatMoney(min, theme.moneyFormat));
     var price2 = (Shopify.formatMoney(max, theme.moneyFormat));
     $(".total-range span.min-price").html(price1);
-    $(".total-range span.max-price").html(price2);	  
+    $(".total-range span.max-price").html(price2);
   }
 $( document ).ready(function() {
   if ($('.template-collection').length){
@@ -224,7 +224,7 @@ $(document).on('click','.facet-checkbox .filter-link',function(e){
   }else{
     window.location.href = _bPath+"?"+filterOpt;
   }
-  
+
 });
   if ($('.collection-filter').length){
     const _search = window.location.search;
@@ -237,3 +237,10 @@ $(document).on('click','.facet-checkbox .filter-link',function(e){
     }
   }
 });
+const sizeList = $(".content-submenu-options-collections ul li").length;
+console.log(sizeList)
+if (sizeList > 2){
+}  else{
+  $(".content-submenu-options-collections").addClass("collapse")
+  console.log("no");
+}

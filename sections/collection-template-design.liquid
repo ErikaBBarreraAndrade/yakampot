@@ -16,16 +16,18 @@
       {{ collection.title }}
     </div>
     <div class="col-11 col-lg-12 content-submenu-options-collections">
-        <ul class="d-flex list-unstyled justify-content-lg-center">
+        <ul class="d-flex list-unstyled justify-content-lg-center {% for tag in collection.all_tags %} {% unless show_tags contains tag %} {% continue %} {% endunless %} {% if current_tags contains tag %}
+           content-active-link {% else %}{% endif %}{% endfor %}">
           <li>
-            <a href="{{ collection.url }}" class="active">
+            <a href="{{ collection.url }}" class="collection-link-active">
               Ver todo
             </a>
           </li>
           {% for tag in collection.all_tags %}
             {% unless show_tags contains tag %}
               {% continue %}
-            {% endunless %} {% if current_tags contains tag %}
+            {% endunless %}
+            {% if current_tags contains tag %}
             <li>
               <a href="{{ collection.url }}/{{ tag }}" class="active">
                 {{ tag }}

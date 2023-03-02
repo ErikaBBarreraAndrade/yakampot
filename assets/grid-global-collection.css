@@ -276,3 +276,12 @@
     transform: rotate(360deg);
   }
 }
+.content-submenu-options-collections ul li a.collection-link-active{
+  font-family: "Raleway-Bold" !important;
+}
+.content-submenu-options-collections ul.content-active-link li a.collection-link-active{
+  font-family: "Raleway-Light" !important;
+}
+.content-submenu-options-collections ul.content-active-link li a.active{
+  font-family: "Raleway-Bold" !important;
+}
