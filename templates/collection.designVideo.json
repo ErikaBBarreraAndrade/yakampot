@@ -3,11 +3,11 @@
     "7fe03ffe-60c9-406e-85fa-c76c8e6fa038": {
       "type": "banner-yakampot-collection",
       "settings": {
-        "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/446d0ed533f64255b25bb7dd0d0b50ea.mp4",
-        "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d902a705dc20483b9adcb9756e20d74a.mp4",
+        "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/09d0949f743b4fa9bb0921e543311a3d.mp4",
+        "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3884a99fb68a4802a316cbb511960d06.mp4",
         "title": "iCÓNICOS YAKAMPOT",
         "subtitle": "NUESTRA COLECCIÓN DE TEXTILES EMBLEMÁTICOS",
-        "enable_titulos": true,
+        "enable_titulos": false,
         "title_color": "#ffffff",
         "text": "<p>- DISFRUTA DE LA SELECCIÓN DE NUESTRAS PIEZAS MAS EXITOSAS -<\/p>",
         "text_color": "#ffffff"
