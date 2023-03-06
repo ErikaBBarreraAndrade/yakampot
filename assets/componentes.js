@@ -244,3 +244,6 @@ if (sizeList > 2){
   $(".content-submenu-options-collections").addClass("collapse")
   console.log("no");
 }
+$(".content-button-form-toggle").click(function (){
+  $(".content-form").fadeIn();
+});

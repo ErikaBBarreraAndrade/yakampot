@@ -29,10 +29,58 @@
 				</div>
 			{% endif %}
 			{% if section.settings.enable_reservation %}
-				<div class="content-button-block">
+				<div class="content-button-block content-button-form-toggle">
 					<span>{{ section.settings.label_button }}</span>
 				</div>
 			{% endif %}
+			<div class="row content-form mx-auto collapse">
+				<div class="col-12">
+					{% form 'contact' %}
+					{%- if form.posted_successfully? -%}
+						<p class="note note--success">
+							{{ 'contact.form.post_success' | t }}
+						</p>
+						<style>
+              .form-puntos-venta{
+                display: none;
+              }
+						</style>
+
+					{%- endif -%}
+					{{ form_errors | default_errors }}
+					<div class="row form-puntos-venta">
+						<div class="col-12 collapse">
+							<input type="text" name="contact[tipoFormulario]" id="tipoFormulario" class="form-control" value="Previa Cita" />
+						</div>
+						<div class="col-12">
+							<input type="text" name="contact[nombreCompleto]" id="nombreCompleto" class="form-control" placeholder="Nombre completo" required/>
+						</div>
+						<div class="col-12">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<input type="tel" name="contact[telefono]" id="telefono"   pattern="[0-9\-]*" class="form-control" placeholder="Teléfono" required />
+								</div>
+								<div class="col-12 col-md-6">
+									<input type="email" name="contact[email]" id="email" class="form-control" placeholder="Correo electrónico" required/>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<p class="subtitle-form">
+								Selecciona el día y hora en la que te gustaría visitarnos
+							</p>
+							<input type="datetime-local" id="start" name="contact[hora_fecha]" class="form-control" placeholder="selecciona el dia y hora">
+						</div>
+						<div class="col-12">
+							<button type="submit"  class="btn">
+								Agendar cita
+							</button>
+						</div>
+						{% endform %}
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

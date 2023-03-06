@@ -21,6 +21,9 @@
   border-bottom: 1px solid #000;
   padding-bottom: 2px;
 }
+.section-imagen-texto-boton .form-puntos-venta{
+  margin-top: 40px;
+}
 @media (min-width: 576px) {
   .section-imagen-texto-boton{
     padding: 60px 0;
