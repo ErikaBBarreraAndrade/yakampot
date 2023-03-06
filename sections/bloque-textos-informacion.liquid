@@ -2,31 +2,32 @@
 <noscript>{{ 'section-bloque-text-info.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="container-fluid">
-	<div class="row">
-		<div class="col-12">
+	<div class="row content-global justify-content-center">
+		<div class="col-11 col-lg-8">
 			{% if section.settings.title != blank %}
-				<div class="content-title-section">
+				<div class="content-title-section text-center">
 					{{ section.settings.title }}
 				</div>
 			{% endif %}
+			<div class="row">
+				{% for block in section.blocks %}
+					<div class="content-block-description col-12 col-sm-6 text-center">
+						{% if block.settings.title != blank %}
+							<div class="content-title-block">
+								{{ block.settings.title }}
+							</div>
+						{% endif %}
+						{% if block.settings.description != blank %}
+							<div class="content-description-block mx-auto">
+								{{ block.settings.description }}
+							</div>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		{% for block in section.blocks %}
-			<div class="content-block-description col-12 col-lg-6">
-				{% if block.settings.title != blank %}
-					<div class="content-title-block">
-						{{ block.settings.title }}
-					</div>
-				{% endif %}
-				{% if block.settings.description != blank %}
-					<div class="content-description-block mx-auto">
-						{{ block.settings.description }}
-					</div>
-				{% endif %}
-			</div>
-		{% endfor %}
-	</div>
+
 </div>
 {% schema %}
 {

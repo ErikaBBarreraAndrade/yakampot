@@ -1,3 +1,42 @@
 .section-bloque-text-info{
-
+  padding: 30px 0 0;
+}
+.section-bloque-text-info .content-title-section{
+  font-family: 'Raleway-Bold';
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+.section-bloque-text-info .content-block-description{
+  margin-bottom: 30px;
+}
+.section-bloque-text-info .content-block-description .content-title-block{
+  font-family: 'Circular Std Bold';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.35px;
+  margin-bottom: 30px;
+}
+.section-bloque-text-info .content-block-description .content-description-block{
+  font-family: 'Circular Std Book';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.35px;
+  margin-bottom: 30px;
+  max-width: 360px;
+}
+@media (min-width: 576px) {
+  .section-bloque-text-info{
+    padding: 0;
+  }
+  .section-bloque-text-info .content-title-section{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 75px;
+  }
+  .section-bloque-text-info .content-block-description{
+    margin-bottom: 40px;
+  }
 }
