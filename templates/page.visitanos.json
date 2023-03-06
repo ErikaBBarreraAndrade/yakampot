@@ -6,6 +6,15 @@
         "class_body": "header_black"
       }
     },
+    "0f673874-bebb-4fb5-bd94-a8dcad984c62": {
+      "type": "imagen-texto-boton",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Yakampot_Blogs-24.jpg",
+        "description_initial": "<p>Showroom Salvatierra 4<br\/>Salvatierra 45, San Miguel Chapultepec, Miguel Hidalgo, Ciudad de México. Lunes a viernes de 10:00 am a 5:00 pm.<\/p>",
+        "enable_reservation": true,
+        "label_button": "agenda una cita"
+      }
+    },
     "9430717f-de7e-4317-8c8a-825bb5257775": {
       "type": "services",
       "blocks": {
@@ -56,6 +65,7 @@
   },
   "order": [
     "main",
+    "0f673874-bebb-4fb5-bd94-a8dcad984c62",
     "9430717f-de7e-4317-8c8a-825bb5257775"
   ]
 }
