@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "class_body": "header_transparent"
+      }
+    },
+    "846eabbc-6bd1-43d8-ac80-9f8947942562": {
+      "type": "rezos-agua-imagen-completa",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BUEN-FIN22_Whatsapp_f298b4ad-e6e9-496f-ae9b-3ed4c370d9bf.jpg",
+        "btn_label": "Compra Ahora",
+        "btn_url": "shopify:\/\/collections\/all"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "846eabbc-6bd1-43d8-ac80-9f8947942562"
+  ]
+}
