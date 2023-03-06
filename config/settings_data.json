@@ -90,10 +90,7 @@
         "blocks": {
           "1643328988340a4b00-0": {
             "type": "text_block",
-            "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/2desk2023.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/1mob2023.jpg",
               "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c6fe85eb78104e98b1839569574a7fb3.mp4",
               "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7cc148feb21649619000bda90553e711.mp4",
               "title": "nuestros icónicos yakampot",
@@ -110,6 +107,7 @@
           },
           "1643328988340a4b00-2": {
             "type": "text_block",
+            "disabled": true,
             "settings": {
               "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/be5ad667fd54453bbd365f7c42311371.mp4",
               "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a57d1b303f9045b0b7a514d357e62e5f.mp4",
