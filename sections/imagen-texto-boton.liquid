@@ -2,15 +2,26 @@
 <noscript>{{ 'section-imagen-texto-boton.css' | asset_url | stylesheet_tag }}</noscript>
 <div class="container-fluid">
 	<div class="row justify-content-center content-global">
-		<div class="col-12">
+		<div class="col-11 col-lg-8 text-center">
 			<div class="content-image-block">
-				<img class="img-fluid w-100 lazyload"
-				     data-src="{{ section.settings.image | img_url: "master" }}"
-				     alt="{{ section.settings.image.alt | escape }}"
-				     width="{{ section.settings.image.width }}"
-				     height="{{ section.settings.image.height }}"
-				     loading="lazy"
-				>
+				{% if section.settings.image != blank %}
+					<img class="img-fluid w-100 lazyload d-none d-lg-block"
+					     data-src="{{ section.settings.image | img_url: "master" }}"
+					     alt="{{ section.settings.image.alt | escape }}"
+					     width="{{ section.settings.image.width }}"
+					     height="{{ section.settings.image.height }}"
+					     loading="lazy"
+					>
+				{% endif %}
+				{% if section.settings.image_mobile != blank %}
+					<img class="img-fluid w-100 lazyload d-block d-lg-none"
+					     data-src="{{ section.settings.image_mobile | img_url: "master" }}"
+					     alt="{{ section.settings.image_mobile.alt | escape }}"
+					     width="{{ section.settings.image_mobile.width }}"
+					     height="{{ section.settings.image_mobile.height }}"
+					     loading="lazy"
+					>
+				{% endif %}
 			</div>
 			{% if section.settings.description_initial != blank %}
 				<div class="content-description-block mx-auto">
@@ -19,7 +30,7 @@
 			{% endif %}
 			{% if section.settings.enable_reservation %}
 				<div class="content-button-block">
-					{{ section.settings.label_button }}
+					<span>{{ section.settings.label_button }}</span>
 				</div>
 			{% endif %}
 		</div>
@@ -38,6 +49,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Imagen"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Imagen mobile"
     },
     {
       "type": "header",
