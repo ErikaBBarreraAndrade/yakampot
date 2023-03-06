@@ -16,53 +16,6 @@
         "label_button": "agenda una cita"
       }
     },
-    "9430717f-de7e-4317-8c8a-825bb5257775": {
-      "type": "services",
-      "blocks": {
-        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-0": {
-          "type": "text",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/noun_Card_3213534_92271cfb-25ef-4637-ae89-ad721e9c1ca6.png",
-            "heading_service": "",
-            "des_service": "TODAS LAS FORMAS DE PAGO"
-          }
-        },
-        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-1": {
-          "type": "text",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/noun_world_2163509_b05b8322-dc35-4287-8b71-ffc4f39795aa.png",
-            "heading_service": "",
-            "des_service": "ENVIOS WORLDWIDE"
-          }
-        },
-        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-2": {
-          "type": "text",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/noun_Easy_Returns_2639560_efa35f3d-8a63-4ed1-8ead-f74fd65474d8.png",
-            "heading_service": "",
-            "des_service": "cambios gratuitos"
-          }
-        }
-      },
-      "block_order": [
-        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-0",
-        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-1",
-        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-2"
-      ],
-      "settings": {
-        "icon-left": false,
-        "color_border_box": "#e5e5e5",
-        "bg_section": "#ffffff",
-        "title": "Heading",
-        "color_title": "#222222",
-        "color_title_sub": "#888888",
-        "color_icon": "#222222",
-        "color_border": "#e5e5e5"
-      }
-    },
     "a5459478-986e-4a4c-9db5-d9d20cbdcd25": {
       "type": "bloque-textos-informacion",
       "blocks": {
@@ -144,12 +97,59 @@
       "settings": {
         "title": "ENCUENTRA YAKAMPOT EN:"
       }
+    },
+    "9430717f-de7e-4317-8c8a-825bb5257775": {
+      "type": "services",
+      "blocks": {
+        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-0": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Card_3213534_92271cfb-25ef-4637-ae89-ad721e9c1ca6.png",
+            "heading_service": "",
+            "des_service": "TODAS LAS FORMAS DE PAGO"
+          }
+        },
+        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-1": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_world_2163509_b05b8322-dc35-4287-8b71-ffc4f39795aa.png",
+            "heading_service": "",
+            "des_service": "ENVIOS WORLDWIDE"
+          }
+        },
+        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-2": {
+          "type": "text",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noun_Easy_Returns_2639560_efa35f3d-8a63-4ed1-8ead-f74fd65474d8.png",
+            "heading_service": "",
+            "des_service": "cambios gratuitos"
+          }
+        }
+      },
+      "block_order": [
+        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-0",
+        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-1",
+        "template--18221629047099__9430717f-de7e-4317-8c8a-825bb5257775-1678118339b2cab779-2"
+      ],
+      "settings": {
+        "icon-left": false,
+        "color_border_box": "#e5e5e5",
+        "bg_section": "#ffffff",
+        "title": "Heading",
+        "color_title": "#222222",
+        "color_title_sub": "#888888",
+        "color_icon": "#222222",
+        "color_border": "#e5e5e5"
+      }
     }
   },
   "order": [
     "main",
     "0f673874-bebb-4fb5-bd94-a8dcad984c62",
-    "9430717f-de7e-4317-8c8a-825bb5257775",
-    "a5459478-986e-4a4c-9db5-d9d20cbdcd25"
+    "a5459478-986e-4a4c-9db5-d9d20cbdcd25",
+    "9430717f-de7e-4317-8c8a-825bb5257775"
   ]
 }
