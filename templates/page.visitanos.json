@@ -62,11 +62,94 @@
         "color_icon": "#222222",
         "color_border": "#e5e5e5"
       }
+    },
+    "a5459478-986e-4a4c-9db5-d9d20cbdcd25": {
+      "type": "bloque-textos-informacion",
+      "blocks": {
+        "template--18221629047099__a5459478-986e-4a4c-9db5-d9d20cbdcd25-167812441635b00650-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "Ciudad de México",
+            "description": "<p>Shop Condesa DF<br\/>Av. Veracruz 102, Roma Nte., Cuauhtémoc, Cdmx, 06700 Lunes y martes de 10:00 am a 6:00 pm Miércoles a domingo de 9:00 am a 9:00 pm.<\/p>"
+          }
+        },
+        "template--18221629047099__a5459478-986e-4a4c-9db5-d9d20cbdcd25-167812441635b00650-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "Guadalajara",
+            "description": "<p>Empathy Store<br\/>Av. Montevideo 3181, Providencia, Guadalajara, Jalisco. Lunes a viernes 10:00 am - 8:00 pm<br\/>Sábados 11:00 am a 3:00 pm.<\/p>"
+          }
+        },
+        "template--18221629047099__a5459478-986e-4a4c-9db5-d9d20cbdcd25-167812441635b00650-2": {
+          "type": "text_block",
+          "settings": {
+            "title": "San Miguel de Allende",
+            "description": "<p>Casa R Concept Store<br\/>Mesones 83, Zona Centro, San Miguel de Allende, Guanajuato, 37700. Lunes a domingo de 11:00 am - 8:00 pm.<\/p>"
+          }
+        },
+        "7f319cc3-3029-41ef-8c9a-e6f341709f23": {
+          "type": "text_block",
+          "settings": {
+            "title": "Punta de Mita",
+            "description": "<p>Fashionkind<br\/>Susurros Del Corazón<br\/>Carretera a la Cruz de Huanacaxtle Km 14, Punta de Mita, Nayarit, 63734.<\/p>"
+          }
+        },
+        "b247bd05-2b1a-4172-a74e-cbee65a98794": {
+          "type": "text_block",
+          "settings": {
+            "title": "Mixta",
+            "description": "<p>Pila Seca 3, Centro, San Miguel de Allende, Guanajuato, 37700. Lunes a Sábado 10:00 am - 7:00 pm<br\/>Domingo 11:00 am - 5:00 pm.<\/p>"
+          }
+        },
+        "7efe1814-11f2-4eb6-9d11-a3c7a134d8db": {
+          "type": "text_block",
+          "settings": {
+            "title": "Puerto Vallarta",
+            "description": "<p>Tienda Belén Del Mar<br\/>Centro comercial La Isla<br\/>Av. Francisco Medina Ascencio 2479 Local PB 12A, Zona hotelera Las Glorias, Puerto Vallarta, Jalisco, 48333.<br\/><\/p>"
+          }
+        },
+        "63af9822-9f88-4d91-b868-726a8119daf6": {
+          "type": "text_block",
+          "settings": {
+            "title": "Mérida",
+            "description": "<p>Trunk Show<br\/>Calle 7 #278F Av. Campestre, Mérida, Yucatán, 97120 Lunes, martes, jueves y viernes 9:00 am - 7:00 pm Sábado 9:00 - 4:30 pm<br\/>Domingo 9:00 - 2:00 pm.<\/p>"
+          }
+        },
+        "2ac89270-3b26-4724-a476-0af6f46aa3f2": {
+          "type": "text_block",
+          "settings": {
+            "title": "San Luis Potosí",
+            "description": "<p>Never Too Much<br\/>Montes Aconcagua 30 1 local 22, Lomas de San Luis segunda sección, Plaza Aconcagua, San Luis Potosí, 78210<br\/>Lunes a viernes 10:00 am a 3:00 pm - 4:00 am a 8:00 pm<br\/>Sábado 11:00 am - 5:00 pm.<\/p>"
+          }
+        },
+        "0e5b4fd4-3c08-4163-9380-e93c705523b0": {
+          "type": "text_block",
+          "settings": {
+            "title": "Tuc Tuc",
+            "description": "<p>A dentro del Hotel Hilton Villa Mercedes Av. Colón 500, Centro, Mérida, Yucatán, 97000 Horario martes a sábado de 11:00 am - 7:00 pm Domingo de 11:00 am - 3:00 pm.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18221629047099__a5459478-986e-4a4c-9db5-d9d20cbdcd25-167812441635b00650-0",
+        "template--18221629047099__a5459478-986e-4a4c-9db5-d9d20cbdcd25-167812441635b00650-1",
+        "template--18221629047099__a5459478-986e-4a4c-9db5-d9d20cbdcd25-167812441635b00650-2",
+        "7f319cc3-3029-41ef-8c9a-e6f341709f23",
+        "b247bd05-2b1a-4172-a74e-cbee65a98794",
+        "7efe1814-11f2-4eb6-9d11-a3c7a134d8db",
+        "63af9822-9f88-4d91-b868-726a8119daf6",
+        "2ac89270-3b26-4724-a476-0af6f46aa3f2",
+        "0e5b4fd4-3c08-4163-9380-e93c705523b0"
+      ],
+      "settings": {
+        "title": "ENCUENTRA YAKAMPOT EN:"
+      }
     }
   },
   "order": [
     "main",
     "0f673874-bebb-4fb5-bd94-a8dcad984c62",
-    "9430717f-de7e-4317-8c8a-825bb5257775"
+    "9430717f-de7e-4317-8c8a-825bb5257775",
+    "a5459478-986e-4a4c-9db5-d9d20cbdcd25"
   ]
 }
