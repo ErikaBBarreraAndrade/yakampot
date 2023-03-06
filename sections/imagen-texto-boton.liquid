@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="{{ 'section-imagen-texto-boton.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-imagen-texto-boton.css' | asset_url | stylesheet_tag }}</noscript>
+<div class="container-fluid">
+	<div class="row justify-content-center content-global">
+		<div class="col-12">
+			<div class="content-image-block">
+				<img class="img-fluid w-100 lazyload"
+				     data-src="{{ section.settings.image | img_url: "master" }}"
+				     alt="{{ section.settings.image.alt | escape }}"
+				     width="{{ section.settings.image.width }}"
+				     height="{{ section.settings.image.height }}"
+				     loading="lazy"
+				>
+			</div>
+			{% if section.settings.description_initial != blank %}
+				<div class="content-description-block mx-auto">
+					{{ section.settings.description_initial }}
+				</div>
+			{% endif %}
+			{% if section.settings.enable_reservation %}
+				<div class="content-button-block">
+					{{ section.settings.label_button }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Imagen texto botón",
+  "class": "section-imagen-texto-boton section-content-description-parallax",
+  "settings": [
+    {
+      "type": "header",
+      "content": "===== Imagen ====="
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "header",
+      "content": "===== Descripción inicial ====="
+    },
+    {
+      "type": "richtext",
+      "id": "description_initial",
+      "label": "Descripción"
+    },
+    {
+      "type": "header",
+      "content": "===== Botón ====="
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_reservation",
+      "label": "Habilitar botón",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "label_button",
+      "label": "Agenda una cita"
+    }
+  ],
+  "presets": [{
+    "name": "Imagen texto botón",
+    "category": "Text"
+  }]
+}
+{% endschema %}
