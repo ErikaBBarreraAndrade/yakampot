@@ -220,8 +220,8 @@
           "36f12b53-3150-4e6f-a6d0-9f4ea5bca4d0": {
             "type": "item",
             "settings": {
-              "tab_name": "Rebajas Invierno",
-              "collection": "febrero60",
+              "tab_name": "Nuevas piezas",
+              "collection": "nuevas-piezas",
               "btn_link": "shopify:\/\/collections\/todos-los-productos-por-rebajas",
               "btn_link_all": ""
             }
@@ -238,6 +238,7 @@
           },
           "2387ff7c-8f0c-4d1b-b5f3-be9b05133906": {
             "type": "item",
+            "disabled": true,
             "settings": {
               "tab_name": "Rezos del Agua",
               "collection": "rezos",
