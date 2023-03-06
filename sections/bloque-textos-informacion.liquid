@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="{{ 'section-bloque-text-info.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-bloque-text-info.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			{% if section.settings.title != blank %}
+				<div class="content-title-section">
+					{{ section.settings.title }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="row">
+		{% for block in section.blocks %}
+			<div class="content-block-description col-12 col-lg-6">
+				{% if block.settings.title != blank %}
+					<div class="content-title-block">
+						{{ block.settings.title }}
+					</div>
+				{% endif %}
+				{% if block.settings.description != blank %}
+					<div class="content-description-block mx-auto">
+						{{ block.settings.description }}
+					</div>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Bloque textos información",
+  "class": "section-content-description-parallax section-bloque-text-info",
+  "settings": [
+	  {
+		  "type": "header",
+		  "content": "==== Titulo ===="
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titulo"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "header",
+          "content": "==== Titulo ===="
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titulo"
+        },
+        {
+          "type": "header",
+          "content": "==== Descripción ===="
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Descripción"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bloque textos información",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

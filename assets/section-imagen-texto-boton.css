@@ -1,9 +1,9 @@
 .section-imagen-texto-boton{
-  padding: 80px 0;
+  padding: 30px 0;
 }
 .section-imagen-texto-boton .content-description-block{
   font-family: 'Circular Std Book';
-  margin-top: 65px;
+  margin-top: 40px;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.35px;
@@ -20,4 +20,17 @@
 .section-imagen-texto-boton .content-button-block span{
   border-bottom: 1px solid #000;
   padding-bottom: 2px;
+}
+@media (min-width: 576px) {
+  .section-imagen-texto-boton{
+    padding: 60px 0;
+  }
+  .section-imagen-texto-boton .content-description-block{
+    margin-top: 65px;
+  }
+}
+@media (min-width: 992px) {
+  .section-imagen-texto-boton{
+    padding: 80px 0;
+  }
 }
