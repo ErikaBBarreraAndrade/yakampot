@@ -90,13 +90,14 @@
         "blocks": {
           "1643328988340a4b00-0": {
             "type": "text_block",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/2desk2023.jpg",
               "image_mobile": "shopify:\/\/shop_images\/1mob2023.jpg",
-              "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/96f0ba8bc92a42ada94347d93621e3ee.mp4",
-              "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f0259e54e06247d48960b3e98c333b79.mp4",
-              "title": "moda mundana",
-              "subtitle": "Prendas inspiradas en elementos icónicos mexicanos",
+              "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c6fe85eb78104e98b1839569574a7fb3.mp4",
+              "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7cc148feb21649619000bda90553e711.mp4",
+              "title": "nuestros icónicos yakampot",
+              "subtitle": "creamos una colección de piezas esenciales que se reinventan y perfeccionan",
               "enable_image": false,
               "enable_titulos": true,
               "title_color": "#ffffff",
