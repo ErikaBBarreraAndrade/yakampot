@@ -168,41 +168,6 @@ $( document ).ready(function() {
   	create_filter_price_bar();
   }
 });
-/*
-$('.slider-more-article').slick({
-    slidesToScroll: 1,
-    slidesToShow: 3,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    dots: true,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                dots: false,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                dots: false,
-                slidesToScroll: 1
-            }
-        }
-
-    ]
-});*/
 $(function(){
 $(document).on('click','.facet-checkbox .filter-link',function(e){
   e.preventDefault();
@@ -238,7 +203,6 @@ $(document).on('click','.facet-checkbox .filter-link',function(e){
   }
 });
 const sizeList = $(".content-submenu-options-collections ul li").length;
-console.log(sizeList)
 if (sizeList > 2){
 }  else{
   $(".content-submenu-options-collections").addClass("collapse")

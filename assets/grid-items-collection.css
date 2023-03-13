@@ -1,17 +1,18 @@
 .template-collection,
 .template-collection .grid-global-collection {
   background: #ffffff;
+  overflow-x: hidden;
 }
 .template-collection
   .grid-global-collection
   .content-submenu-options-collections {
-  margin: 0px 0 40px 0;
+  margin: 0;
 }
 @media (min-width: 992px) {
   .template-collection
     .grid-global-collection
     .content-submenu-options-collections {
-    margin: 0px 0 60px 0;
+    margin: 0;
   }
 }
 .template-collection

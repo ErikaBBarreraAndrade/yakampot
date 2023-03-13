@@ -1,84 +1,376 @@
-{{ 'component-facets.css' | asset_url | stylesheet_tag }}
-<link rel="preload" href="{{ 'grid-global-collection.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ 'grid-global-collection.css' | asset_url }}"></noscript>
-{%- assign per_row = section.settings.per_row -%}
-{%- assign paginate_by = per_row | times: section.settings.rows_per_page -%}
-{% assign show_tags = "DRESSES,BLUSAS,CAMISAS,TOPS,BOTTOMS,OUTERWEAR" | split: "," %}
-<style>
-  .quick-view{
-    display: none;
-  }
-</style>
-{%- paginate collection.products by 8 -%}
-<div class="container-fluid page-width">
-	<div class="row justify-content-center content-products-grid-box-global">
-    <div class="col-11 col-lg-12 content-title-collection-box text-center">
-      {{ collection.title }}
-    </div>
-    <div class="col-11 col-lg-12 content-submenu-options-collections">
-        <ul class="d-flex list-unstyled justify-content-lg-center {% for tag in collection.all_tags %} {% unless show_tags contains tag %} {% continue %} {% endunless %} {% if current_tags contains tag %}
-           content-active-link {% else %}{% endif %}{% endfor %}">
-          <li>
-            <a href="{{ collection.url }}" class="collection-link-active">
-              Ver todo
-            </a>
-          </li>
-          {% for tag in collection.all_tags %}
-            {% unless show_tags contains tag %}
-              {% continue %}
-            {% endunless %}
-            {% if current_tags contains tag %}
-            <li>
-              <a href="{{ collection.url }}/{{ tag }}" class="active">
-                {{ tag }}
-              </a>
-            </li>
-          {% else %}
-            <li>
-              <a href="{{ collection.url }}/{{ tag }}">
-                {{ tag }}
-              </a>
-            </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    <div class="col-11 col-lg-12 content-global-grid-products">
-      <div class="row products-on-page" data-next-url="{{paginate.next.url}}">
-        {%- for product in collection.products -%}
-          {%- render 'product-grid-item-new', product: product -%}
-        {%- else -%}
-          <div class="grid__item">
-            <p>{{ 'collections.general.no_matches' | t }}</p>
+  {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+  <link rel="preload" href="{{ 'grid-global-collection.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'grid-global-collection.css' | asset_url }}"></noscript>
+  <link rel="preload" href="{{ 'box-filter-options.scss.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'box-filter-options.scss.css' | asset_url }}"></noscript>
+  {% assign show_tags = "DRESSES,BLUSAS,CAMISAS,TOPS,BOTTOMS,OUTERWEAR" | split: "," %}
+  <style>
+    .quick-view{
+      display: none;
+    }
+  </style>
+  {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+  <div>
+    <div class="collection-filter row d-none">
+      {%- assign current_filter_size = current_tags | size -%}
+      <div class="col-12 page-width">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="row justify-content-end">
+              <div class="col-12 col-xxl-6 content-filter">
+                <div class="row">
+                  <div class="col-6 col-lg-6 text-center text-lg-end">
+                    <a class="filter-show-yakampot">
+                      Ordenar por <i class="fa fa-angle-down"></i>
+                    </a>
+                    {% comment %}<div class="collection-filter__item collection-filter__item--drawer">
+											<button
+													type="button"
+													class="js-drawer-open-collection-filters btn btn--tertiary{% unless current_filter_size == 0 %} btn--tertiary-active{% endunless %}"
+													aria-controls="FilterDrawer">
+												<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-filter" viewBox="0 0 64 64"><path d="M48 42h10M48 42a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM7 42h31M16 22H6M16 22a5 5 0 1 1 5 5 5 5 0 0 1-5-5zM57 22H26"/></svg>
+												{{ 'collections.filters.title_tags' | t }}
+												{%- if current_filter_size > 0 -%}
+													({{ current_filter_size }})
+												{%- endif -%}
+											</button>
+										</div>{% endcomment %}
+                  </div>
+                  <div class="col-6 col-lg-6  text-center text-lg-end">
+                    <a class="filter-show-complete-yakampot">
+                      Filtrar por <i class="fa fa-angle-down"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        {%- endfor -%}
+        </div>
       </div>
     </div>
-    {% if collection.products_count > 8 %}
-      <div class="load-more">
-        <a class="load-more_btn" onclick="loadMoreProducts()">Ver más</a>
-        <div class="load-more_spinner"></div>
-      </div>
-      {% else %}
-    {% endif %}
-	</div>
-</div>
-  {%- if settings.quick_shop_enable -%}
-    {%- for product in collection.products -%}
-      {%- if product.available -%}
-        {%- render 'quick-shop-modal', product: product -%}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endif -%}
+  </div>
+  {%- paginate collection.products by 8 -%}
+    <div class="container-fluid page-width">
+      <div class="row justify-content-center content-products-grid-box-global">
+        <div class="col-11 col-lg-12 content-title-collection-box text-center">
+          {{ collection.title }}
+        </div>
+        <div class="col-11 col-lg-12 content-submenu-options-collections">
+          <ul class="d-flex list-unstyled justify-content-lg-center {% for tag in collection.all_tags %} {% unless show_tags contains tag %} {% continue %} {% endunless %} {% if current_tags contains tag %}
+           content-active-link {% else %}{% endif %}{% endfor %}">
+            <li>
+              <a href="{{ collection.url }}" class="collection-link-active">
+                Ver todo
+              </a>
+            </li>
+            {% for tag in collection.all_tags %}
+              {% unless show_tags contains tag %}
+                {% continue %}
+              {% endunless %}
+              {% if current_tags contains tag %}
+                <li>
+                  <a href="{{ collection.url }}/{{ tag }}" class="active">
+                    {{ tag }}
+                  </a>
+                </li>
+              {% else %}
+                <li>
+                  <a href="{{ collection.url }}/{{ tag }}">
+                    {{ tag }}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+       {% comment %} <div class="col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Filtrar y ordenar
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="row filter-complete-yakampot d-block ">
+                    <div class="col-12 pb-4">
+                      <div class="title-block text-uppercase">
+                        Filtrar por:
+                      </div>
 
-{%- endpaginate -%}
+                      {% if current_tags %}
+                        <div class="list-current-tag">
+                          <ul>
+                            {% for tag in current_tags %}
+                              {% assign cTName = tag | remove_first : 'COLOR_' | remove_first : 'TALLA_' %}
+                              <li>{{cTName}} {{ 'x' | link_to_remove_tag: tag }}</li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                    </div>
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-12 text-center col-md-3">
+                          <div class="collection-filter__sort-container select-filter">
+                            {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                            <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+                            <select name="SortBy" id="SortBy" data-default-sortby="{{ collection.default_sort_by }}">
+                              <option value="best-selling">Más vendidos</option>
+                              <option value="price-ascending">Precio, menor a mayor</option>
+                              <option value="price-descending">Precio, mayor a menor</option>
+                            </select>
+                          </div>
+                        </div>
+                        {%- for filter in collection.filters -%}
+                          {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+                          {%  assign filterName = filter.label | downcase %}
+                          {%  if filterName != 'disponibilidad' %}
+                            <div class="col-12 col-md-3">
+                              <div class="row">
+                                <div class="col-12 title-block text-uppercase pb-4">
+                                  {{ filter.label }}
+                                </div>
+                                {%- for value in filter.values -%}
+                                  {% if value.count > 0 %}
+                                    <div class="col-12 mb-2">
+                                      <div href="#" class="catalog_color text-uppercase">
+                                        <div class="d-flex align-items-center">
+
+                                          <div class="flex-grow-1 ms-3 facet-checkbox {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %} {% if value.active %}link-active{% endif %}">
+                                            <a class="filter-link {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %}" data-colurl="/collections/{{ collection.handle }}" data-filteropt="{{ value.param_name }}={{ value.value }}" href="#">
+                                              <svg width="1rem" height="1rem" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                              </svg>
+
+                                              <svg class="icon icon-checkmark"
+                                                   width="1.1rem"
+                                                   height="0.7rem"
+                                                   viewBox="0 0 11 7"
+                                                   fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+
+                                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                                      stroke="currentColor"
+                                                      stroke-width="1.75"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round" />
+                                              </svg>
+                                              {% if filter.label == 'Color' %}
+                                                <div class="cc-color cc-color-{{ value.label | handleize }}"></div>
+                                              {%  endif %}
+                                              <span aria-hidden="true">{{ value.label | escape }} </span>
+                                              <span class="float-end">{{ value.count }}</span>
+
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  {%  endif %}
+                                {%- endfor -%}
+                              </div>
+                            </div>
+                          {%  endif %}
+                        {% endfor %}
+
+                        <div class="col-12 col-md-3 catalog_price">
+                          <div class="row h-100">
+                            <div class="col-12 title-block text-uppercase">
+                              Filtro de precios
+                            </div>
+                            <div class="col-12 mt-2">
+                              <input id="range1" type="text"/>
+                              <p class="total-range text-start">
+                                <span class="min-price">$ 300.00 MXN</span> - <span class="max-price">$ 7,999.00 MXN</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>{% endcomment %}
+    <div class="col-11 col-sm-11 col-lg-12 box-content-filter-global">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Filtrar y ordenar
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="row filter-complete-yakampot d-block">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="content-tag-result">
+                            {% if current_tags %}
+                              <div class="list-current-tag">
+                                <ul>
+                                  {% for tag in current_tags %}
+                                    {% assign cTName = tag | remove_first : 'COLOR_' | remove_first : 'TALLA_' %}
+                                    <li>{{cTName}} {{ 'x' | link_to_remove_tag: tag }}</li>
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                            {% endif %}
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-lg-3">
+                              <div class="collection-filter__sort-container select-filter">
+                                {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                                <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+                                <select name="SortBy" id="SortBy" data-default-sortby="{{ collection.default_sort_by }}">
+                                  <option value="best-selling">Más vendidos</option>
+                                  <option value="price-ascending">Precio, menor a mayor</option>
+                                  <option value="price-descending">Precio, mayor a menor</option>
+                                </select>
+                              </div>
+                            </div>
+                            {%- for filter in collection.filters -%}
+                              {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+                              {%  assign filterName = filter.label | downcase %}
+                              {%  if filterName != 'disponibilidad' %}
+                                <div class="col-12 col-sm-6 col-lg-3 box-filter-options-global">
+                                  <div class="row">
+                                    <div class="col-12 text-uppercase">
+                                      <div class="title-block">
+                                        {{ filter.label }}
+                                      </div>
+                                    </div>
+                                    {%- for value in filter.values -%}
+                                      {% if value.count > 0 %}
+                                        <div class="col-6 col-md-12 mb-2">
+                                          <div href="#" class="catalog_color">
+                                            <div class="d-flex align-items-center">
+                                              <div class="flex-grow-1 facet-checkbox {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %} {% if value.active %}link-active{% endif %}">
+                                                {% for tag in collection.all_tags %}
+                                                  {% unless show_tags contains tag %}
+                                                    {% continue %}
+                                                  {% endunless %}
+                                                  {% if current_tags contains tag %}
+                                                    <style>
+                                                      .content-filter-collection-global{
+                                                        display: none;
+                                                      }
+                                                    </style>
+                                                    <a class="filter-link {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %}" data-colurl="/collections/{{ collection.handle }}/{{ tag }}" data-filteropt="{{ value.param_name }}={{ value.value }}" href="#">
+                                                      <svg width="1rem" height="1rem" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                                        <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                                      </svg>
+
+                                                      <svg class="icon icon-checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 12.7 12.7" enable-background="new 0 0 12.7 12.7" xml:space="preserve">
+                                                      <g id="Grupo_384" transform="translate(6.344 -4.928) rotate(45)">
+                                                        <path id="Trazado_33" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="4" d="M0,8h15.9"/>
+                                                        <path id="Trazado_250" fill="none" stroke="#000000" stroke-linecap="round" d="M8,0v15.9"/>
+                                                      </g>
+                                                      </svg>
+                                                      {% if filter.label == 'Color' %}
+                                                        <div class="cc-color cc-color-{{ value.label | handleize }}"></div>
+                                                      {%  endif %}
+                                                      <span aria-hidden="true">{{ value.label | escape }} </span>
+                                                      <span class="float-end">{{ value.count }}</span>
+
+                                                    </a>
+                                                  {% else %}
+                                                  {% endif %}
+                                                {% endfor %}
+                                                <a class="filter-link content-filter-collection-global {% if value.count < 1 or filter.active_values.size > 0 and filterName == 'talla' and value.active == false %}disable_filter{% endif %}" data-colurl="/collections/{{ collection.handle }}/{{ tag }}" data-filteropt="{{ value.param_name }}={{ value.value }}" href="#">
+                                                  <svg width="1rem" height="1rem" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                                  </svg>
+
+                                                  <svg class="icon icon-checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 12.7 12.7" enable-background="new 0 0 12.7 12.7" xml:space="preserve">
+                                                      <g id="Grupo_384" transform="translate(6.344 -4.928) rotate(45)">
+                                                        <path id="Trazado_33" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="4" d="M0,8h15.9"/>
+                                                        <path id="Trazado_250" fill="none" stroke="#000000" stroke-linecap="round" d="M8,0v15.9"/>
+                                                      </g>
+                                                      </svg>
+                                                  {% if filter.label == 'Color' %}
+                                                    <div class="cc-color cc-color-{{ value.label | handleize }}"></div>
+                                                  {%  endif %}
+                                                  <span aria-hidden="true">{{ value.label | escape }} </span>
+                                                  <span class="float-end">{{ value.count }}</span>
+
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      {%  endif %}
+                                    {%- endfor -%}
+                                  </div>
+                                </div>
+                              {%  endif %}
+                            {% endfor %}
+
+                            <div class="col-12 col-lg-3 catalog_price">
+                              <div class="row h-100">
+                                <div class="col-12 text-uppercase">
+                                  <div class="title-block">
+                                    Filtro de precios
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                  <input id="range1" type="text"/>
+                                  <p class="total-range text-start">
+                                    <span class="min-price">$ 300.00 MXN</span> - <span class="max-price">$ 7,999.00 MXN</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-lg-12 content-global-grid-products">
+          <div class="row products-on-page grid--collection" data-next-url="{{paginate.next.url}}">
+            {%- for product in collection.products -%}
+              {%- render 'product-grid-item-new', product: product -%}
+            {%- else -%}
+              <div class="grid__item">
+                <p>{{ 'collections.general.no_matches' | t }}</p>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+        {% if collection.products_count > 8 %}
+          <div class="load-more">
+            <a class="load-more_btn" onclick="loadMoreProducts()">Ver más</a>
+            <div class="load-more_spinner"></div>
+          </div>
+        {% else %}
+        {% endif %}
+      </div>
+    </div>
+    {%- if settings.quick_shop_enable -%}
+      {%- for product in collection.products -%}
+        {%- if product.available -%}
+          {%- render 'quick-shop-modal', product: product -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endpaginate -%}
 
 {% schema %}
-  {
-    "name": "Collection pages",
-    "class": "grid-global-collection section-content-description-parallax",
-    "settings": [
+{
+  "name": "Collection pages",
+  "class": "grid-global-collection section-content-description-parallax",
+  "settings": [
 
-    ]
-  }
+  ]
+}
 {% endschema %}
