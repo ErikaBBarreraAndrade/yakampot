@@ -787,8 +787,16 @@
               "text": "<p>Calle 7 #278F Av. Campestre, Mérida, Yucatán, 97120<\/p><p>Lunes, martes, jueves y viernes 9:00 am - 7:00 pm<\/p><p>Sábado 9:00 - 4:30 pm<\/p><p>Domingo 9:00 - 2:00 pm<\/p>"
             }
           },
+          "d5d5dbfa-b0c5-471a-a17e-c504bad23849": {
+            "type": "text_block",
+            "settings": {
+              "title": "Tuc Tuc",
+              "text": "<p>A dentro del Hotel Hilton Villa Mercedes<\/p><p>Av. Colón 500, Centro, Mérida, Yucatán, 97000<\/p><p>Horario lunes cerrado, martes a sábado de 11:00 am - 7:00 pm<\/p><p>Domingo de 11:00 am - 3:00 pm<\/p>"
+            }
+          },
           "120a2f45-fdb8-4534-b405-b42459eb9811": {
             "type": "text_block",
+            "disabled": true,
             "settings": {
               "title": "CDMX",
               "text": "<p>Zapatería El Tigre<br\/>Colima 107, Col. Roma Norte, Cuauhtémoc, CDMX.<\/p><p><\/p><p><strong>Nuup Shop<br\/><\/strong>Monte athos 340<br\/>Lomas de Chapultepec, Miguel Hidalgo, CDMX, CP 1100<br\/>Lunes a Sábado 11am a 7 pm<\/p>"
@@ -804,6 +812,7 @@
           },
           "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8": {
             "type": "text_block",
+            "disabled": true,
             "settings": {
               "title": "Porton Madera Concept Store",
               "text": "<p>Calle Positos No. 33, Colonia Centro, Guanajuato, Gto. Dentro del Hotel Boutique Casa del Rector<br\/>Miércoles a Lunes de 10:30am -8:00pm <br\/>Martes Cerrado<\/p>"
@@ -811,6 +820,7 @@
           },
           "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e": {
             "type": "text_block",
+            "disabled": true,
             "settings": {
               "title": "Casa R Concept Store",
               "text": "<p>Mesones 83, Zona Centro, 37700, San Miguel de Allende, Gto.<br\/>Lunes a domingo de 11:00am -8:00pm<\/p>"
@@ -818,16 +828,17 @@
           },
           "6990f233-059d-46cc-8f0a-b3a85d7df34f": {
             "type": "text_block",
+            "disabled": true,
             "settings": {
               "title": "Mérida Trunk Show",
               "text": "<p>Calle 30 #391, Col. Campestre, Mérida, Yucatán, CP 97129 <br\/>Lunes a viernes 11 am a 7 pm<br\/>Sábados 9 am a 2 pm<\/p>"
             }
           },
-          "d5d5dbfa-b0c5-471a-a17e-c504bad23849": {
+          "2ee7795e-1fa6-403b-9463-eae6c98e62da": {
             "type": "text_block",
             "settings": {
-              "title": "Tuc Tuc",
-              "text": "<p>A dentro del Hotel Hilton Villa Mercedes<\/p><p>Av. Colón 500, Centro, Mérida, Yucatán, 97000<\/p><p>Horario lunes cerrado, martes a sábado de 11:00 am - 7:00 pm<\/p><p>Domingo de 11:00 am - 3:00 pm<\/p>"
+              "title": "Empathy Store",
+              "text": "<p>Av. Montevideo 3181, Providencia, Guadalajara, Jalisco.<\/p><p>Lunes a viernes 10:00 am - 8:00 pm<\/p><p>Sábados 11:00 am a 3:00 pm<\/p>"
             }
           }
         },
@@ -837,12 +848,13 @@
           "45db10fb-38ba-4da1-a569-e4d5d80e2098",
           "67b1c207-0370-43ad-baf5-2843d216a98c",
           "bda46bee-fc7e-4920-a1dd-364063b80985",
+          "d5d5dbfa-b0c5-471a-a17e-c504bad23849",
           "120a2f45-fdb8-4534-b405-b42459eb9811",
           "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7",
           "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8",
           "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e",
           "6990f233-059d-46cc-8f0a-b3a85d7df34f",
-          "d5d5dbfa-b0c5-471a-a17e-c504bad23849"
+          "2ee7795e-1fa6-403b-9463-eae6c98e62da"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/imagen_puntos_de_venta_8b08e229-2b6a-4923-9644-5cb95534ac5e.jpg",
