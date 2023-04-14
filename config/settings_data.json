@@ -780,6 +780,13 @@
               "text": "<p>Pila Seca 3, Centro, San Miguel de Allende, Guanajuato, 37700.<\/p><p>Lunes a Sábado 10:00 am - 7:00 pm<\/p><p>Domingo 10:00 am - 5:00 pm<\/p>"
             }
           },
+          "bda46bee-fc7e-4920-a1dd-364063b80985": {
+            "type": "text_block",
+            "settings": {
+              "title": "Trunk Show",
+              "text": "<p>Calle 7 #278F Av. Campestre, Mérida, Yucatán, 97120<\/p><p>Lunes, martes, jueves y viernes 9:00 am - 7:00 pm<\/p><p>Sábado 9:00 - 4:30 pm<\/p><p>Domingo 9:00 - 2:00 pm<\/p>"
+            }
+          },
           "120a2f45-fdb8-4534-b405-b42459eb9811": {
             "type": "text_block",
             "settings": {
@@ -816,11 +823,11 @@
               "text": "<p>Calle 30 #391, Col. Campestre, Mérida, Yucatán, CP 97129 <br\/>Lunes a viernes 11 am a 7 pm<br\/>Sábados 9 am a 2 pm<\/p>"
             }
           },
-          "bda46bee-fc7e-4920-a1dd-364063b80985": {
+          "d5d5dbfa-b0c5-471a-a17e-c504bad23849": {
             "type": "text_block",
             "settings": {
-              "title": "Trunk Show",
-              "text": "<p>Calle 7 #278F Av. Campestre, Mérida, Yucatán, 97120<\/p><p>Lunes, martes, jueves y viernes 9:00 am - 7:00 pm<\/p><p>Sábado 9:00 - 4:30 pm<\/p><p>Domingo 9:00 - 2:00 pm<\/p>"
+              "title": "Tuc Tuc",
+              "text": "<p>A dentro del Hotel Hilton Villa Mercedes<\/p><p>Av. Colón 500, Centro, Mérida, Yucatán, 97000<\/p><p>Horario lunes cerrado, martes a sábado de 11:00 am - 7:00 pm<\/p><p>Domingo de 11:00 am - 3:00 pm<\/p>"
             }
           }
         },
@@ -829,12 +836,13 @@
           "39969f0b-906a-493f-a90b-e59c46aefcfa",
           "45db10fb-38ba-4da1-a569-e4d5d80e2098",
           "67b1c207-0370-43ad-baf5-2843d216a98c",
+          "bda46bee-fc7e-4920-a1dd-364063b80985",
           "120a2f45-fdb8-4534-b405-b42459eb9811",
           "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7",
           "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8",
           "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e",
           "6990f233-059d-46cc-8f0a-b3a85d7df34f",
-          "bda46bee-fc7e-4920-a1dd-364063b80985"
+          "d5d5dbfa-b0c5-471a-a17e-c504bad23849"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/imagen_puntos_de_venta_8b08e229-2b6a-4923-9644-5cb95534ac5e.jpg",
