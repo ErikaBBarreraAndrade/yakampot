@@ -759,6 +759,13 @@
               "text": "<p>PREVIA CITA<\/p><p>Salvatierra 45, San Miguel Chapultepec II Sección, Miguel Hidalgo, Cdmx, 11850<\/p><p>Lunes a viernes de 10:00 am - 5:00 pm<\/p>"
             }
           },
+          "39969f0b-906a-493f-a90b-e59c46aefcfa": {
+            "type": "text_block",
+            "settings": {
+              "title": "Shop Condesa DF",
+              "text": "<p>Av. Veracruz 102, Roma Nte., Cuauhtémoc, Cdmx, 06700<\/p><p>Lunes y martes de 10:00 am a 6:00 pm<\/p><p>Miércoles a domingo de 9:00 am a 9:00 pm<\/p>"
+            }
+          },
           "120a2f45-fdb8-4534-b405-b42459eb9811": {
             "type": "text_block",
             "settings": {
@@ -795,22 +802,23 @@
               "text": "<p>Calle 30 #391, Col. Campestre, Mérida, Yucatán, CP 97129 <br\/>Lunes a viernes 11 am a 7 pm<br\/>Sábados 9 am a 2 pm<\/p>"
             }
           },
-          "39969f0b-906a-493f-a90b-e59c46aefcfa": {
+          "45db10fb-38ba-4da1-a569-e4d5d80e2098": {
             "type": "text_block",
             "settings": {
-              "title": "Shop Condesa DF",
-              "text": "<p>Av. Veracruz 102, Roma Nte., Cuauhtémoc, Cdmx, 06700<\/p><p>Lunes y martes de 10:00 am a 6:00 pm<\/p><p>Miércoles a domingo de 9:00 am a 9:00 pm<\/p>"
+              "title": "Casa R Concept Store",
+              "text": "<p>Mesones 83, Zona Centro, San Miguel de Allende, Guanajuato, 37700.<\/p><p>Lunes a domingo de 11:00 am - 8:00 pm<\/p>"
             }
           }
         },
         "block_order": [
           "b71f53e0-97e7-4ce0-aa59-3c7ca2ff8195",
+          "39969f0b-906a-493f-a90b-e59c46aefcfa",
           "120a2f45-fdb8-4534-b405-b42459eb9811",
           "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7",
           "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8",
           "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e",
           "6990f233-059d-46cc-8f0a-b3a85d7df34f",
-          "39969f0b-906a-493f-a90b-e59c46aefcfa"
+          "45db10fb-38ba-4da1-a569-e4d5d80e2098"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/imagen_puntos_de_venta_8b08e229-2b6a-4923-9644-5cb95534ac5e.jpg",
