@@ -752,6 +752,13 @@
       "puntos-venta": {
         "type": "puntos-venta",
         "blocks": {
+          "b71f53e0-97e7-4ce0-aa59-3c7ca2ff8195": {
+            "type": "text_block",
+            "settings": {
+              "title": "Showroom",
+              "text": "<p>PREVIA CITA<\/p><p>Salvatierra 45, San Miguel Chapultepec II Sección, Miguel Hidalgo, Cdmx, 11850<\/p><p>Lunes a viernes de 10:00 am - 5:00 pm<\/p>"
+            }
+          },
           "120a2f45-fdb8-4534-b405-b42459eb9811": {
             "type": "text_block",
             "settings": {
@@ -790,6 +797,7 @@
           }
         },
         "block_order": [
+          "b71f53e0-97e7-4ce0-aa59-3c7ca2ff8195",
           "120a2f45-fdb8-4534-b405-b42459eb9811",
           "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7",
           "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8",
