@@ -794,6 +794,13 @@
               "title": "Mérida Trunk Show",
               "text": "<p>Calle 30 #391, Col. Campestre, Mérida, Yucatán, CP 97129 <br\/>Lunes a viernes 11 am a 7 pm<br\/>Sábados 9 am a 2 pm<\/p>"
             }
+          },
+          "39969f0b-906a-493f-a90b-e59c46aefcfa": {
+            "type": "text_block",
+            "settings": {
+              "title": "Shop Condesa DF",
+              "text": "<p>Av. Veracruz 102, Roma Nte., Cuauhtémoc, Cdmx, 06700<\/p><p>Lunes y martes de 10:00 am a 6:00 pm<\/p><p>Miércoles a domingo de 9:00 am a 9:00 pm<\/p>"
+            }
           }
         },
         "block_order": [
@@ -802,7 +809,8 @@
           "baa1003e-9f9e-4ba5-b0c8-d5a5526735f7",
           "e9cb7985-a9d4-4a58-8c06-e44e52a2b5d8",
           "5f8296c9-ae0a-4fe8-8a5f-5c04f519f88e",
-          "6990f233-059d-46cc-8f0a-b3a85d7df34f"
+          "6990f233-059d-46cc-8f0a-b3a85d7df34f",
+          "39969f0b-906a-493f-a90b-e59c46aefcfa"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/imagen_puntos_de_venta_8b08e229-2b6a-4923-9644-5cb95534ac5e.jpg",
