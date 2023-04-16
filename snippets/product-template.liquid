@@ -92,7 +92,11 @@
 				        </div>
 				        <div data-fera-container="504944" data-product_id="{{ product.id }}"></div>
 				        <div class="col-12">
-					        {%- if settings.sku_enable -%}
+					        
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+{%- if settings.sku_enable -%}
 						        <p id="Sku-{{ section_id }}" class="product-single__sku">
 							        {%- if current_variant.sku -%}
 								        {{ current_variant.sku }}
@@ -347,7 +351,11 @@ to the app about the products displayed in the collection.
                         
                       </div>
       </div>
-    </div>
+    
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+</div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
