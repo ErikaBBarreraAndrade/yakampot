@@ -167,6 +167,7 @@ src="https://www.facebook.com/tr?id=827294584850364&ev=PageView&noscript=1"
       <main class="main-content" id="MainContent">
         <!--LayoutHub-Workspace-Start-->{{ content_for_layout }}<!--LayoutHub-Workspace-End-->
       </main>
+  {% render 'judgeme_widgets', widget_type: 'judgeme_medals', concierge_install: true %}
 
       {%- section 'footer-promotions' -%}
       {%- section 'footer' -%}
@@ -312,6 +313,5 @@ src="https://www.facebook.com/tr?id=827294584850364&ev=PageView&noscript=1"
 
 
 {% include 'limoniapps-discountninja-body' %}
-  {% render 'judgeme_widgets', widget_type: 'judgeme_medals', concierge_install: true %}
 </body>
 </html>
