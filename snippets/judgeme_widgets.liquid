@@ -21,7 +21,7 @@ data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false
 
 {% if widget_type == 'judgeme_all_reviews_text' %}
 <div class='jdgm-widget jdgm-all-reviews-text' data-from-snippet='{% if concierge_install != nil  %}{{ concierge_install }}{% else %}true{% endif %}' >
-  <a href="https://yakampot.com.mx/pages/reviews">
+  <a href="javascript:void(0)">
     <span class='jdgm-all-reviews-text__text' data-score="{{ shop.metafields.judgeme.all_reviews_rating }}" data-number-of-reviews="{{ shop.metafields.judgeme.all_reviews_count }}" data-locale="es">
       Los clientes nos califican {{ shop.metafields.judgeme.all_reviews_rating | round: 1 }}/5 según las reseñas de {{ shop.metafields.judgeme.all_reviews_count }}.
     </span>
