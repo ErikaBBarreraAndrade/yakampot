@@ -381,7 +381,7 @@
         "settings": {
           "icon-left": false,
           "color_border_box": "#e5e5e5",
-          "bg_section": "#ffffff",
+          "bg_section": "#fafafa",
           "title": "",
           "color_title": "#222222",
           "color_title_sub": "#888888",
@@ -882,20 +882,6 @@
           "url_button": ""
         }
       },
-      "16436439204c7d82b3": {
-        "type": "box-texto-simple",
-        "disabled": true,
-        "settings": {
-          "bg_color": "#000000",
-          "color_text": "#fffcfc",
-          "title": "Tierra es mi cuerpo, agua es mi sangre, viento es mi aliento y fuego es mi espíritu.",
-          "color_des": "#fffcfc",
-          "description": "",
-          "button_color": "",
-          "button_text": "",
-          "button_link": ""
-        }
-      },
       "1643643989e11be2ef": {
         "type": "only-text-button",
         "disabled": true,
@@ -1039,6 +1025,7 @@
       },
       "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d": {
         "type": "slider-stars",
+        "disabled": true,
         "blocks": {
           "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d-1665602080f5165e83-0": {
             "type": "quote",
@@ -1087,15 +1074,6 @@
           "title": "",
           "subtitle": "TESTIMONIOS VERIFICADOS DE NUESTRXS CLIENTES - <a href=\"https:\/\/fera.ai\/fake-reviews\">FERA.AI<\/a>",
           "bg_section": "#ffffff"
-        }
-      },
-      "95acabd1-d7de-407c-92ab-dc313e9e3024": {
-        "type": "instafeed",
-        "disabled": true,
-        "settings": {
-          "heading_size": 20,
-          "feed_width": 100,
-          "html_area": ""
         }
       },
       "f4332dfd-2bfb-4d33-bdda-c68b5b923792": {
@@ -1161,16 +1139,14 @@
       "16433290912ba7e43d",
       "16437438910a3d8c5c",
       "e77b5c70-e96e-4d5d-9ee4-f87ddcf5568d",
-      "1643329456d6e81824",
-      "164332962395135d69",
       "16433295822c6e3b4c",
-      "f4332dfd-2bfb-4d33-bdda-c68b5b923792",
+      "164332962395135d69",
+      "1663784892c5786ae6",
+      "1643329456d6e81824",
       "1643643989e11be2ef",
-      "16436439204c7d82b3",
       "164738936267baed6f",
-      "1647982846b8618b83",
-      "95acabd1-d7de-407c-92ab-dc313e9e3024",
-      "1663784892c5786ae6"
+      "f4332dfd-2bfb-4d33-bdda-c68b5b923792",
+      "1647982846b8618b83"
     ],
     "blocks": {
       "15154131639906026026": {
@@ -1187,12 +1163,6 @@
       },
       "14417550493701535262": {
         "type": "shopify:\/\/apps\/discount-ninja\/blocks\/discountninja-app-embed-latest\/b9a933ba-e276-459f-a4bf-3571d5a1e81c",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "11349500561483629931": {
-        "type": "shopify:\/\/apps\/ReStock\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
         "settings": {
         }
