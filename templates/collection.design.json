@@ -2,12 +2,14 @@
   "sections": {
     "bf0390ea-7c94-4c29-a0b6-471cf07d2a64": {
       "type": "index-slider-yakampot",
+      "disabled": true,
       "blocks": {
         "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-0": {
           "type": "text_block",
           "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/be5ad667fd54453bbd365f7c42311371.mp4",
-            "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d902a705dc20483b9adcb9756e20d74a.mp4",
+            "image": "shopify:\/\/shop_images\/Yakampot_Blogs-24.jpg",
+            "video_link": "",
+            "video_link_mobile": "",
             "title": "Add a title or tagline",
             "subtitle": "Add a subtitle or tagline",
             "enable_image": false,
@@ -67,7 +69,6 @@
     },
     "c79b8ef3-9882-4315-8f85-7b0320ce3d01": {
       "type": "background-image-text",
-      "disabled": true,
       "settings": {
         "subtitle": "Moda Mundana",
         "title": "YAKAMPOT",
