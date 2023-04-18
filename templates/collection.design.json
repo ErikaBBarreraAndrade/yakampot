@@ -6,15 +6,15 @@
         "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-0": {
           "type": "text_block",
           "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d13f8eea8f4c44a78d50b99b48b498c3.mp4",
-            "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/79b3c0d1db7a4de3b7f4600a7f15e764.mp4",
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/446d0ed533f64255b25bb7dd0d0b50ea.mp4",
+            "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d902a705dc20483b9adcb9756e20d74a.mp4",
             "title": "Add a title or tagline",
             "subtitle": "Add a subtitle or tagline",
             "enable_image": false,
             "enable_titulos": false,
-            "title_color": "#FFF",
+            "title_color": "#ffffff",
             "text": "Add a text or tagline",
-            "text_color": "#FFF",
+            "text_color": "#ffffff",
             "posicion_boton": "bottom-button",
             "button_label": "",
             "button_link": ""
@@ -29,9 +29,9 @@
             "subtitle": "Add a subtitle or tagline",
             "enable_image": false,
             "enable_titulos": false,
-            "title_color": "#FFF",
+            "title_color": "#ffffff",
             "text": "Add a text or tagline",
-            "text_color": "#FFF",
+            "text_color": "#ffffff",
             "posicion_boton": "bottom-button",
             "button_label": "",
             "button_link": ""
@@ -46,9 +46,9 @@
             "subtitle": "Add a subtitle or tagline",
             "enable_image": false,
             "enable_titulos": false,
-            "title_color": "#FFF",
+            "title_color": "#ffffff",
             "text": "Add a text or tagline",
-            "text_color": "#FFF",
+            "text_color": "#ffffff",
             "posicion_boton": "bottom-button",
             "button_label": "",
             "button_link": ""
