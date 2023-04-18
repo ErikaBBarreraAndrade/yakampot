@@ -22,6 +22,7 @@
         },
         "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-1": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "video_link": "",
             "video_link_mobile": "",
@@ -39,6 +40,7 @@
         },
         "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-2": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "video_link": "",
             "video_link_mobile": "",
