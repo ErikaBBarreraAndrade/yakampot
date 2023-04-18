@@ -86,6 +86,10 @@
               {{ 'home_page.onboarding.product_title' | t }}
             {%- endunless -%}
           </div>
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+
 
           {%- if settings.enable_product_reviews -%}
             {%- assign review_link = product.url | within: collection | append: '#Reviews-' | append: product.id -%}
