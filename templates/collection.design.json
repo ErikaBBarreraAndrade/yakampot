@@ -1,7 +1,71 @@
 {
   "sections": {
+    "bf0390ea-7c94-4c29-a0b6-471cf07d2a64": {
+      "type": "index-slider-yakampot",
+      "blocks": {
+        "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-0": {
+          "type": "text_block",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d13f8eea8f4c44a78d50b99b48b498c3.mp4",
+            "video_link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/79b3c0d1db7a4de3b7f4600a7f15e764.mp4",
+            "title": "Add a title or tagline",
+            "subtitle": "Add a subtitle or tagline",
+            "enable_image": false,
+            "enable_titulos": false,
+            "title_color": "#FFF",
+            "text": "Add a text or tagline",
+            "text_color": "#FFF",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-1": {
+          "type": "text_block",
+          "settings": {
+            "video_link": "",
+            "video_link_mobile": "",
+            "title": "Add a title or tagline",
+            "subtitle": "Add a subtitle or tagline",
+            "enable_image": false,
+            "enable_titulos": false,
+            "title_color": "#FFF",
+            "text": "Add a text or tagline",
+            "text_color": "#FFF",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-2": {
+          "type": "text_block",
+          "settings": {
+            "video_link": "",
+            "video_link_mobile": "",
+            "title": "Add a title or tagline",
+            "subtitle": "Add a subtitle or tagline",
+            "enable_image": false,
+            "enable_titulos": false,
+            "title_color": "#FFF",
+            "text": "Add a text or tagline",
+            "text_color": "#FFF",
+            "posicion_boton": "bottom-button",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-0",
+        "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-1",
+        "template--18171498201403__bf0390ea-7c94-4c29-a0b6-471cf07d2a64-16818279785cecbde9-2"
+      ],
+      "settings": {
+      }
+    },
     "c79b8ef3-9882-4315-8f85-7b0320ce3d01": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "Moda Mundana",
         "title": "YAKAMPOT",
@@ -154,6 +218,7 @@
     }
   },
   "order": [
+    "bf0390ea-7c94-4c29-a0b6-471cf07d2a64",
     "c79b8ef3-9882-4315-8f85-7b0320ce3d01",
     "product-grid",
     "802a1750-1925-4a35-8d6a-3869f9e19ee3",
