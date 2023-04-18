@@ -65,6 +65,7 @@
     },
     "e54adad9-d913-43f9-a135-bd6d3213dd31": {
       "type": "slider-stars",
+      "disabled": true,
       "blocks": {
         "template--18086185992507__e54adad9-d913-43f9-a135-bd6d3213dd31-1677252379c0e40520-0": {
           "type": "quote",
@@ -117,12 +118,29 @@
         "subtitle": "TESTIMONIOS VERIFICADOS DE NUESTRXS CLIENTES - FERA.AI",
         "bg_section": "#ffffff"
       }
+    },
+    "168182342525d96eca": {
+      "type": "apps",
+      "blocks": {
+        "ed4d53c3-cd6c-473c-a6ce-ff6e337886f0": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "ed4d53c3-cd6c-473c-a6ce-ff6e337886f0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "product-grid",
     "14346ec5-a92c-4158-8807-3152833752e4",
     "802a1750-1925-4a35-8d6a-3869f9e19ee3",
-    "e54adad9-d913-43f9-a135-bd6d3213dd31"
+    "e54adad9-d913-43f9-a135-bd6d3213dd31",
+    "168182342525d96eca"
   ]
 }
