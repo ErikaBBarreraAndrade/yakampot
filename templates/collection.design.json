@@ -30,7 +30,7 @@
       "settings": {
         "bg_color": "#000000",
         "url": "shopify:\/\/pages\/puntos-de-venta",
-        "label": "Agenda tu cita en nuestro showroom"
+        "label": "¿Quieres probarte todo y sentir las telas? - Agenda una cita en nuestro showroom"
       }
     },
     "14346ec5-a92c-4158-8807-3152833752e4": {
@@ -151,6 +151,11 @@
       ],
       "settings": {
       }
+    },
+    "16818254693c0c5ae8": {
+      "type": "apps",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -159,6 +164,7 @@
     "802a1750-1925-4a35-8d6a-3869f9e19ee3",
     "14346ec5-a92c-4158-8807-3152833752e4",
     "e54adad9-d913-43f9-a135-bd6d3213dd31",
-    "168182342525d96eca"
+    "168182342525d96eca",
+    "16818254693c0c5ae8"
   ]
 }
