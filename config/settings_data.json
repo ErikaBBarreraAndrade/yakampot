@@ -4,7 +4,7 @@
     "type_product_style": "body",
     "quick_shop_enable": true,
     "quick_shop_text": "Vista Rápida",
-    "product_grid_image_size": "natural",
+    "product_grid_image_size": "portrait",
     "product_hover_image": true,
     "enable_payment_button": false,
     "product_zoom_enable": true,
