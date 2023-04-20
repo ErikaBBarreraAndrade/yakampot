@@ -29,9 +29,11 @@ data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false
 </div>
 {% endif %}
 
+{% comment %}
 {% if widget_type == 'judgeme_medals' %}
   {{ shop.metafields.judgeme.medals }}
 {% endif %}
+{% endcomment %}
 
 {% if widget_type == 'judgeme_floating_tab' %}
 <section class='jdgm-widget jdgm-revs-tab' role='complementary'>
