@@ -125,6 +125,25 @@
               "button_link": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1"
             }
           },
+          "15921433-debc-44e0-bfb8-42c097ac29bf": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Casa-Mandarine-Desktop-1_f3c13834-da89-4689-9470-444846118463.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Casa-Mandarine-Mobile_d8d3c35a-4d2c-4ac1-9a70-52016492b14b.jpg",
+              "video_link": "",
+              "video_link_mobile": "",
+              "title": "Add a title or tagline",
+              "subtitle": "Add a subtitle or tagline",
+              "enable_image": false,
+              "enable_titulos": false,
+              "title_color": "#ffffff",
+              "text": "",
+              "text_color": "#ffffff",
+              "posicion_boton": "bottom-button",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
           "1643328988340a4b00-0": {
             "type": "text_block",
             "settings": {
@@ -140,26 +159,6 @@
               "posicion_boton": "bottom-button",
               "button_label": "VER  PRODUCTOS",
               "button_link": "https:\/\/yakampot.com.mx\/collections\/preventa-iconicos"
-            }
-          },
-          "15921433-debc-44e0-bfb8-42c097ac29bf": {
-            "type": "text_block",
-            "disabled": true,
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Yakampot_HotSale-24.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/Yakampot_HotSale-25.jpg",
-              "video_link": "",
-              "video_link_mobile": "",
-              "title": "Add a title or tagline",
-              "subtitle": "Add a subtitle or tagline",
-              "enable_image": false,
-              "enable_titulos": false,
-              "title_color": "#ffffff",
-              "text": "",
-              "text_color": "#ffffff",
-              "posicion_boton": "bottom-button",
-              "button_label": "",
-              "button_link": ""
             }
           },
           "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d": {
@@ -204,8 +203,8 @@
         "block_order": [
           "1643328988340a4b00-2",
           "b4da12de-4d66-4dc4-bd82-ee0132c63bbd",
-          "1643328988340a4b00-0",
           "15921433-debc-44e0-bfb8-42c097ac29bf",
+          "1643328988340a4b00-0",
           "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d",
           "7ae79269-59cf-4300-b529-59c774a97845"
         ],
