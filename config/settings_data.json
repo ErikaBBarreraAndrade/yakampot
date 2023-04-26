@@ -135,7 +135,7 @@
               "title": "Yakampot en la condesa",
               "subtitle": "Tu ropa mundana favorita a partir del 27 de abril en Casa Mandarine.",
               "enable_image": false,
-              "enable_titulos": false,
+              "enable_titulos": true,
               "title_color": "#ffffff",
               "text": "",
               "text_color": "#ffffff",
