@@ -113,15 +113,15 @@
               "image_mobile": "shopify:\/\/shop_images\/10-de-Mayo_Mobile.jpg",
               "video_link": "",
               "video_link_mobile": "",
-              "title": "10 de mayo",
-              "subtitle": "En Yakampot celebramos a las mamás con estilo. 15% off en toda la tienda.*",
+              "title": "celebramos a las madres",
+              "subtitle": "Yakampot, regalos con estilo. 15% off en toda la tienda.*",
               "enable_image": false,
               "enable_titulos": true,
               "title_color": "#ffffff",
               "text": "*Excepto colección Ceiba.",
               "text_color": "#ffffff",
               "posicion_boton": "bottom-button",
-              "button_label": "Descubre los nuevos colores",
+              "button_label": "Ver productos",
               "button_link": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1"
             }
           },
