@@ -163,14 +163,13 @@
           },
           "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d": {
             "type": "text_block",
-            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/ceiba.jpg",
               "image_mobile": "shopify:\/\/shop_images\/ceiba2.jpg",
               "video_link": "",
               "video_link_mobile": "",
-              "title": "Colección Ceiba",
-              "subtitle": "la practicidad de lo moderno y la elegancia de lo atemporal.",
+              "title": "Nueva Colección Ceiba",
+              "subtitle": "la practicidad de lo moderno y la elegancia de lo atemporal. ¡Ya disponible aquí!",
               "enable_image": false,
               "enable_titulos": true,
               "title_color": "#ffffff",
