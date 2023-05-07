@@ -1131,15 +1131,15 @@
       },
       "59917129-ed0d-4ef7-9fd3-73124f890661": {
         "type": "judgeme_carousel_section",
-        "disabled": true,
         "settings": {
           "maxwidth": 1280
         }
       },
       "3ab9d0b2-a6db-4f0d-a811-865907535c39": {
         "type": "judgeme_carousel_section",
+        "disabled": true,
         "settings": {
-          "maxwidth": 1080
+          "maxwidth": 1480
         }
       }
     },
