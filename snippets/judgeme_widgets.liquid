@@ -53,14 +53,6 @@ data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false
 data-from-snippet='{% if concierge_install != nil %}{{ concierge_install }}{% else %}true{% endif %}'
 data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false{% endif %}' >
   {% assign jm_metafields = shop.metafields.judgeme %}  
-  <div class="jdgm-carousel-title-and-link">
-    <h2 class='jdgm-carousel-title'>Testimonios de nuestros clientes</h2>
-    <a class="jdgm-all-reviews-rating-wrapper" href="https://yakampot.com.mx/pages/reviews">
-      <span style="display:block"  data-score='{{ jm_metafields.all_reviews_rating }}' class='jdgm-all-reviews-rating' aria-label='{{ jm_metafields.all_reviews_rating }} stars' tabindex='0' role='img'></span>
-      <span style="display: block" class='jdgm-carousel-number-of-reviews' data-number-of-reviews='{{ jm_metafields.all_reviews_count }}'>
-        Comentarios verificados por - judge.me - {{ shop.metafields.judgeme.all_reviews_count }} reseñas
-      </span>
-</a>  </div>
   {{ jm_metafields.featured_carousel }}
 </div>
 {% endif %}
