@@ -59,6 +59,21 @@
       },
       "footer-promotions": {
         "type": "footer-promotions",
+        "blocks": {
+          "b12d1f59-f593-48ba-bcfb-a2267cc84bfe": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "title": "Site-wide promotion",
+              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "button_label": "Optional button",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "b12d1f59-f593-48ba-bcfb-a2267cc84bfe"
+        ],
         "settings": {
           "hide_homepage": true,
           "image_size": "wide"
@@ -966,19 +981,6 @@
           "social_sharing_blog": false
         }
       },
-      "1647982846b8618b83": {
-        "type": "featured-collection",
-        "disabled": true,
-        "settings": {
-          "title": "Featured collection",
-          "home_featured_products": "descuento-30",
-          "per_row": 4,
-          "rows": 1,
-          "mobile_scrollable": true,
-          "view_all": true,
-          "divider": false
-        }
-      },
       "1663784892c5786ae6": {
         "type": "seccion-texto-boton-edit",
         "settings": {
@@ -1135,11 +1137,25 @@
           "maxwidth": 1280
         }
       },
-      "3ab9d0b2-a6db-4f0d-a811-865907535c39": {
-        "type": "judgeme_carousel_section",
-        "disabled": true,
+      "ea4a24a2-f423-400e-9479-7778d6306797": {
+        "type": "advanced-content",
+        "blocks": {
+          "ea4a24a2-f423-400e-9479-7778d6306797-16834234390034d345-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sellos_Yakampot.png",
+              "link": "",
+              "width": "33%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "ea4a24a2-f423-400e-9479-7778d6306797-16834234390034d345-0"
+        ],
         "settings": {
-          "maxwidth": 1480
+          "full_width": true,
+          "space_around": false
         }
       }
     },
@@ -1157,8 +1173,7 @@
       "1643643989e11be2ef",
       "164738936267baed6f",
       "f4332dfd-2bfb-4d33-bdda-c68b5b923792",
-      "1647982846b8618b83",
-      "3ab9d0b2-a6db-4f0d-a811-865907535c39"
+      "ea4a24a2-f423-400e-9479-7778d6306797"
     ],
     "blocks": {
       "15154131639906026026": {
