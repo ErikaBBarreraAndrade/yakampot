@@ -1136,27 +1136,6 @@
         "settings": {
           "maxwidth": 1280
         }
-      },
-      "ea4a24a2-f423-400e-9479-7778d6306797": {
-        "type": "advanced-content",
-        "blocks": {
-          "ea4a24a2-f423-400e-9479-7778d6306797-16834234390034d345-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Sellos_Yakampot.png",
-              "link": "",
-              "width": "33%",
-              "alignment": "center"
-            }
-          }
-        },
-        "block_order": [
-          "ea4a24a2-f423-400e-9479-7778d6306797-16834234390034d345-0"
-        ],
-        "settings": {
-          "full_width": true,
-          "space_around": false
-        }
       }
     },
     "content_for_index": [
@@ -1172,8 +1151,7 @@
       "1663784892c5786ae6",
       "1643643989e11be2ef",
       "164738936267baed6f",
-      "f4332dfd-2bfb-4d33-bdda-c68b5b923792",
-      "ea4a24a2-f423-400e-9479-7778d6306797"
+      "f4332dfd-2bfb-4d33-bdda-c68b5b923792"
     ],
     "blocks": {
       "15154131639906026026": {
