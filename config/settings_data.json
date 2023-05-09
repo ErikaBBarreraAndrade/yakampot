@@ -62,6 +62,7 @@
         "blocks": {
           "b12d1f59-f593-48ba-bcfb-a2267cc84bfe": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "title": "Site-wide promotion",

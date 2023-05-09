@@ -156,66 +156,27 @@
         "color_border": "#e5e5e5"
       }
     },
-    "89578d77-f479-4e7e-965f-edadf65a119b": {
-      "type": "slider-stars",
-      "disabled": true,
-      "blocks": {
-        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-0": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p><strong>Amo la ropa de Yakampot<\/strong>. <br\/>Desde que los conocí, cada que puedo compro ropa ahí. Me encantan sus diseños y los colores que tienen.<\/p>",
-            "image": "shopify:\/\/shop_images\/stars.png"
-          }
-        },
-        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-1": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p>Siempre me preocupo por verme bien y tengo un estilo muy particular. En realidad, es difícil encontrar ropa que me guste mucho, pero desde que conocí Yakampot <strong>me encantaron sus diseños y ahora casi toda mi ropa la compro con ellos<\/strong>. Además está super que sea ropa mexicana.<\/p>",
-            "image": "shopify:\/\/shop_images\/stars.png"
-          }
-        },
-        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-2": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p><strong>Los conocí porque una amiga del trabajo usaba ropa que me gustaba mucho<\/strong>.<br\/>Un día le pregunté que dónde la compraba y me dijo que en Yakampot. Los busqué y quedé encantada con la ropa. Me gusta mucho los outfits que puedo hacer y combinar con los colores que manejan. Vi que algunas prendas son artesanales, lo cual está increíble.<\/p>",
-            "image": "shopify:\/\/shop_images\/stars.png"
-          }
-        },
-        "7ebc650d-faa0-452e-8e12-b3afff5ec642": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p><strong>Me gusto mucho la ropa cuando la vi en facebook.<\/strong><br\/>Decidí comprarla y mi sorpresa al recibirla es que es  muy buena calidad y se ve mucho mejor en vivo. Gracias por todo.<\/p>",
-            "image": "shopify:\/\/shop_images\/stars.png"
-          }
-        },
-        "fa57058d-b03e-4a43-8cfb-bd49f08cffa0": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p><strong>Todo es muy hermoso!<br\/><\/strong>Lo que pido, me llega en tiempo record! lo necesitaba para un regalo y fue todo un éxito! sin duda volvere a comprar<\/p>",
-            "image": "shopify:\/\/shop_images\/stars.png"
-          }
-        }
-      },
-      "block_order": [
-        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-0",
-        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-1",
-        "template--18113012531515__89578d77-f479-4e7e-965f-edadf65a119b-1677262374390108e5-2",
-        "7ebc650d-faa0-452e-8e12-b3afff5ec642",
-        "fa57058d-b03e-4a43-8cfb-bd49f08cffa0"
-      ],
-      "custom_css": [
-        ".section-slider-fera {}"
-      ],
-      "settings": {
-        "title": "Reviews",
-        "subtitle": "Comentarios de nuestros clientes - FERA.AI",
-        "bg_section": "#ffffff"
-      }
-    },
     "73a144b7-4098-4d71-8217-dffc64b92b0b": {
       "type": "judgeme_carousel_section",
       "settings": {
         "maxwidth": 1080
+      }
+    },
+    "96a865e5-4935-4fdf-a2e4-2a622dc8ea08": {
+      "type": "grids-images",
+      "settings": {
+        "imageBackground": "shopify:\/\/shop_images\/Group_17.png",
+        "title1": "Mejoras en el fit, detalles bordados a mano  y una nueva experimentación artesanal de teñido.",
+        "image1": "shopify:\/\/shop_images\/Rectangle_30.png",
+        "image1-2": "shopify:\/\/shop_images\/Rectangle_29.png",
+        "link1": "",
+        "img-txt": "ENSAMBLE MANGAS VOLUMEN NEGRO",
+        "image2": "shopify:\/\/shop_images\/Rectangle_28.png",
+        "img-txt2": "ENSAMBLE MANGAS VOLUMEN NEGRO",
+        "title2": "Te seguiremos escuchando para continuar con la reinvención de nuestras piezas más vendidas.",
+        "image3": "shopify:\/\/shop_images\/Rectangle_28_1.png",
+        "link2": "",
+        "sub-title": "Generamos una nueva experimentación de teñido artesanal, y perfeccionamos la pieza para ti, basándonos en tu experiencia con ellas."
       }
     }
   },
@@ -224,7 +185,7 @@
     "16432144337e6d776a",
     "158bbdfb-8792-42e8-9372-6cf385859313",
     "67ceb293-e10f-4aca-9510-15931ffbc2b1",
-    "89578d77-f479-4e7e-965f-edadf65a119b",
-    "73a144b7-4098-4d71-8217-dffc64b92b0b"
+    "73a144b7-4098-4d71-8217-dffc64b92b0b",
+    "96a865e5-4935-4fdf-a2e4-2a622dc8ea08"
   ]
 }
