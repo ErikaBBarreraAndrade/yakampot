@@ -1,0 +1,70 @@
+.grids-images .container-grids{
+      z-index: 3;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    resize: both;
+    margin: 0;
+    padding: 5%;
+}
+
+.grids-images .gridImage1{
+    max-width: 33%;
+    height: 179px;
+}
+.grids-images .gridImage1 img{
+    position: absolute;
+    max-width: 20%;
+    top: 26%;
+}
+.grids-images .gridImage{
+    max-width: 33%;
+}
+.grids-images .gridTtitle2 {
+    position: relative;
+    top: 35%;
+}
+.grids-images .gridTtitle .title{
+  height: 100%;
+}
+.grids-images .gridTtitle2 .title {
+    position: relative;
+    top: 35%;
+}
+.grids-images .title{
+  font-family: 'Minion Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 49px;
+    color: #FFFFFF;
+    max-width: 70%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.grids-images .subtitle{
+    position: relative;
+    top: 40%;
+    max-width: 50%;
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 150%;
+    
+    color: #FFFFFF;
+}
+.grids-images a{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  
+  /* Blanco */
+  
+  color: #FFFFFF;
+}

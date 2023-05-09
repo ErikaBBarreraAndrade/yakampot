@@ -1,7 +1,144 @@
+{{ 'grids-images.css' | asset_url | stylesheet_tag }}
+
+<div class="container-grids" style="background-image: url({{ section.settings.imageBackground | image_url }});">
+  <div class="row">
+    <div class="col-6 gridTtitle">
+      <p class="title">{{ section.settings.title1 }}</p>
+    </div>
+    <div class="col-6 gridImage">
+      <span style="display: inline-flex;">
+        <img
+          loading="lazy"
+          src="{{ section.settings.image1-2  | img_url: '800x800' }}"
+          data-src="{{ section.settings.image1-2.src }}"
+          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+          data-aspectratio="{{ section.settings.image1-2.aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ section.settings.image1-2.alt | escape }}"
+        >
+        <img
+          loading="lazy"
+          src="{{ section.settings.image1  | img_url: '800x800' }}"
+          data-src="{{ section.settings.image1.src }}"
+          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+          data-aspectratio="{{ section.settings.image1.aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ section.settings.image1.alt | escape }}"
+        >
+      </span>
+      <a href="{{ section.settings.link1 }}" >{{ section.settings.img-txt }}</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 gridImage1">
+      <span style="display: inline-flex;">
+        <img
+          loading="lazy"
+          src="{{ section.settings.image2  | img_url: '800x800' }}"
+          data-src="{{ section.settings.image2.src }}"
+          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+          data-aspectratio="{{ section.settings.image2.aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ section.settings.image2.alt | escape }}"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 gridTtitle2">
+      <p class="title">{{ section.settings.title2 }}</p>
+      <p class="subtitle">{{ section.settings.sub-title }}</p>
+    </div>
+    <div class="col-6 gridImage">
+      <span style="display: inline-flex;">
+        <img
+          loading="lazy"
+          src="{{ section.settings.image3  | img_url: '800x800' }}"
+          data-src="{{ section.settings.image3.src }}"
+          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+          data-aspectratio="{{ section.settings.image3.aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ section.settings.image3.alt | escape }}"
+        >
+      </span>
+      <a href="{{ section.settings.link2 }}" >{{ section.settings.img-txt2 }}</a>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "grids images",
+    "class": "grids-images",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "imageBackground",
+      "label": "Background image"
+      },
+      {
+        "type": "text",
+        "id": "title1",
+        "label": "First title",
+        "default": "Mejoras en el fit, detalles bordados a mano  y una nueva experimentación artesanal de teñido."
+      },
+      {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "First image"
+      },
+      {
+      "type": "image_picker",
+      "id": "image1-2",
+      "label": "Image optional"
+      },
+      {
+        "type": "url",
+        "id": "link1",
+        "label": "Link image 1"
+      },
+      {
+        "type": "text",
+        "id": "img-txt",
+        "label": "First image txt",
+        "default": "ENSAMBLE MANGAS VOLUMEN NEGRO"
+      },
+      {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Second image"
+      },
+      {
+        "type": "text",
+        "id": "img-txt2",
+        "label": "Second image txt",
+        "default": "ENSAMBLE MANGAS VOLUMEN NEGRO"
+      },
+      {
+        "type": "text",
+        "id": "title2",
+        "label": "Second title",
+        "default": "Te seguiremos escuchando para continuar con la reinvención de nuestras piezas más vendidas."
+      },
+      {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Third image"
+      },
+      {
+        "type": "url",
+        "id": "link2",
+        "label": "Link image 3"
+      },
+      {
+        "type": "text",
+        "id": "sub-title",
+        "label": "Subtitle",
+        "default": "Generamos una nueva experimentación de teñido artesanal, y perfeccionamos la pieza para ti, basándonos en tu experiencia con ellas."
+      }
+    ],
+    "presets": [{
+      "name": "grids images"
+    }]
   }
 {% endschema %}
 
