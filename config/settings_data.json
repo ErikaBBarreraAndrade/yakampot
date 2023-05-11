@@ -122,25 +122,6 @@
               "button_link": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1"
             }
           },
-          "b4da12de-4d66-4dc4-bd82-ee0132c63bbd": {
-            "type": "text_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Yak-Madres_e63207e7-3334-455c-acb7-7b85110e99ff.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/10-de-Mayo_Mobile.jpg",
-              "video_link": "",
-              "video_link_mobile": "",
-              "title": "celebramos a las madres",
-              "subtitle": "Yakampot, regalos con estilo. Hasta 50% off en la tienda y tienda en línea*",
-              "enable_image": false,
-              "enable_titulos": true,
-              "title_color": "#ffffff",
-              "text": "*Excepto colección Ceiba.",
-              "text_color": "#ffffff",
-              "posicion_boton": "bottom-button",
-              "button_label": "Ver productos",
-              "button_link": "https:\/\/yakampot.com.mx\/collections\/productos?filter.v.availability=1"
-            }
-          },
           "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d": {
             "type": "text_block",
             "settings": {
@@ -217,7 +198,6 @@
         },
         "block_order": [
           "1643328988340a4b00-2",
-          "b4da12de-4d66-4dc4-bd82-ee0132c63bbd",
           "8a1e6a4b-c263-42f1-8c55-da5b2b21f64d",
           "15921433-debc-44e0-bfb8-42c097ac29bf",
           "1643328988340a4b00-0",
